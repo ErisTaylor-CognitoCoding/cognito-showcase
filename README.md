@@ -18,10 +18,36 @@ Cognito Coding builds AI-powered business automation and educational platforms:
 ```
 cognito-showcase/
 ├── projects/           # Project showcases (sanitised)
-├── patterns/          # Production code patterns
-├── prompts/           # AI agent persona examples
-└── tutorials/         # How-to guides
+│   ├── nova/          # AI Co-founder & Discord bot
+│   ├── pantheon/      # Business command centre
+│   └── award-tracker/ # AQA Unit Award SaaS
+├── patterns/          # Production code patterns (coming soon)
+├── prompts/           # AI agent persona examples (coming soon)
+└── tutorials/         # How-to guides (coming soon)
 ```
+
+## 🚀 Featured Projects
+
+### [Nova](./projects/nova) — AI Co-founder & Executive Assistant
+AI Discord bot with memory, agent delegation, and real-world execution power. Nova handles daily operations, coordinates specialist agents, and delivers morning briefings. Built on Claude API + PostgreSQL + MCP tools.
+
+**Tech**: Python, discord.py, Claude API, PostgreSQL, MCP, Docker
+
+---
+
+### [Pantheon](./projects/pantheon) — AI-Powered Business Command Centre
+Custom operating system for businesses — CRM, invoicing, accounts, Kanban, proposals, plus an AI agent team (Nova, CMO, CFO, Scout, CTO, Arthur). Deployed per-client with isolated infrastructure. Cognito itself runs on Pantheon.
+
+**Tech**: Python/Flask, PostgreSQL (multi-tenant), Claude API, Paperclip (agent engine), Docker
+
+---
+
+### [Award Tracker](./projects/award-tracker) — AQA Unit Award SaaS
+Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £24.99/month.
+
+**Tech**: Python/Flask, PostgreSQL (multi-tenant), ReportLab (PDF), DashDeck SSO, Docker
+
+---
 
 ## 🔗 Links
 
