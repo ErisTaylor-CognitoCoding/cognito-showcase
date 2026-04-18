@@ -1,152 +1,143 @@
 # Pantheon
 
-> AI-powered business command centre — CRM, agents, invoicing, proposals, and automation in one private instance
+> **Your own AI-powered business command centre — CRM, agents, invoicing, proposals, and automation in one private instance.**
+>
+> *"Build your temple."*
+
+**Price**: £2,500+ fixed fee (flagship tier of the Cognito AI stack)
 
 ## Overview
 
-Pantheon is a custom AI-powered business operating system. It combines a web dashboard (CRM, invoicing, accounts, Kanban, proposals) with an AI agent team (Nova, CMO, CFO, Scout, CTO, Arthur) that runs the business alongside the founder.
+Pantheon is a custom private instance of the full Cognito stack, configured for your business. Not a template, not a shared platform — **your data, your database, your branding, your infrastructure**. Cognito deploys and maintains; you own the workflow.
 
-Unlike SaaS platforms, Pantheon is **deployed per-client** with isolated infrastructure. Each client gets:
-- Their own database (PostgreSQL)
-- Their own AI agents (configured for their business)
-- Their own branding and workflows
-- Their own Discord/Slack/Telegram bot (Nova)
+Pantheon is the flagship tier of Cognito's three-tier AI stack:
 
-Cognito Coding itself runs on Pantheon. This is the tool we built for our own business, and we deploy the same stack for other companies.
+> **Apollo (£29.99/mo) → Athena (£750) → Pantheon (£2,500+)**
+>
+> *"Start with knowledge. Add wisdom. Build your temple."*
+
+Pantheon was built from three earlier systems — a business dashboard, Apollo's AI executive assistant, and an agent execution engine — unified into a single platform in April 2026. **Cognito Coding itself runs on Pantheon every day.** Nova, CMO, CFO, Scout, CTO and the rest of the agent roster all live in production on the same stack we deploy for clients.
+
+## What You Get
+
+### 1. Your Own Dashboard
+One place to run the business:
+- **CRM** — client lifecycle, contacts, last-contact tracking
+- **Invoicing** — drafts, send-ready PDFs, payment status
+- **Accounts ledger** — income, expenses, Stripe sync, Gmail receipt scanning, UK tax-year filtering
+- **Kanban** — task board: backlog → todo → in progress → in review → done
+- **Proposals** — Scout-drafted, Nova-reviewed, status tracking
+- **Newsletter** — draft, preview, scheduled send
+- **Company doc** — single source of truth for products, pricing, brand voice
+- **Skills library** — reusable Markdown playbooks agents read at runtime
+- **Routines** — cron-scheduled agent jobs
+- **Secrets vault** — encrypted storage for API keys
+
+### 2. Your Own Apollo
+An AI executive assistant embedded in Discord / Slack / Telegram. Reads email, manages calendar, runs outreach, chases leads, delivers morning briefings. Same Apollo tech as the standalone product — just wired into your Pantheon.
+
+### 3. Your Own Specialist Agent Team
+Each agent is a real employee-style persona, not a chatbot. Each has a custom system prompt, a default skill set, and a cron schedule.
+
+- **CTO** — technical execution, infrastructure, monitoring
+- **CMO** — marketing, content, proposals, lead generation
+- **CFO** — Stripe sync, expense scanning from receipts, weekly P&L
+- **Scout** — Upwork / LinkedIn proposal drafting
+- **Engineer** — code and shell-level execution inside the container
+
+Agents are **not chatbots**. They run on cron schedules (routines), execute autonomously, report to Discord, and log every action (`agent_runs` table) for audit.
+
+### 4. Configured for Your Business
+Personas, brand voice, pricing, workflows — all tuned to your operation, not a generic chatbot bolted onto a template.
+
+### 5. Claude Max Under the Hood
+All agent execution runs on Claude Max subscription billing, not per-token API billing. No surprise spend. No bill shock. Predictable monthly infrastructure cost.
+
+### 6. Fully Private and Audited
+- Every agent action logged
+- Secrets encrypted at rest
+- Destructive operations require confirmation
+- Per-client database isolation — your data never mixes with anyone else's
 
 ## Tech Stack
 
 - **Backend**: Python 3.11 + Flask
-- **Database**: PostgreSQL (multi-tenant, per-client isolation)
-- **AI**: Anthropic Claude API (Sonnet 4)
-- **Agent Engine**: Paperclip (custom orchestration layer)
+- **Database**: PostgreSQL (per-client isolated database)
+- **AI**: Anthropic Claude (Sonnet 4 / Opus 4) via Claude Max
+- **Agent runtime**: MCP tools + cron scheduler, unified Pantheon runtime
 - **Frontend**: HTML/CSS/JS (server-rendered, no framework bloat)
-- **Deployment**: Docker Compose (containerised services)
+- **Deployment**: Docker Compose (containerised, per-client)
 - **Auth**: Session-based with bcrypt
 
 ## Architecture
 
 ```
-┌──────────────────────────────────────┐
-│         DashDeck (Web UI)            │
-│  CRM | Invoices | Accounts | Kanban  │
-│  Proposals | Newsletter | Skills     │
-└──────────────────────────────────────┘
-                  ↓
-┌──────────────────────────────────────┐
-│       Paperclip (Agent Engine)       │
-│  Nova | CMO | CFO | Scout | CTO      │
-│  Arthur | Skills | Routines          │
-└──────────────────────────────────────┘
-                  ↓
-┌──────────────────────────────────────┐
-│  PostgreSQL (Multi-Tenant Database)  │
-│  clients | contacts | proposals      │
-│  accounts | tasks | agent_runs       │
-└──────────────────────────────────────┘
+┌──────────────────────────────────────────────┐
+│             Pantheon Web UI                  │
+│  CRM │ Invoices │ Accounts │ Kanban          │
+│  Proposals │ Newsletter │ Skills │ Routines  │
+└──────────────────────────────────────────────┘
+                       │
+┌──────────────────────────────────────────────┐
+│          Pantheon Agent Runtime              │
+│  Nova │ CMO │ CFO │ Scout │ CTO │ Engineer   │
+│  Skills library │ Routines │ Agent logs      │
+└──────────────────────────────────────────────┘
+                       │
+┌──────────────────────────────────────────────┐
+│      PostgreSQL (Per-Client Isolation)       │
+│  clients │ contacts │ proposals │ tasks      │
+│  accounts │ agent_runs │ secrets │ skills    │
+└──────────────────────────────────────────────┘
 ```
 
-## Key Features
+## Why It's Not Niche
 
-### 1. **CRM Pipeline**
-- Client lifecycle tracking (prospect → client → paused → churned)
-- Contact management with email/phone
-- Last contact timestamp (synced from outreach channels)
-- Notes and history per client
+Any business that deals with clients, leads, content, or ops can run on Pantheon. Law firms, dental practices, tradespeople, coaches, agencies, consultancies, service businesses.
 
-### 2. **Proposal Builder**
-- Draft proposals with AI assistance (Scout agent)
-- Store job listings, client details, pricing
-- Track status (draft → submitted → won → lost)
-- Review queue for Nova
+If our education product DashDeck is *"the command centre for tutors"*, **Pantheon is the command centre for any business.**
 
-### 3. **Accounts Ledger**
-- Income and expense tracking
-- Stripe sync (auto-import charges)
-- Gmail receipt scanning (CFO agent extracts invoice data from emails)
-- Category tagging, client attribution
-- Tax-year filtering (UK tax year: 6 Apr → 5 Apr)
+## Proof It Works
 
-### 4. **Grind Tracker (Kanban)**
-- Task board: backlog → todo → in progress → in review → done
-- Assign to agents or humans
-- Priority levels (low/normal/high)
-- Comments and history
+Cognito Coding itself runs on Pantheon:
 
-### 5. **Agent Team**
-Each agent is a Claude instance with a custom persona and toolset:
+- **Apollo** runs our outreach and morning briefings
+- **Scout** hunts job listings and drafts proposals every weekday
+- **CMO** schedules social posts, drafts newsletters, produces YouTube videos
+- **CFO** syncs Stripe and scans Gmail receipts into the accounts ledger
+- **CTO** monitors infra and triages every agent failure
+- The dashboard is the first thing Zero opens every morning
 
-- **Nova** — CEO, morning briefings, email management, calendar, outreach coordination
-- **CMO** — Marketing, content creation, video production, social media
-- **CFO** — Finance, expense scanning, Stripe sync, P&L reports
-- **Scout** — Job hunting (Upwork, LinkedIn), proposal drafting
-- **CTO** — Technical execution, infrastructure monitoring
-- **Arthur** — Code-level engineering, shell execution, Docker logs
-
-Agents are **not chatbots**. They:
-- Run on cron schedules (routines)
-- Execute tasks autonomously
-- Report results to Discord
-- Have memory (agent_runs table logs every execution)
-
-### 6. **Skills Library**
-Reusable workflow playbooks (Markdown templates). Examples:
-- How to draft a proposal
-- How to generate a thumbnail
-- How to scan a receipt and extract invoice data
-- How to sync Stripe charges
-
-Agents read skills during execution to follow consistent processes.
-
-### 7. **Routines (Cron Scheduling)**
-Agents run recurring jobs:
-- **Nova**: Morning briefing (weekdays 9am)
-- **CFO**: Stripe sync (daily), receipt scan (daily)
-- **Scout**: Job board scrape (weekdays 10am)
-- **CMO**: Social media scheduling checks
-
-### 8. **Secrets Vault**
-Encrypted storage for API keys:
-- Stripe API key
-- Gmail OAuth tokens
-- Gemini API key (image generation)
-- ElevenLabs API key (TTS)
-- Veo3Gen API key (video generation)
-
-Agents fetch secrets at runtime via Paperclip.
-
-## Multi-Tenancy
-
-Pantheon supports per-client database isolation. Each deployment can serve:
-- **One business** (Cognito's own instance)
-- **Multiple clients** (SaaS mode with tenant-scoped data)
-
-Current implementation uses **per-client PostgreSQL databases** (Award Tracker, DashDeck Education clients).
+We didn't build this theoretically. We built it because we needed it, and now we deploy the same stack for other businesses.
 
 ## Lessons Learned
 
 ### What Worked Well
 
-**Agents as employees, not chatbots**: Treating agents like team members (with roles, personas, routines) made them feel part of the operation. Zero doesn't "use a tool" — he works with Nova, CMO, Scout.
+**Agents as employees, not chatbots.** Treating agents like team members (with roles, personas, routines) made them feel part of the operation. Zero doesn't "use a tool" — he works with Nova, CMO, Scout.
 
-**Skills library prevents drift**: Reusable playbooks keep processes consistent. When CMO generates a thumbnail, the skill ensures the same template and brand style every time.
+**Skills library prevents drift.** Reusable Markdown playbooks keep processes consistent. When CMO generates a thumbnail, the skill ensures the same template and brand style every time.
 
-**Cron routines are killer**: Morning briefings, Stripe sync, receipt scanning happen automatically. Zero wakes up to a Discord message with the day's overview. This is the "magic moment" clients pay for.
+**Cron routines are killer.** Morning briefings, Stripe sync, receipt scanning happen automatically. Zero wakes up to a Discord message with the day's overview. This is the "magic moment" clients pay for.
 
-**PostgreSQL handles everything**: No need for Redis, caching layers, or NoSQL. Postgres + proper indexes + JSONB columns handle agent logs, conversation history, and CRM data beautifully.
+**PostgreSQL handles everything.** No Redis, no caching layers, no NoSQL. Postgres + proper indexes + JSONB columns handle agent logs, conversation history, and CRM data beautifully.
 
-**Docker isolates cleanly**: Each service (DashDeck, Paperclip, Nova) in its own container. Rebuild one without touching the others. Logs stay separate.
+**Docker isolates cleanly.** Each client gets their own container stack. Rebuild one without touching others. Logs stay separate.
+
+**Claude Max beats per-token API billing.** Moving all background agent execution off per-token API billing onto Claude Max subscription removed the spend anxiety. Pantheon clients get predictable monthly infra, not a metered surprise.
 
 ### What We'd Do Differently
 
-**UI polish comes last**: We built the backend and agents first, UI second. The dashboard works but looks utilitarian. For client deployments, we'd invest in frontend design earlier.
+**UI polish comes last.** We built backend and agents first, UI second. The dashboard works but looks utilitarian. For client deployments, we now invest in frontend design earlier.
 
-**Agent error handling**: When an agent fails (API timeout, malformed response), the error gets logged but not always surfaced to the user. Need better alerting and retry logic.
+**Agent error handling.** When an agent fails (API timeout, malformed response), the error is logged but not always surfaced. We've since added a CTO routine that triages failed runs and comments on stuck tasks.
 
-**Secrets management**: Current vault works but is custom-built. Would consider HashiCorp Vault or AWS Secrets Manager for enterprise clients.
+**Secrets management.** Current vault works but is custom-built. For larger client deployments we'd consider HashiCorp Vault or AWS Secrets Manager.
 
-**Cost monitoring**: Claude API usage can spike. We'd add per-agent token tracking and budget alerts before deploying for clients with tight margins.
+**Cost monitoring.** Even on Claude Max, some agents can burn hours of CLI time. Per-agent run tracking and alerting landed in the flagship build — we'd scaffold it in from day one next time.
 
 ---
+
+*Part of the Cognito AI stack: [Apollo](../apollo) → [Athena](../athena) → [Pantheon](./)*
 
 *Built by [Cognito Coding](https://cognitocoding.com)*
