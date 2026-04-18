@@ -6,27 +6,64 @@ This repository demonstrates the technical foundations behind Cognito's products
 
 ## 🎯 What We Build
 
-Cognito Coding builds AI-powered business automation and educational platforms:
+Cognito Coding builds AI-powered business automation and educational platforms. Our AI tier is structured in three levels:
 
-- **Pantheon** — Custom AI-powered business command centres (CRM, agents, automation)
-- **Apollo** — AI executive assistants deployed per-client in isolated Docker containers
-- **DashDeck** — Education platform command centre (tutoring agencies, SEND providers)
+> **Start with knowledge. Add wisdom. Build your temple.**
+
+| Tier | Product | Price |
+|------|---------|-------|
+| 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month |
+| 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750 fixed |
+| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | £2,500+ fixed |
+
+Plus:
+
 - **Small Business Apps** — Niche tools for trades (dog walkers, tutors, etc.) at £9.99/month
+- **Education Platform** — DashDeck and add-ons for tutoring agencies and SEND providers
 
 ## 📂 Repository Structure
 
 ```
 cognito-showcase/
-├── projects/           # Project showcases (sanitised)
-│   ├── nova/          # AI Co-founder & Discord bot
-│   ├── pantheon/      # Business command centre
-│   └── award-tracker/ # AQA Unit Award SaaS
-├── patterns/          # Production code patterns (coming soon)
-├── prompts/           # AI agent persona examples (coming soon)
-└── tutorials/         # How-to guides (coming soon)
+├── projects/              # Project showcases (sanitised)
+│   ├── apollo/           # AI executive assistant (£29.99/mo)
+│   ├── athena/           # AI audit + multi-agent consultancy (£750)
+│   ├── pantheon/         # Full AI business command centre (£2,500+)
+│   ├── nova/             # AI Co-founder & Discord bot
+│   └── award-tracker/    # AQA Unit Award SaaS
+├── patterns/             # Production code patterns (coming soon)
+├── prompts/              # AI agent persona examples (coming soon)
+└── tutorials/            # How-to guides (coming soon)
 ```
 
 ## 🚀 Featured Projects
+
+### [Apollo](./projects/apollo) — AI Executive Assistant (£29.99/month)
+Per-client AI executive assistant deployed in an isolated Docker container. Claude Code orchestration + Ollama for conversational inference + SQLite per client + Telegram as the primary interface. Clients can add custom skills to extend their agent. Clean IDE-style web UI: chat, skills panel, knowledge base, connections, settings.
+
+**Tech**: Claude Code, Ollama, SQLite, Telegram Bot API, Docker
+
+**Tagline**: *"Start with knowledge."*
+
+---
+
+### [Athena](./projects/athena) — AI Consultancy & Multi-Agent (£750 fixed)
+Business audit + implementation. A full workflow review, AI opportunity map, implementation plan, and 60-minute debrief — plus 2–3 configured agents deployed for specific workflows in your business. The bridge between Apollo (entry) and Pantheon (full build).
+
+**Deliverables**: Audit report, AI opportunity map, 2–3 deployed agents, 60-min debrief
+
+**Tagline**: *"Add wisdom."*
+
+---
+
+### [Pantheon](./projects/pantheon) — AI Business Command Centre (£2,500+ fixed)
+A custom private instance of the full Cognito stack, configured for your business. Your own dashboard (CRM, invoicing, accounts, Kanban, proposals, newsletter, skills, routines, secrets vault), your own Apollo executive assistant, and a full specialist agent team (CTO, CMO, CFO, Scout, Engineer). Claude Max subscription under the hood — no per-token API billing. Cognito Coding itself runs on Pantheon every day.
+
+**Tech**: Python/Flask, PostgreSQL (multi-tenant), Claude API (Max), Docker, per-client isolation
+
+**Tagline**: *"Build your temple."*
+
+---
 
 ### [Nova](./projects/nova) — AI Co-founder & Executive Assistant
 AI Discord bot with memory, agent delegation, and real-world execution power. Nova handles daily operations, coordinates specialist agents, and delivers morning briefings. Built on Claude API + PostgreSQL + MCP tools.
@@ -35,15 +72,8 @@ AI Discord bot with memory, agent delegation, and real-world execution power. No
 
 ---
 
-### [Pantheon](./projects/pantheon) — AI-Powered Business Command Centre
-Custom operating system for businesses — CRM, invoicing, accounts, Kanban, proposals, plus an AI agent team (Nova, CMO, CFO, Scout, CTO, Arthur). Deployed per-client with isolated infrastructure. Cognito itself runs on Pantheon.
-
-**Tech**: Python/Flask, PostgreSQL (multi-tenant), Claude API, Paperclip (agent engine), Docker
-
----
-
 ### [Award Tracker](./projects/award-tracker) — AQA Unit Award SaaS
-Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £24.99/month.
+Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £19.99/month.
 
 **Tech**: Python/Flask, PostgreSQL (multi-tenant), ReportLab (PDF), DashDeck SSO, Docker
 
@@ -61,7 +91,7 @@ Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative pr
 - Client names or data
 - API keys, credentials, secrets
 - Full application codebases
-- Internal processes or pricing
+- Internal processes or pricing beyond public tiers
 
 ## 📜 License
 
