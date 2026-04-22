@@ -47,7 +47,7 @@ Per-client AI executive assistant deployed in an isolated Docker container. Clau
 
 ---
 
-### [Athena](./projects/athena) — AI Consultancy & Multi-Agent (£750 fixed)
+### [Athena](./projects/athena) — AI Consultancy & Multi-Agent (£750/month)
 Business audit + implementation. A full workflow review, AI opportunity map, implementation plan, and 60-minute debrief — plus 2–3 configured agents deployed for specific workflows in your business. The bridge between Apollo (entry) and Pantheon (full build).
 
 **Deliverables**: Audit report, AI opportunity map, 2–3 deployed agents, 60-min debrief
@@ -56,7 +56,7 @@ Business audit + implementation. A full workflow review, AI opportunity map, imp
 
 ---
 
-### [Pantheon](./projects/pantheon) — AI Business Command Centre (£2,500+ fixed)
+### [Pantheon](./projects/pantheon) — AI Business Command Centre (£2,500+ /month)
 A custom private instance of the full Cognito stack, configured for your business. Your own dashboard (CRM, invoicing, accounts, Kanban, proposals, newsletter, skills, routines, secrets vault), your own Apollo executive assistant, and a full specialist agent team (CTO, CMO, CFO, Scout, Engineer). Claude Max subscription under the hood — no per-token API billing. Cognito Coding itself runs on Pantheon every day.
 
 **Tech**: Python/Flask, PostgreSQL (multi-tenant), Claude API (Max), Docker, per-client isolation
