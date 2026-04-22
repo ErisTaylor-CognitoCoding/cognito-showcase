@@ -13,8 +13,8 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 | Tier | Product | Price |
 |------|---------|-------|
 | 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month |
-| 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750 fixed |
-| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | £2,500+ fixed |
+| 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750/month |
+| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | £2,500+ /month |
 
 Plus:
 
