@@ -4,22 +4,44 @@
 >
 > *"Add wisdom."*
 
-**Price**: £750 fixed fee
+**Price**: £750/month
 
 ## Overview
 
 Athena is Cognito's mid-tier AI engagement: a **full business audit** to identify where AI adds value, plus **2–3 configured agents** deployed for specific workflows in your business. It bridges the gap between Apollo (the entry-level assistant) and Pantheon (the full custom build).
 
+**Apollo sits on top as your single point of contact.** You instruct Apollo in plain English. Apollo briefs the right specialist underneath — CMO for content, Scout for leads, Ops for tasks. You never manage the stack. You manage Apollo.
+
 Athena is for businesses that:
 - Know AI could help but don't know where to start
 - Want more than a single assistant but aren't ready for a £2,500+ Pantheon build
-- Need an expert to map their workflows, spot opportunities, and prototype real agents
+- Need an expert to map their workflows, spot opportunities, and deploy real agents
 
 Athena is the mid-tier of Cognito's three-tier AI stack:
 
-> **Apollo (£29.99/mo) → Athena (£750) → Pantheon (£2,500+)**
+> **Apollo (£29.99/mo) → Athena (£750/mo) → Pantheon (£2,500+)**
 >
 > *"Start with knowledge. Add wisdom. Build your temple."*
+
+## The Apollo-Conductor Architecture
+
+```
+         YOU
+          │
+          ▼
+    ┌─────────────┐
+    │   APOLLO    │  ← Your single point of contact
+    │ (Telegram)  │     Natural language. Plain English.
+    └──────┬──────┘
+           │  Apollo briefs the right specialist
+           │
+     ┌─────┼──────┐
+     ▼     ▼      ▼
+  [CMO]  [Scout] [Ops]
+ content  leads  tasks
+```
+
+You instruct Apollo. Apollo runs the team. You never manage the stack — **you manage Apollo**.
 
 ## What's Included
 
@@ -40,8 +62,8 @@ A written document the client keeps, covering:
 ### 3. Implementation Plan
 A practical, phased plan — not a fantasy roadmap. What to deploy in month 1, what to revisit in month 3, what to budget for if they want to scale to a full Pantheon build later.
 
-### 4. 2–3 Configured Agents
-The part that makes Athena different from a generic consultancy engagement. We don't just write a document — we **deploy working agents** for 2–3 of the highest-value workflows identified in the audit. Examples from past engagements:
+### 4. 2–3 Configured Agents (Apollo-Conducted)
+The part that makes Athena different from a generic consultancy engagement. We don't just write a document — we **deploy working agents** for 2–3 of the highest-value workflows identified in the audit, with Apollo as the interface over them. Examples from past engagements:
 
 - **Proposal Drafter** — reads a job listing, drafts a full proposal in the client's brand voice
 - **Receipt Scanner** — inbox-monitoring agent that extracts expense data and logs to accounts
@@ -74,7 +96,7 @@ Athena agents are typically built on the same stack Cognito uses internally:
 
 ### What Worked Well
 
-**A £750 fixed fee removes every objection.** Clients who balk at a £2,500 Pantheon build say yes to a £750 Athena engagement. It's small enough to feel safe, large enough for us to do real work, and profitable enough to be worth building for.
+**A £750/month fee removes every objection.** Clients who balk at a £2,500 Pantheon build say yes to a £750/month Athena engagement. It's small enough to feel safe, large enough for us to do real work, and profitable enough to be worth building for.
 
 **The audit on its own justifies the fee.** Even without the agents, clients tell us the workflow review is the clearest picture they've ever had of their own operation. The agents are the kicker.
 
@@ -86,7 +108,7 @@ Athena agents are typically built on the same stack Cognito uses internally:
 
 **Scope the agents before signing.** Early Athena engagements drifted because "we'll pick the agents after the audit" meant clients kept adding candidates. We now scope 2–3 agent slots at kick-off and lock them by end of week 1.
 
-**Charge more for complex integrations.** £750 assumes the agents integrate with common systems (Gmail, Stripe, standard CRMs). When a client needs a custom API bridge or legacy-system connector, that's extra.
+**Charge more for complex integrations.** The monthly fee assumes the agents integrate with common systems (Gmail, Stripe, standard CRMs). When a client needs a custom API bridge or legacy-system connector, that's extra.
 
 **Ship a starter pack of "known-good" agent templates.** Instead of designing each agent from scratch, we now start from proven templates and tune them to the client. Cuts delivery time by a week.
 
