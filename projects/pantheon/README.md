@@ -1,6 +1,6 @@
 # Pantheon
 
-> **Your own AI-powered business command centre — CRM, agents, invoicing, proposals, and automation in one private instance.**
+> **Your own AI-powered business command centre — Apollo orchestrates a bespoke specialist team built around your operation.**
 >
 > *"Build your temple."*
 
@@ -10,9 +10,11 @@
 
 Pantheon is a custom private instance of the full Cognito stack, configured for your business. Not a template, not a shared platform — **your data, your database, your branding, your infrastructure**. Cognito deploys and maintains; you own the workflow.
 
+**Apollo orchestrates a bespoke specialist team built around your business.** Same conductor model as Athena, scaled up: you instruct Apollo in natural language, Apollo briefs the specialist agents underneath. You never manage the stack — you manage Apollo.
+
 Pantheon is the flagship tier of Cognito's three-tier AI stack:
 
-> **Apollo (£29.99/mo) → Athena (£750) → Pantheon (£2,500+)**
+> **Apollo (£29.99/mo) → Athena (£750/mo) → Pantheon (£2,500+)**
 >
 > *"Start with knowledge. Add wisdom. Build your temple."*
 
@@ -26,26 +28,36 @@ One place to run the business:
 - **Invoicing** — drafts, send-ready PDFs, payment status
 - **Accounts ledger** — income, expenses, Stripe sync, Gmail receipt scanning, UK tax-year filtering
 - **Kanban** — task board: backlog → todo → in progress → in review → done
-- **Proposals** — Scout-drafted, Nova-reviewed, status tracking
+- **Proposals** — Scout-drafted, Apollo-reviewed, status tracking
 - **Newsletter** — draft, preview, scheduled send
 - **Company doc** — single source of truth for products, pricing, brand voice
 - **Skills library** — reusable Markdown playbooks agents read at runtime
 - **Routines** — cron-scheduled agent jobs
 - **Secrets vault** — encrypted storage for API keys
 
-### 2. Your Own Apollo
-An AI executive assistant embedded in Discord / Slack / Telegram. Reads email, manages calendar, runs outreach, chases leads, delivers morning briefings. Same Apollo tech as the standalone product — just wired into your Pantheon.
+### 2. Your Own Apollo — The Conductor
+An AI executive assistant embedded in Discord / Slack / Telegram. This is your single point of contact into the entire Pantheon stack:
 
-### 3. Your Own Specialist Agent Team
-Each agent is a real employee-style persona, not a chatbot. Each has a custom system prompt, a default skill set, and a cron schedule.
+- Reads your inbox and surfaces what matters
+- Manages your calendar
+- Runs morning briefings with overnight activity summary
+- Conducts outreach and chases leads
+- **Briefs the specialist team and reports results back to you**
 
-- **CTO** — technical execution, infrastructure, monitoring
-- **CMO** — marketing, content, proposals, lead generation
-- **CFO** — Stripe sync, expense scanning from receipts, weekly P&L
-- **Scout** — Upwork / LinkedIn proposal drafting
-- **Engineer** — code and shell-level execution inside the container
+You instruct Apollo in plain English. Apollo decides which specialist to brief, coordinates across the team, and keeps you informed. You never open an agent panel or write a prompt — you talk to Apollo.
 
-Agents are **not chatbots**. They run on cron schedules (routines), execute autonomously, report to Discord, and log every action (`agent_runs` table) for audit.
+### 3. Your Specialist Agent Team — Conducted by Apollo
+Apollo orchestrates this team on your behalf. Each agent is a real employee-style persona with a custom system prompt, default skill set, and cron schedule. You never interact with individual agents directly — Apollo does that.
+
+| Agent | What They Do |
+|-------|-------------|
+| **CTO** | Technical execution, infrastructure monitoring, code reviews |
+| **CMO** | Content creation, social scheduling, proposal writing, lead nurturing |
+| **CFO** | Stripe sync, receipt scanning, expense tracking, weekly P&L |
+| **Scout** | Upwork and LinkedIn prospecting, outreach drafting |
+| **Engineer** | Code changes, shell-level automation, integrations |
+
+Agents are **not chatbots**. They run on cron schedules (routines), execute autonomously, report to Apollo, and log every action (`agent_runs` table) for audit.
 
 ### 4. Configured for Your Business
 Personas, brand voice, pricing, workflows — all tuned to your operation, not a generic chatbot bolted onto a template.
@@ -72,18 +84,28 @@ All agent execution runs on Claude Max subscription billing, not per-token API b
 ## Architecture
 
 ```
+              YOU
+    (Discord / Slack / Telegram)
+               │
+               ▼
+┌──────────────────────────────────────────────┐
+│         Apollo — The Conductor               │
+│   Single point of contact. Natural language. │
+│   Briefs the right specialist. Reports back. │
+└──────────────────────────────────────────────┘
+               │
 ┌──────────────────────────────────────────────┐
 │             Pantheon Web UI                  │
 │  CRM │ Invoices │ Accounts │ Kanban          │
 │  Proposals │ Newsletter │ Skills │ Routines  │
 └──────────────────────────────────────────────┘
-                       │
+               │
 ┌──────────────────────────────────────────────┐
 │          Pantheon Agent Runtime              │
-│  Nova │ CMO │ CFO │ Scout │ CTO │ Engineer   │
+│  CTO │ CMO │ CFO │ Scout │ Engineer          │
 │  Skills library │ Routines │ Agent logs      │
 └──────────────────────────────────────────────┘
-                       │
+               │
 ┌──────────────────────────────────────────────┐
 │      PostgreSQL (Per-Client Isolation)       │
 │  clients │ contacts │ proposals │ tasks      │
