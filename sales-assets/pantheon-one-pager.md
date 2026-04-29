@@ -23,7 +23,7 @@ Pantheon is your private AI command centre — Apollo at the top, a full special
         └──────┬───────┘
                │  Apollo briefs the right agent
                │
-    ┌──────────┼──────────┐
+    ┌──────────┼────────────┐
     ▼          ▼          ▼          ▼          ▼
   [CTO]      [CMO]      [CFO]     [Scout]  [Engineer]
   infra     content    finance    leads      code
@@ -47,16 +47,16 @@ A private instance of the full Cognito platform, branded for your business:
 - Skills library and routines
 - Secrets vault — encrypted, audited
 
-### Your Apollo
-Your AI executive assistant, active 24/7:
+### Your Apollo — The Conductor
+Your AI executive assistant, active 24/7. Apollo is the **single point of contact for your entire specialist team** — you never issue instructions to individual agents, you manage Apollo and Apollo manages the team.
 - Reads your inbox and surfaces what matters
 - Manages your calendar
 - Runs morning briefings with overnight activity summary
 - Conducts outreach and chases leads
 - Briefs your specialist team and reports results back to you
 
-### Your Specialist Agent Team
-Real employee-style personas. Not chatbots — agents that do work:
+### Your Specialist Agent Team — Conducted by Apollo
+Apollo orchestrates this team. You don't interact with individual agents directly — you instruct Apollo, Apollo assigns the work, and Apollo reports results back to you in plain English.
 
 | Agent | What They Do |
 |-------|-------------|
