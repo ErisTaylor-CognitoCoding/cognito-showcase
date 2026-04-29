@@ -8,11 +8,11 @@ Nova is Cognito Coding's AI Co-founder — a Discord bot powered by Claude API t
 
 Unlike typical chatbots, Nova has:
 - **Long-term memory** via PostgreSQL conversation storage
-- **Agent delegation** through Paperclip (agent orchestration engine)
+- **Agent delegation** through the Pantheon agent runtime
 - **Real execution power** with MCP tools for Gmail, Calendar, GitHub, Drive
 - **Personality and context** — Nova is "he/him", part of the founding team, speaks in first person
 
-Nova demonstrates how AI can be embedded into a business as a true operational partner, not just a Q&A tool.
+Nova demonstrates how AI can be embedded into a business as a true operational partner, not just a Q&A tool. Nova is the model for what Apollo is in client deployments — the single point of contact that conducts the specialist team.
 
 ## Tech Stack
 
@@ -20,7 +20,7 @@ Nova demonstrates how AI can be embedded into a business as a true operational p
 - **Framework**: discord.py + Flask
 - **AI**: Anthropic Claude API (Sonnet 4)
 - **Database**: PostgreSQL (conversation history, context, memory)
-- **Orchestration**: Paperclip (custom agent execution engine)
+- **Orchestration**: Pantheon agent runtime (cron-scheduled agents, MCP tool execution)
 - **Tools**: MCP (Model Context Protocol) for Gmail, Calendar, GitHub, Drive, YouTube
 - **Deployment**: Docker container
 
@@ -33,15 +33,15 @@ Nova Bot (discord.py)
     ↓
 Claude API (conversation + tools)
     ↓
-┌─────────────────────────────────┐
-│ MCP Tools:                      │
-│ - Gmail (read/send)             │
-│ - Calendar (read events)        │
-│ - GitHub (repos, files)         │
-│ - Drive (upload/download)       │
-│ - YouTube (upload videos)       │
-│ - Paperclip (trigger agents)    │
-└─────────────────────────────────┘
+┌────────────────────────────────┐
+│ MCP Tools:                     │
+│ - Gmail (read/send)            │
+│ - Calendar (read events)       │
+│ - GitHub (repos, files)        │
+│ - Drive (upload/download)      │
+│ - YouTube (upload videos)      │
+│ - Pantheon (trigger agents)    │
+└────────────────────────────────┘
     ↓
 PostgreSQL (conversation history)
 ```
@@ -52,7 +52,7 @@ PostgreSQL (conversation history)
 Every conversation stored in PostgreSQL with full context. Nova remembers past discussions, decisions, and preferences across sessions.
 
 ### 2. **Agent Delegation**
-Nova coordinates specialist agents via Paperclip:
+Nova coordinates specialist agents via the Pantheon agent runtime:
 - **CMO** — Marketing, content creation, video production
 - **CFO** — Finance, expense scanning, Stripe sync
 - **Scout** — Job hunting, proposal drafting
@@ -66,7 +66,7 @@ Real-world execution via MCP:
 - Create GitHub repos and commit files
 - Upload files to Google Drive
 - Publish videos to YouTube
-- Trigger Paperclip agents for complex workflows
+- Trigger Pantheon agent routines for complex workflows
 
 ### 4. **Morning Briefings**
 Daily summary delivered to Discord:
@@ -96,7 +96,7 @@ Nova reviews drafts from other agents before sending to clients. Acts as quality
 
 **Tool error handling**: When an MCP tool fails (e.g. Gmail API rate limit), Nova needs better retry logic and user-facing error messages. Currently too raw.
 
-**Multi-channel support**: Nova only works in Discord. Next iteration should support Slack and Telegram using the same backend (in progress as "Apollo").
+**Multi-channel support**: Nova runs in Discord. Apollo (the client-facing equivalent) extends this to Slack and Telegram using the same conductor model — one interface, specialist team underneath.
 
 ---
 
