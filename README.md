@@ -31,9 +31,10 @@ cognito-showcase/
 │   ├── pantheon/         # Full AI business command centre (£2,500+)
 │   ├── nova/             # AI Co-founder & Discord bot
 │   └── award-tracker/    # AQA Unit Award SaaS
-├── patterns/             # Production code patterns (coming soon)
-├── prompts/              # AI agent persona examples (coming soon)
-└── tutorials/            # How-to guides (coming soon)
+├── marketing/             # Positioning docs and market research
+├── sales-assets/          # Sales collateral and pitch materials
+├── seo-outreach/          # SEO and outreach materials
+└── memory/                # Reference and context files
 ```
 
 ## 🚀 Featured Projects
@@ -73,7 +74,7 @@ AI Discord bot with memory, agent delegation, and real-world execution power. No
 ---
 
 ### [Award Tracker](./projects/award-tracker) — AQA Unit Award SaaS
-Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £19.99/month.
+Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £19.99/month as a DashDeck add-on.
 
 **Tech**: Python/Flask, PostgreSQL (multi-tenant), ReportLab (PDF), DashDeck SSO, Docker
 
