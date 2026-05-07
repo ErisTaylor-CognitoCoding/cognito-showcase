@@ -18,7 +18,7 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 
 Plus:
 
-- **Small Business Apps** — Niche tools for trades (dog walkers, tutors, etc.) at £9.99/month
+- **Small Business Apps** — Niche tools for trades and professionals at £9.99/month ([WagTracker](./projects/wagtracker), [SoloTutorLite](./projects/solo-tutor-lite), and more)
 - **Education Platform** — DashDeck and add-ons for tutoring agencies and SEND providers
 
 ## 📂 Repository Structure
@@ -30,7 +30,9 @@ cognito-showcase/
 │   ├── athena/           # AI audit + multi-agent consultancy (£750/mo)
 │   ├── pantheon/         # Full AI business command centre (£2,500+)
 │   ├── nova/             # AI Co-founder & Discord bot
-│   └── award-tracker/    # AQA Unit Award SaaS
+│   ├── award-tracker/    # AQA Unit Award SaaS
+│   ├── wagtracker/       # Dog walker business manager (£9.99/mo)
+│   └── solo-tutor-lite/  # Independent tutor all-in-one (£9.99/mo)
 ├── marketing/             # Positioning docs and market research
 ├── sales-assets/          # Sales collateral and pitch materials
 ├── seo-outreach/          # SEO and outreach materials
@@ -77,6 +79,24 @@ AI Discord bot with memory, agent delegation, and real-world execution power. No
 Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £19.99/month as a DashDeck add-on.
 
 **Tech**: Python/Flask, PostgreSQL (multi-tenant), ReportLab (PDF), DashDeck SSO, Docker
+
+---
+
+## 🛠️ Small Business Apps (£9.99/month)
+
+Niche tools for sole traders — built fast, priced for the market, zero faff.
+
+### [WagTracker](./projects/wagtracker) — Dog Walker Business Manager
+Schedule walks, manage clients and dogs, track cancellations, invoice, and keep emergency vet details on file — all from a phone. Replaces the notebook, the spreadsheet, and the WhatsApp thread.
+
+🟢 **Live** · [30s Short](https://youtube.com/shorts/Mh781szagRk?si=ROCSSqw97z2NPRJ4) · [Walkthrough](https://youtu.be/b8F5Y0cV8U8?si=L9JrDmd7pVNm_cJn)
+
+---
+
+### [SoloTutorLite](./projects/solo-tutor-lite) — Independent Tutor All-in-One
+Lesson planning, built-in interactive whiteboard, one-click video sessions, AI-generated reports, and invoicing — all in one app. No more juggling five tools. Built by a tutor who still teaches every day.
+
+🟢 **Live** · [30s Short](https://youtube.com/shorts/jm2Bs0u7p2k)
 
 ---
 
