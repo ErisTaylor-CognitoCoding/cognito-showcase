@@ -19,24 +19,29 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 Plus:
 
 - **Small Business Apps** — Niche tools for trades and professionals at £9.99/month ([WagTracker](./projects/wagtracker), [SoloTutorLite](./projects/solo-tutor-lite), and more)
-- **Education Platform** — EducationDashDeck and add-ons for tutoring agencies and SEND providers
+- **Education Platform** — [EducationDashDeck](./projects/education-dashdeck) — modular ecosystem for tutoring agencies and SEND providers
 
 ## 📂 Repository Structure
 
 ```
 cognito-showcase/
-├── projects/              # Project showcases (sanitised)
-│   ├── apollo/           # AI executive assistant (£29.99/mo)
-│   ├── athena/           # AI audit + multi-agent consultancy (£750/mo)
-│   ├── pantheon/         # Full AI business command centre (£2,500+)
-│   ├── nova/             # AI Co-founder & Discord bot
-│   ├── award-tracker/    # AQA Unit Award SaaS
-│   ├── wagtracker/       # Dog walker business manager (£9.99/mo)
-│   └── solo-tutor-lite/  # Independent tutor all-in-one (£9.99/mo)
-├── marketing/             # Positioning docs and market research
-├── sales-assets/          # Sales collateral and pitch materials
-├── seo-outreach/          # SEO and outreach materials
-└── memory/                # Reference and context files
+├── projects/                     # Project showcases (sanitised)
+│   ├── apollo/                   # AI executive assistant (£29.99/mo)
+│   ├── athena/                   # AI audit + multi-agent consultancy (£750/mo)
+│   ├── pantheon/                 # Full AI business command centre (£2,500+)
+│   ├── nova/                     # AI Co-founder & Discord bot
+│   ├── wagtracker/               # Dog walker business manager (£9.99/mo)
+│   ├── solo-tutor-lite/          # Independent tutor all-in-one (£9.99/mo)
+│   └── education-dashdeck/       # Education ecosystem (from £69/mo)
+│       ├── award-tracker/        #   AQA Unit Award Scheme (£19.99/mo add-on)
+│       ├── lesson-logs/          #   Auto session logging (£9.99/mo add-on)
+│       ├── target-tracker/       #   Half-termly targets + PDF reports (£9.99/mo add-on)
+│       ├── session-pay/          #   Payment tracking + invoicing (£9.99/mo add-on)
+│       └── meet-and-teach/       #   Video tutoring with IWB (£19.99/mo add-on)
+├── marketing/                    # Positioning docs and market research
+├── sales-assets/                 # Sales collateral and pitch materials
+├── seo-outreach/                 # SEO and outreach materials
+└── memory/                       # Reference and context files
 ```
 
 ## 🚀 Featured Projects
@@ -75,10 +80,39 @@ AI Co-founder running Cognito's daily operations — coordinates the internal ag
 
 ---
 
-### [Award Tracker](./projects/award-tracker) — AQA Unit Award SaaS
-Multi-tenant web app for managing the AQA Unit Award Scheme (SEND/alternative provision). Evidence collection, portfolio generation, certificate printing. Live with paying clients at £19.99/month as a DashDeck add-on.
+## 🎓 Education DashDeck
 
-**Tech**: Python/Flask, PostgreSQL (multi-tenant), ReportLab (PDF), DashDeck SSO, Docker
+> The modular command centre for tutoring agencies, AP/SEND providers, and alternative provision settings. Every module works standalone but plugs into the DashDeck command centre via SSO and a shared data layer.
+
+**[→ Full Ecosystem Overview](./projects/education-dashdeck)**
+
+### Architecture
+
+```
+EducationDashDeck — Command Centre (£69/mo, up to 50 users)
+        │
+        └── SSO & Shared Student Data Layer
+                │
+                ├── Lesson Logs        ← auto-logs from Meet & Teach
+                │       ├──▶ Target Tracker   (progress data)
+                │       ├──▶ Session Pay      (billable sessions)
+                │       └──▶ Award Tracker    (evidence timestamps)
+                │
+                ├── Meet & Teach       ← video + IWB + auto-log
+                ├── Target Tracker     ← half-termly targets + PDF reports
+                ├── Session Pay        ← invoicing + payment tracking
+                └── Award Tracker      ← AQA Unit Award portfolios + certificates
+```
+
+### Modules
+
+| Module | What it does | Status | Price |
+|--------|-------------|--------|-------|
+| **[Award Tracker](./projects/education-dashdeck/award-tracker)** | AQA Unit Award Scheme — evidence, portfolios, certificates | 🟢 Live | £19.99/mo add-on |
+| **[Lesson Logs](./projects/education-dashdeck/lesson-logs)** | Auto session logging, learner voice, progress notes | 🟡 In Development | £9.99/mo add-on |
+| **[Target Tracker](./projects/education-dashdeck/target-tracker)** | Half-termly targets + auto PDF reports | 🟡 In Development | £9.99/mo add-on |
+| **[Session Pay](./projects/education-dashdeck/session-pay)** | Session-based payment tracking + invoicing | 🟡 In Development | £9.99/mo add-on |
+| **[Meet & Teach](./projects/education-dashdeck/meet-and-teach)** | Integrated video tutoring with IWB — auto-logs into Lesson Logs | 🟡 In Development | £19.99/mo add-on |
 
 ---
 
