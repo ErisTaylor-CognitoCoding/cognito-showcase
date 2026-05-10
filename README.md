@@ -19,7 +19,7 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 Plus:
 
 - **Small Business Apps** — Niche tools for trades and professionals at £9.99/month ([WagTracker](./projects/wagtracker), [SoloTutorLite](./projects/solo-tutor-lite), and more)
-- **Education Platform** — DashDeck and add-ons for tutoring agencies and SEND providers
+- **Education Platform** — EducationDashDeck and add-ons for tutoring agencies and SEND providers
 
 ## 📂 Repository Structure
 
@@ -69,9 +69,9 @@ A custom private instance of the full Cognito stack, configured for your busines
 ---
 
 ### [Nova](./projects/nova) — AI Co-founder & Executive Assistant
-AI Discord bot with memory, agent delegation, and real-world execution power. Nova handles daily operations, coordinates specialist agents, and delivers morning briefings. Built on Claude API + PostgreSQL + MCP tools. Nova is the model for what Apollo is in client deployments.
+AI Co-founder running Cognito's daily operations — coordinates the internal agent team, handles communications, delivers morning briefings, and executes real-world actions via MCP tools. Nova is the model for what Apollo is in client deployments.
 
-**Tech**: Python, discord.py, Claude API, PostgreSQL, MCP, Docker
+**Tech**: TypeScript / Node.js, React + Vite, Drizzle ORM + PostgreSQL, MCP tools, Docker
 
 ---
 
