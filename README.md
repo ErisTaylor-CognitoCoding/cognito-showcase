@@ -34,10 +34,14 @@ cognito-showcase/
 │   ├── solo-tutor-lite/          # Independent tutor all-in-one (£9.99/mo)
 │   └── education-dashdeck/       # Education ecosystem (from £69/mo)
 │       ├── award-tracker/        #   AQA Unit Award Scheme (£19.99/mo add-on)
+│       ├── coding-hub/           #   In-browser code editor (£9.99/mo add-on)
+│       ├── revision-bites/       #   Personalised revision schedules (£9.99/mo add-on)
 │       ├── lesson-logs/          #   Auto session logging (£9.99/mo add-on)
 │       ├── target-tracker/       #   Half-termly targets + PDF reports (£9.99/mo add-on)
 │       ├── session-pay/          #   Payment tracking + invoicing (£9.99/mo add-on)
-│       └── meet-and-teach/       #   Video tutoring with IWB (£19.99/mo add-on)
+│       ├── meet-and-teach/       #   Video tutoring with IWB (£19.99/mo add-on)
+│       ├── lesson-crafter/       #   AI curriculum planning (£19.99/mo add-on)
+│       └── titan-for-teachers/   #   AI layer in EducationDashDeck (included)
 ├── marketing/                    # Positioning docs and market research
 ├── sales-assets/                 # Sales collateral and pitch materials
 ├── seo-outreach/                 # SEO and outreach materials
@@ -80,16 +84,16 @@ AI Co-founder running Cognito's daily operations — coordinates the internal ag
 
 ---
 
-## 🎓 Education DashDeck
+## 🎓 EducationDashDeck
 
-> The modular command centre for tutoring agencies, AP/SEND providers, and alternative provision settings. Every module works standalone but plugs into the DashDeck command centre via SSO and a shared data layer.
+> The modular command centre for tutoring agencies, AP/SEND providers, and alternative provision settings. Every module works standalone but plugs into the EducationDashDeck command centre via SSO and a shared data layer.
 
 **[→ Full Ecosystem Overview](./projects/education-dashdeck)**
 
 ### Architecture
 
 ```
-EducationDashDeck — Command Centre (£69/mo, up to 50 users)
+EducationDashDeck — Command Centre (£69/mo, up to 50 users, 1 Basic app included)
         │
         └── SSO & Shared Student Data Layer
                 │
@@ -98,10 +102,14 @@ EducationDashDeck — Command Centre (£69/mo, up to 50 users)
                 │       ├──▶ Session Pay      (billable sessions)
                 │       └──▶ Award Tracker    (evidence timestamps)
                 │
-                ├── Meet & Teach       ← video + IWB + auto-log
+                ├── Meet & Teach       ← video + IWB + scientific calculator + auto-log
                 ├── Target Tracker     ← half-termly targets + PDF reports
                 ├── Session Pay        ← invoicing + payment tracking
-                └── Award Tracker      ← AQA Unit Award portfolios + certificates
+                ├── Award Tracker      ← AQA Unit Award portfolios + certificates
+                ├── Revision Bites     ← personalised weekly revision schedules
+                ├── Coding Hub         ← in-browser HTML/CSS/JS editor with live preview
+                ├── LessonCrafter      ← AI curriculum planning
+                └── Titan for Teachers ← AI layer (lesson plans, AQA outcomes, reports)
 ```
 
 ### Modules
@@ -109,10 +117,14 @@ EducationDashDeck — Command Centre (£69/mo, up to 50 users)
 | Module | What it does | Status | Price |
 |--------|-------------|--------|-------|
 | **[Award Tracker](./projects/education-dashdeck/award-tracker)** | AQA Unit Award Scheme — evidence, portfolios, certificates | 🟢 Live | £19.99/mo add-on |
+| **[Coding Hub](./projects/education-dashdeck/coding-hub)** | In-browser HTML/CSS/JS code editor with live visual feedback | 🟡 In Development | £9.99/mo add-on |
+| **[Revision Bites](./projects/education-dashdeck/revision-bites)** | Personalised weekly revision schedules, curriculum-aligned topics | 🟡 In Development | £9.99/mo add-on |
 | **[Lesson Logs](./projects/education-dashdeck/lesson-logs)** | Auto session logging, learner voice, progress notes | 🟡 In Development | £9.99/mo add-on |
 | **[Target Tracker](./projects/education-dashdeck/target-tracker)** | Half-termly targets + auto PDF reports | 🟡 In Development | £9.99/mo add-on |
 | **[Session Pay](./projects/education-dashdeck/session-pay)** | Session-based payment tracking + invoicing | 🟡 In Development | £9.99/mo add-on |
 | **[Meet & Teach](./projects/education-dashdeck/meet-and-teach)** | Integrated video tutoring with IWB — auto-logs into Lesson Logs | 🟡 In Development | £19.99/mo add-on |
+| **[LessonCrafter](./projects/education-dashdeck/lesson-crafter)** | AI-powered curriculum planning and course structure generation | 🟡 In Development | £19.99/mo add-on |
+| **Titan for Teachers** | AI layer inside EducationDashDeck — lesson plans, AQA outcomes, auto-reports. Not standalone. | 🟡 In Development | Included with base |
 
 ---
 
