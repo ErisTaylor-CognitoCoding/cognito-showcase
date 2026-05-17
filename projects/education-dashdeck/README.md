@@ -1,4 +1,4 @@
-# Education DashDeck
+# EducationDashDeck
 
 > The modular command centre for tutoring agencies, AP/SEND providers, and alternative provision settings.
 
@@ -7,7 +7,7 @@
 
 ## Overview
 
-EducationDashDeck is an end-to-end, teacher-led modular ecosystem that reduces teacher workload. Every module works standalone but plugs into the DashDeck command centre via SSO and a shared data layer — so learner progress, session history, payments, and award evidence are always in sync across your whole team.
+EducationDashDeck is an end-to-end, teacher-led modular ecosystem that reduces teacher workload. Every module works standalone but plugs into the EducationDashDeck command centre via SSO and a shared data layer — so learner progress, session history, payments, and award evidence are always in sync across your whole team.
 
 Built by a tutor and Deputy Headteacher who lived the admin problem for 25 years.
 
@@ -19,7 +19,7 @@ Built by a tutor and Deputy Headteacher who lived the admin problem for 25 years
 
 ## The Modules
 
-Each module solves a real problem and plugs into the DashDeck command centre via SSO. Add only what you need. Remove what you don't.
+Each module solves a real problem and plugs into the EducationDashDeck command centre via SSO. Add only what you need. Remove what you don't.
 
 | Module | What it does | Tier | Price |
 |--------|-------------|------|-------|
@@ -41,7 +41,7 @@ No setup fee. No lock-in. Add modules as your provision grows.
 
 ## How the Data Flows
 
-The power of DashDeck is the shared data layer. Modules don't exist in silos — session data, progress records, evidence, and billing all speak to each other.
+The power of EducationDashDeck is the shared data layer. Modules don't exist in silos — session data, progress records, evidence, and billing all speak to each other.
 
 ```
 EducationDashDeck — Command Centre
