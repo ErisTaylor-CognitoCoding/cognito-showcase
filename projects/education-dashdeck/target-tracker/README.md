@@ -19,19 +19,19 @@ Target Tracker removes the half-term reporting crunch. Set targets once per stud
 - **Progress RAG** — Red/Amber/Green status per target, updated automatically as Lesson Log data arrives.
 - **Tutor Notes** — Free-text commentary per target for the report narrative. Visible to the student's assigned tutor only.
 - **Agency Dashboard** — All students, all targets, all RAG statuses at a glance. Spot who's behind before it becomes a problem.
-- **DashDeck Integration** — Pulls session data from Lesson Logs automatically. Pushes summaries into Award Tracker evidence records.
+- **EducationDashDeck Integration** — Pulls session data from Lesson Logs automatically. Pushes summaries into Award Tracker evidence records.
 - **Export** — Reports as PDF. Data export as CSV for commissioners or LA returns.
 
 ## Pricing
 
-**£9.99/month** as a DashDeck add-on (Basic tier).  
+**£9.99/month** as an EducationDashDeck add-on (Basic tier).  
 Included in EducationDashDeck Small (1 Basic module free in base price).
 
 ## Status
 
 🟡 **In Development** — Available at [cognitocoding.com](https://cognitocoding.com)
 
-## Part of Education DashDeck
+## Part of EducationDashDeck
 
 Target Tracker is one module in the [EducationDashDeck ecosystem](../).  
 It reads from **Lesson Logs** and writes summaries into **Award Tracker** — the reporting layer that ties the ecosystem together.
