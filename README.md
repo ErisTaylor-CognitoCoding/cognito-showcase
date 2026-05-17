@@ -14,7 +14,7 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 |------|---------|-------|
 | 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month |
 | 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750/month |
-| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500 (fixed fee) |
+| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500/month (no build fee) |
 
 Plus:
 
@@ -28,7 +28,7 @@ cognito-showcase/
 ├── projects/                     # Project showcases (sanitised)
 │   ├── apollo/                   # AI executive assistant (£29.99/mo)
 │   ├── athena/                   # AI audit + multi-agent consultancy (£750/mo)
-│   ├── pantheon/                 # Full AI business command centre (£2,500+)
+│   ├── pantheon/                 # Full AI business command centre (from £2,500/mo)
 │   ├── nova/                     # AI Co-founder & Discord bot
 │   ├── wagtracker/               # Dog walker business manager (£9.99/mo)
 │   ├── solo-tutor-lite/          # Independent tutor all-in-one (£9.99/mo)
@@ -68,8 +68,10 @@ Business audit + AI team deployment. A full workflow review, AI opportunity map,
 
 ---
 
-### [Pantheon](./projects/pantheon) — AI Business Command Centre (From £2,500, fixed fee)
+### [Pantheon](./projects/pantheon) — AI Business Command Centre (from £2,500/month, no build fee)
 A custom private instance of the full Cognito stack, configured for your business. **Apollo orchestrates a bespoke specialist team built around your operation — you talk to Apollo in plain English, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.** Includes your own private dashboard (CRM, invoicing, accounts, Kanban, proposals, newsletter, skills, routines, secrets vault) and Claude Max under the hood — no per-token API billing. Cognito Coding itself runs on Pantheon every day.
+
+The build is included — no setup fee, no upfront cost. You pay monthly from go-live.
 
 **Tech**: Python/Flask, PostgreSQL (multi-tenant), Claude API (Max), Docker, per-client isolation
 
