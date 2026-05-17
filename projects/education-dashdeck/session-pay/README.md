@@ -19,21 +19,21 @@ Session Pay closes the loop between teaching and getting paid. Sessions logged i
 - **Invoice Generation** — Professional PDF invoices branded to the agency or tutor. One click per client.
 - **Payment Tracking** — Mark invoices as paid, part-paid, or overdue. Automatic chaser reminders for overdue invoices.
 - **Income Summary** — Monthly income breakdown by student, tutor, and subject. Export to CSV for accountants or HMRC.
-- **DashDeck Integration** — Full billing history visible from each student's profile. Session count and income in one view.
+- **EducationDashDeck Integration** — Full billing history visible from each student's profile. Session count and income in one view.
 
 ## Pricing
 
-**£9.99/month** as a DashDeck add-on (Basic tier).  
+**£9.99/month** as an EducationDashDeck add-on (Basic tier).  
 Included in EducationDashDeck Small (1 Basic module free in base price).
 
 ## Status
 
 🟡 **In Development** — Available at [cognitocoding.com](https://cognitocoding.com)
 
-## Part of Education DashDeck
+## Part of EducationDashDeck
 
 Session Pay is one module in the [EducationDashDeck ecosystem](../).  
-It is the billing layer — fed automatically by **Lesson Logs**, visible from the student profile in the DashDeck command centre.
+It is the billing layer — fed automatically by **Lesson Logs**, visible from the student profile in the EducationDashDeck command centre.
 
 See the [full ecosystem overview](..) for pricing and architecture.
 
