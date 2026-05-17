@@ -20,19 +20,19 @@ Fully integrated with the EducationDashDeck SSO layer — student data flows aut
 - **Learner Voice** — In-session prompts capture the learner's own words. Meets Ofsted expectations for learner voice evidence.
 - **Progress Notes** — Structured note templates per subject. Quick to fill, consistent across tutors.
 - **Session History** — Full chronological session history per student, filterable by date, subject, and tutor.
-- **DashDeck Integration** — Session data feeds directly into Target Tracker and Award Tracker. Write once, report everywhere.
+- **EducationDashDeck Integration** — Session data feeds directly into Target Tracker and Award Tracker. Write once, report everywhere.
 - **Export** — Export session logs as PDF or CSV for compliance reporting.
 
 ## Pricing
 
-**£9.99/month** as a DashDeck add-on (Basic tier).  
+**£9.99/month** as an EducationDashDeck add-on (Basic tier).  
 Included in EducationDashDeck Small (1 Basic module free in base price).
 
 ## Status
 
 🟡 **In Development** — Available at [cognitocoding.com](https://cognitocoding.com)
 
-## Part of Education DashDeck
+## Part of EducationDashDeck
 
 Lesson Logs is one module in the [EducationDashDeck ecosystem](../).  
 Sessions logged here automatically flow into **Target Tracker** (progress tracking) and **Session Pay** (invoicing) — no double-entry.
@@ -53,7 +53,7 @@ EducationDashDeck SSO
         └──▶ Meet & Teach (auto-log on session close)
 ```
 
-Session records are shared across modules via the DashDeck data layer. A session logged here is immediately visible in billing, progress reports, and evidence portfolios — without copy-paste.
+Session records are shared across modules via the EducationDashDeck data layer. A session logged here is immediately visible in billing, progress reports, and evidence portfolios — without copy-paste.
 
 ## Tech Stack
 
