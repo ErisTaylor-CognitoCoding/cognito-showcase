@@ -26,16 +26,16 @@ The key difference: when the session ends, it auto-logs into Lesson Logs. Durati
 
 ## Pricing
 
-**£19.99/month** as a DashDeck add-on (Premium tier).
+**£19.99/month** as an EducationDashDeck add-on (Premium tier).
 
 ## Status
 
 🟡 **In Development** — Available at [cognitocoding.com](https://cognitocoding.com)
 
-## Part of Education DashDeck
+## Part of EducationDashDeck
 
 Meet & Teach is one module in the [EducationDashDeck ecosystem](../).  
-It is the only DashDeck module that auto-creates entries in **Lesson Logs** — making it the fastest path to a complete session record.
+It is the only EducationDashDeck module that auto-creates entries in **Lesson Logs** — making it the fastest path to a complete session record.
 
 See the [full ecosystem overview](..) for pricing and architecture.
 
@@ -57,14 +57,14 @@ Meet & Teach session
                 └──▶ Award Tracker (evidence timestamp)
 ```
 
-A Meet & Teach session creates data that flows through the entire DashDeck ecosystem — Lesson Logs, Target Tracker, Session Pay, and Award Tracker all updated from one event.
+A Meet & Teach session creates data that flows through the entire EducationDashDeck ecosystem — Lesson Logs, Target Tracker, Session Pay, and Award Tracker all updated from one event.
 
 ## Tech Stack
 
 - WebRTC peer-to-peer video (no third-party video platform)
 - HTML5 Canvas interactive whiteboard
 - Browser MediaStream API (screen sharing)
-- DashDeck SSO integration
+- EducationDashDeck SSO integration
 - Auto-integration with Lesson Logs on session close
 - PostgreSQL multi-tenant data store
 - Hosted by Cognito Coding — no installation required
