@@ -22,11 +22,11 @@ Live with paying clients.
 - **Portfolio Generation** — Auto-generate a printable student portfolio (PDF) showing all completed units and evidence references. Ready for review meetings.
 - **Certificate Printing** — AQA-formatted completion certificates per unit. No manual template work, no design software needed.
 - **Multi-User Access** — Staff roles: admin, teacher, viewer. Assign learners to specific staff members.
-- **DashDeck Integration** — Evidence timestamps sync with Lesson Logs session records. Progress summaries feed into Target Tracker reports.
+- **EducationDashDeck Integration** — Evidence timestamps sync with Lesson Logs session records. Progress summaries feed into Target Tracker reports.
 
 ## Pricing
 
-**£19.99/month** as a DashDeck add-on (Premium tier).
+**£19.99/month** as an EducationDashDeck add-on (Premium tier).
 
 ## Status
 
@@ -36,7 +36,7 @@ Live with paying clients.
 
 Available at [cognitocoding.com](https://cognitocoding.com)
 
-## Part of Education DashDeck
+## Part of EducationDashDeck
 
 Award Tracker is one module in the [EducationDashDeck ecosystem](../).  
 Evidence timestamps sync with **Lesson Logs**. Progress summaries push to **Target Tracker** reports — the student's full picture in one place.
@@ -63,7 +63,7 @@ Multi-tenant isolation: each client's evidence files are stored in a dedicated, 
 
 ## Tech Stack
 
-- Multi-tenant web app with DashDeck SSO
+- Multi-tenant web app with EducationDashDeck SSO
 - PDF generation — portfolio and certificate printing (ReportLab)
 - Evidence file storage (secure, per-client isolation)
 - PostgreSQL (multi-tenant, row-level security)
