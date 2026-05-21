@@ -12,9 +12,9 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 
 | Tier | Product | Price |
 |------|---------|-------|
-| 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month |
-| 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750/month |
-| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500/month (no build fee) |
+| 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month · [🟢 Live demo](https://apollo.cognitocoding.app) |
+| 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750/month · [🟢 Live demo](https://athena.cognitocoding.app) |
+| 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500/month (no build fee) · [🟢 Live demo](https://pantheon.cognitocoding.app) |
 
 Plus:
 
@@ -53,6 +53,8 @@ cognito-showcase/
 ### [Apollo](./projects/apollo) — AI Executive Assistant (£29.99/month)
 Per-client AI executive assistant deployed in an isolated Docker container. Claude Code orchestration + Ollama for conversational inference + SQLite per client + Telegram as the primary interface. Clients can add custom skills to extend their agent. Clean IDE-style web UI: chat, skills panel, knowledge base, connections, settings.
 
+**Status**: 🟢 [Live demo](https://apollo.cognitocoding.app) — built and reachable. No paying clients yet.
+
 **Tech**: Claude Code, Ollama, SQLite, Telegram Bot API, Docker
 
 **Tagline**: *"Start with knowledge."*
@@ -61,6 +63,8 @@ Per-client AI executive assistant deployed in an isolated Docker container. Clau
 
 ### [Athena](./projects/athena) — AI Consultancy & Multi-Agent (£750/month)
 Business audit + AI team deployment. A full workflow review, AI opportunity map, implementation plan, and 60-minute debrief — plus 2–3 configured specialist agents deployed for your highest-value workflows. **Apollo sits on top as your single point of contact: you instruct Apollo, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.** The bridge between Apollo (entry) and Pantheon (full build).
+
+**Status**: 🟢 [Live demo](https://athena.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) is a V2 milestone. No paying clients yet.
 
 **Deliverables**: Audit report, AI opportunity map, 2–3 deployed agents (Apollo-conducted), 60-min debrief
 
@@ -72,6 +76,8 @@ Business audit + AI team deployment. A full workflow review, AI opportunity map,
 A custom private instance of the full Cognito stack, configured for your business. **Apollo orchestrates a bespoke specialist team built around your operation — you talk to Apollo in plain English, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.** Includes your own private dashboard (CRM, invoicing, accounts, Kanban, proposals, newsletter, skills, routines, secrets vault) and Claude Max under the hood — no per-token API billing. Cognito Coding itself runs on Pantheon every day.
 
 The build is included — no setup fee, no upfront cost. You pay monthly from go-live.
+
+**Status**: 🟢 [Live demo](https://pantheon.cognitocoding.app) — multi-vertical build, running at Cognito HQ daily. No external paying clients yet.
 
 **Tech**: Python/Flask, PostgreSQL (multi-tenant), Claude API (Max), Docker, per-client isolation
 
