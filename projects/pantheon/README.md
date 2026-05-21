@@ -6,6 +6,10 @@
 
 **Price**: £2,500+ fixed fee (flagship tier of the Cognito AI stack)
 
+## Status
+
+🟢 **[Live demo at pantheon.cognitocoding.app](https://pantheon.cognitocoding.app)** — Multi-Vertical Cross-System Orchestration build, seeded with the PeakForm demo client. Cognito Coding itself runs on Pantheon daily (this is our own production stack). No external paying clients yet — Pantheon is a bespoke engagement; [get in touch](https://cognitocoding.com) to scope your build.
+
 ## Overview
 
 Pantheon is a custom private instance of the full Cognito stack, configured for your business. Not a template, not a shared platform — **your data, your database, your branding, your infrastructure**. Cognito deploys and maintains; you own the workflow.
@@ -89,7 +93,7 @@ All agent execution runs on Claude Max subscription billing, not per-token API b
         └──────┬───────┘
                │  Apollo briefs the right agent
                │
-    ┌──────────┼──────────────┐
+    ┌──────────┼──────────────────┐
     ▼          ▼          ▼          ▼          ▼
   [CTO]      [CMO]      [CFO]     [Scout]  [Engineer]
   infra     content    finance    leads      code
@@ -98,24 +102,24 @@ All agent execution runs on Claude Max subscription billing, not per-token API b
 ### System Architecture
 
 ```
-┌──────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │             Pantheon Web UI                  │
 │  CRM │ Invoices │ Accounts │ Kanban          │
 │  Proposals │ Newsletter │ Skills │ Routines  │
-└──────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
                        │
-┌──────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │          Pantheon Agent Runtime              │
 │  Apollo (conductor) │ CMO │ CFO │ Scout      │
 │  CTO │ Engineer                              │
 │  Skills library │ Routines │ Agent logs      │
-└──────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
                        │
-┌──────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │      PostgreSQL (Per-Client Isolation)       │
 │  clients │ contacts │ proposals │ tasks      │
 │  accounts │ agent_runs │ secrets │ skills    │
-└──────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
 ```
 
 ## Why It's Not Niche
@@ -135,9 +139,11 @@ Cognito Coding itself runs on Pantheon:
 - **CTO** monitors infra and triages every agent failure
 - The dashboard is the first thing Zero opens every morning
 
-We didn't build this theoretically. We built it because we needed it, and now we deploy the same stack for other businesses.
+We didn't build this theoretically. We built it because we needed it, and Pantheon is ready to deploy for other businesses on their own private instance.
 
-## Lessons Learned
+## Design Learnings
+
+> **Note:** Cognito Coding itself runs on Pantheon every day — these learnings come from building and operating our own production stack. No external paying clients yet.
 
 ### What Worked Well
 
@@ -157,13 +163,13 @@ We didn't build this theoretically. We built it because we needed it, and now we
 
 ### What We'd Do Differently
 
-**UI polish comes last.** We built backend and agents first, UI second. The dashboard works but looks utilitarian. For client deployments, we now invest in frontend design earlier.
+**UI polish comes last.** We built backend and agents first, UI second. The dashboard works but looks utilitarian. For client deployments, investing in frontend design earlier is the right approach.
 
-**Agent error handling.** When an agent fails (API timeout, malformed response), the error is logged but not always surfaced. We've since added a CTO routine that triages failed runs and comments on stuck tasks.
+**Agent error handling.** When an agent fails (API timeout, malformed response), the error is logged but not always surfaced. A CTO routine that triages failed runs and comments on stuck tasks should be scaffolded from day one.
 
-**Secrets management.** Current vault works but is custom-built. For larger client deployments we'd consider HashiCorp Vault or AWS Secrets Manager.
+**Secrets management.** Current vault works but is custom-built. For larger deployments we'd consider HashiCorp Vault or AWS Secrets Manager.
 
-**Cost monitoring.** Even on Claude Max, some agents can burn hours of CLI time. Per-agent run tracking and alerting landed in the flagship build — we'd scaffold it in from day one next time.
+**Cost monitoring.** Even on Claude Max, some agents can burn hours of CLI time. Per-agent run tracking and alerting should be scaffolded in from day one.
 
 ---
 
