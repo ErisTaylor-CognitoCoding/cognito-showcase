@@ -6,6 +6,10 @@
 
 **Price**: £29.99/month (entry tier of the Cognito AI stack)
 
+## Status
+
+🟢 **[Live demo at apollo.cognitocoding.app](https://apollo.cognitocoding.app)** — the product is built and reachable. Click through and see Apollo in action. No paying clients yet — per-client Docker deployments happen at customer onboarding.
+
 ## Overview
 
 Apollo is a personal AI executive assistant deployed per-client in an isolated Docker container. Unlike shared chatbot products, Apollo is **configured and trained on your business** — not a generic LLM bolted onto a template.
@@ -21,20 +25,20 @@ Apollo is the entry tier of Cognito's three-tier AI stack:
 ## Architecture
 
 ```
-┌──────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │            Telegram Bot (Client)             │
 │    DMs, voice notes, forwarded emails        │
-└──────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
                        │
-┌──────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │       Apollo Web UI (IDE-style)              │
 │  Chat │ Skills │ Knowledge │ Connections │ ⚙️ │
-└──────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
                        │
-┌──────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────┐
 │        Claude Code (Orchestration)           │
 │  Tool routing, skill execution, reasoning    │
-└──────────────────────────────────────────────┘
+└──────────────────────────────────────────────────┘
                        │
        ┌───────────────┴───────────────┐
        ▼                               ▼
@@ -87,11 +91,13 @@ Four panels, no bloat:
 - **Connections** — Gmail, calendar, Telegram, custom APIs
 - **Settings** — model choice, persona tweaks, branding
 
-## Lessons Learned
+## Design Learnings
+
+> **Note:** Apollo is live at apollo.cognitocoding.app. These learnings come from building and running the product — not from paying client engagements, which are still to come.
 
 ### What Worked Well
 
-**Telegram beat every other primary interface.** Clients already have Telegram. Push notifications are free, instant, and work on desktop and mobile. Voice notes transcribe automatically. No new app to install.
+**Telegram beat every other primary interface.** Users already have Telegram. Push notifications are free, instant, and work on desktop and mobile. Voice notes transcribe automatically. No new app to install.
 
 **Claude Code + Ollama hybrid keeps costs down.** Claude Code handles the expensive reasoning and tool orchestration. Ollama handles the chatty back-and-forth. Result: per-client API spend stays low enough to make £29.99/mo a healthy margin.
 
@@ -101,11 +107,11 @@ Four panels, no bloat:
 
 ### What We'd Do Differently
 
-**Skill discovery is hard.** Clients don't know what skills to add until they've lived with Apollo for a week. We now ship every Apollo with a starter pack of 10 common skills and suggest new ones based on observed patterns.
+**Skill discovery is hard.** Users don't know what skills to add until they've lived with Apollo for a week. Every Apollo should ship with a starter pack of 10 common skills, plus suggestions based on observed patterns.
 
-**Ollama model choice matters more than we expected.** Qwen for fast chat, Llama for reasoning, Mistral for code. We had to tune per-deployment instead of picking one.
+**Ollama model choice matters more than expected.** Qwen for fast chat, Llama for reasoning, Mistral for code. The right approach is to tune per-deployment rather than picking one model for everything.
 
-**Voice note transcription needed a ceiling.** A 20-minute voice note from a client with dictation as a habit will happily spend an hour of inference time. We cap at 5 minutes per note now, and summarise rather than transcribe verbatim.
+**Voice note transcription needs a ceiling.** A long voice note from a user with a dictation habit will spend significant inference time. Capping at 5 minutes per note and summarising rather than transcribing verbatim is the right design.
 
 ---
 
