@@ -6,6 +6,10 @@
 
 **Price**: £750 fixed fee
 
+## Status
+
+🟢 **[Live demo at athena.cognitocoding.app](https://athena.cognitocoding.app)** — Social Media vertical end-to-end, seeded with the PeakForm demo client. Anyone can click through and see Athena in action. No paying clients yet. Real social API publishing (Instagram / Facebook / X) and live DM/comment ingestion are V2 milestones.
+
 ## Overview
 
 Athena is Cognito's mid-tier AI engagement: a **full business audit** to identify where AI adds value, plus **2–3 configured specialist agents** deployed for your highest-value workflows. **Apollo sits on top as your single point of contact — you instruct Apollo in plain English, Apollo briefs the specialist agents underneath. You never manage the stack — you manage Apollo.**
@@ -59,7 +63,7 @@ A practical, phased plan — not a fantasy roadmap. What to deploy in month 1, w
 ### 4. 2–3 Configured Specialist Agents (Apollo-Conducted)
 The part that makes Athena different from a generic consultancy engagement. We don't just write a document — we **deploy working agents** for 2–3 of the highest-value workflows identified in the audit.
 
-These agents run underneath Apollo — you never interact with them directly. You instruct Apollo; Apollo assigns the work to the right specialist and reports results back to you in plain English. Examples from past engagements:
+These agents run underneath Apollo — you never interact with them directly. You instruct Apollo; Apollo assigns the work to the right specialist and reports results back to you in plain English. Example use cases:
 
 - **Proposal Drafter** — reads a job listing, drafts a full proposal in the client's brand voice
 - **Receipt Scanner** — inbox-monitoring agent that extracts expense data and logs to accounts
@@ -88,25 +92,27 @@ Athena agents are typically built on the same stack Cognito uses internally:
 - **Hosting**: Client's existing infrastructure or a Cognito-hosted container (client's choice)
 - **Handover**: Full source access — the client owns what's built
 
-## Lessons Learned
+## Design Learnings
+
+> **Note:** Athena launched as a live demo in May 2026. These reflections are drawn from building and refining the product — not from paying client engagements, which are still to come.
 
 ### What Worked Well
 
-**A £750 fixed fee removes every objection.** Clients who balk at a £2,500 Pantheon build say yes to a £750 Athena engagement. It's small enough to feel safe, large enough for us to do real work, and profitable enough to be worth building for.
+**A £750 fixed fee removes the barrier.** Businesses that would balk at a £2,500 Pantheon build can commit to a £750 Athena engagement. It's small enough to feel safe, large enough to do real work, and a genuine stepping stone to the full platform.
 
-**The audit on its own justifies the fee.** Even without the agents, clients tell us the workflow review is the clearest picture they've ever had of their own operation. The agents are the kicker.
+**The audit on its own justifies the fee.** Even without the agents, a well-run workflow review gives businesses the clearest picture they've ever had of their own operation. The agents are the kicker.
 
-**2–3 is the right number.** One agent feels like a trial. Four or more bloats the scope and missed deadlines. Two to three hits the sweet spot — enough to prove AI can pay for itself, few enough to ship in a month.
+**2–3 is the right number.** One agent feels like a trial. Four or more bloats scope and risks missed deadlines. Two to three hits the sweet spot — enough to prove AI can pay for itself, few enough to ship in a month.
 
-**Athena is the natural Pantheon upsell.** Roughly half of Athena clients want a full Pantheon build after seeing two agents running for 30 days. The agents deployed in Athena migrate straight into the Pantheon stack when they upgrade.
+**Athena is the natural Pantheon stepping stone.** The architecture is designed so the agents deployed in Athena migrate straight into the Pantheon stack when a business is ready to scale up.
 
 ### What We'd Do Differently
 
-**Scope the agents before signing.** Early Athena engagements drifted because "we'll pick the agents after the audit" meant clients kept adding candidates. We now scope 2–3 agent slots at kick-off and lock them by end of week 1.
+**Scope the agents before signing.** Scope drift happens when "we'll pick the agents after the audit" means candidates keep getting added. The right approach: scope 2–3 agent slots at kick-off and lock them by end of week 1.
 
-**Charge more for complex integrations.** £750 assumes the agents integrate with common systems (Gmail, Stripe, standard CRMs). When a client needs a custom API bridge or legacy-system connector, that's extra.
+**Charge more for complex integrations.** £750 assumes agents integrate with common systems (Gmail, Stripe, standard CRMs). Projects needing a custom API bridge or legacy-system connector should be priced higher.
 
-**Ship a starter pack of "known-good" agent templates.** Instead of designing each agent from scratch, we now start from proven templates and tune them to the client. Cuts delivery time by a week.
+**Ship a starter pack of known-good agent templates.** Starting from proven templates and tuning to the client cuts estimated delivery time by a week compared to designing each agent from scratch.
 
 ---
 
