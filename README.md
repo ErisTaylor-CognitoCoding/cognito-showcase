@@ -20,6 +20,7 @@ Plus:
 
 - **Small Business Apps** — Niche tools for trades and professionals at £9.99/month ([WagTracker](./projects/wagtracker), [SoloTutorLite](./projects/solo-tutor-lite), and more)
 - **Education Platform** — [EducationDashDeck](./projects/education-dashdeck) — modular ecosystem for tutoring agencies and SEND providers
+- **Gaming Tools** — Browser-based utilities for gamers ([Sonaria Clip Saver](./projects/sonaria-clip-saver))
 
 ## 📂 Repository Structure
 
@@ -32,6 +33,7 @@ cognito-showcase/
 │   ├── nova/                     # AI Co-founder & Discord bot
 │   ├── wagtracker/               # Dog walker business manager (£9.99/mo)
 │   ├── solo-tutor-lite/          # Independent tutor all-in-one (£9.99/mo)
+│   ├── sonaria-clip-saver/       # Background game clip recorder (browser)
 │   └── education-dashdeck/       # Education ecosystem (from £69/mo)
 │       ├── award-tracker/        #   AQA Unit Award Scheme (£19.99/mo add-on)
 │       ├── coding-hub/           #   In-browser code editor (£9.99/mo add-on)
@@ -151,6 +153,21 @@ Schedule walks, manage clients and dogs, track cancellations, invoice, and keep 
 Lesson planning, built-in interactive whiteboard, one-click video sessions, AI-generated reports, and invoicing — all in one app. No more juggling five tools. Built by a tutor who still teaches every day.
 
 🟢 **Live** · [30s Short](https://youtube.com/shorts/jm2Bs0u7p2k)
+
+---
+
+## 🎮 Gaming Tools
+
+Browser-based utilities for gamers — no install, no accounts, no backend.
+
+### [Sonaria Clip Saver](./projects/sonaria-clip-saver) — Auto Clip Recorder for Creatures of Sonaria
+A background screen recorder that automatically saves the last ~30 seconds of gameplay whenever a **KILL CONFIRMED** banner appears on screen. Built for Sonaria mains who are tired of missing highlight clips.
+
+No reflexes required. Open the app in Chrome/Edge, share your game window, press F10 on a real banner to calibrate, and play. Clips save automatically to disk as `.webm` with a trigger-frame `.jpg` alongside each one.
+
+**Tech**: React + Vite + TypeScript, `getDisplayMedia`, `MediaRecorder`, `OffscreenCanvas`, File System Access API — runs entirely in the browser. No telemetry, no accounts, clips stay on your machine.
+
+🔵 **Built** · [→ Full Details](./projects/sonaria-clip-saver)
 
 ---
 
