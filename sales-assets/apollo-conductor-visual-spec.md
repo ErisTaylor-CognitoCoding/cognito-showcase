@@ -1,7 +1,7 @@
 # Apollo Conductor — Visual Spec
 ## Architecture Diagram: Image Generation Prompts
 
-This document contains ready-to-use Gemini/Imagen prompts for generating the Apollo-as-conductor architecture visuals. CMO uses these when creating social assets, pitch decks, or web graphics for Athena and Pantheon.
+This document contains ready-to-use Gemini/Imagen prompts for generating the Apollo-as-conductor architecture visuals. CMO uses these when creating social assets, pitch decks, or web graphics for Moirai and Pantheon.
 
 ---
 
@@ -14,7 +14,7 @@ A person at the top sends a message. Apollo — glowing at the centre — receiv
 
 ---
 
-## Prompt 1: Athena Architecture Diagram (Square 1:1)
+## Prompt 1: Moirai Architecture Diagram (Square 1:1)
 
 Use for: LinkedIn posts, social media, pitch deck slides
 
@@ -58,7 +58,7 @@ Top-left corner: Cognito Coding logo (small, white/orange).
 
 ## Prompt 3: Product Family Tier Visual (Square 1:1)
 
-Use for: social posts explaining the Apollo → Athena → Pantheon journey
+Use for: social posts explaining the Apollo → Moirai → Pantheon journey
 
 ```
 Create a bold, modern infographic in 1:1 aspect ratio. Dark black background.
@@ -67,7 +67,7 @@ Show three tiers stacked vertically, each with increasing size/scale to show pro
 
 TIER 1 (top, smallest): Orange pill label 'APOLLO £29.99/mo' — small glowing brain icon — tagline 'Start with knowledge.'
 
-TIER 2 (middle, medium): Orange pill label 'ATHENA £750/mo' — medium glowing brain icon with two smaller icons beside it — tagline 'Add wisdom.'
+TIER 2 (middle, medium): Orange pill label 'MOIRAI £750/mo' — medium glowing brain icon with two smaller icons beside it — tagline 'Add wisdom.'
 
 TIER 3 (bottom, largest, most prominent): Orange pill label 'PANTHEON £2,500+' — large glowing brain icon with five smaller icons fanning out below — tagline 'Build your temple.'
 
@@ -102,11 +102,11 @@ Background: #000000 to #1A0F00 dark gradient with subtle gold particle effects.
 
 ## Usage Notes for CMO
 
-1. For any Athena or Pantheon post, **always use Prompt 1 or Prompt 2** (not a generic tech image) — the architecture diagram is the core message
+1. For any Moirai or Pantheon post, **always use Prompt 1 or Prompt 2** (not a generic tech image) — the architecture diagram is the core message
 2. Apollo must always be visually dominant (larger, brighter, more central than any specialist agent)
 3. The client (YOU) must always appear above Apollo — never beside it, never below it
 4. Specialist agents must always appear below Apollo — never beside it at the same level as the client
-5. Taglines must always appear: "You talk to Apollo. Apollo runs the team." (Athena) or "You never manage the stack — you manage Apollo." (Pantheon)
+5. Taglines must always appear: "You talk to Apollo. Apollo runs the team." (Moirai) or "You never manage the stack — you manage Apollo." (Pantheon)
 
 ---
 
