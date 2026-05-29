@@ -23,7 +23,7 @@ Pantheon is your private AI command centre — Apollo at the top, a full special
         └──────┬───────┘
                │  Apollo briefs the right agent
                │
-    ┌──────────┼────────────────────┐
+    ┌──────────┼──────────────────────┐
     ▼          ▼          ▼          ▼          ▼
   [CTO]      [CMO]      [CFO]     [Scout]  [Engineer]
   infra     content    finance    leads      code
