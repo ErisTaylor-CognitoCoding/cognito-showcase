@@ -67,7 +67,7 @@ This is the defining differentiator. While other AI products give you a chatbot 
     │  Conductor  │     Now conducts your full custom team
     └──────┬──────┘
            │ briefs
-    ┌──────┼──────────────────┐
+    ┌──────┼──────────────┐
     ▼      ▼       ▼      ▼       ▼
   [CTO]  [CMO]  [CFO] [Scout] [Engineer]
   infra content finance leads    code
@@ -108,7 +108,7 @@ The three products share:
 
 3. **Invisible infrastructure** — the client should never see the complexity. They see Apollo and results.
 
-4. **Greek mythology theme** — Apollo (the guide), Moirai (wisdom), Pantheon (the full temple). The naming is intentional: each tier adds to the last. You're building something, not just buying a tool.
+4. **Greek mythology theme** — Apollo (the guide), Moirai (the Fates), Pantheon (the full temple). The naming is intentional: each tier adds to the last. You're building something, not just buying a tool.
 
 5. **Three taglines, one story**:
    - *"Start with knowledge."* — Apollo gives you an AI brain for your business.
