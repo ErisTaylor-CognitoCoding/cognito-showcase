@@ -1,5 +1,3 @@
-# Athena → Moirai
-
-This product has been renamed to **Moirai**.
+# Moirai
 
 ➡️ **[View updated documentation → projects/moirai](../moirai)**
