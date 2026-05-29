@@ -1,4 +1,4 @@
-# Apollo, Athena, Pantheon — One Family. One Conductor.
+# Apollo, Moirai, Pantheon — One Family. One Conductor.
 ## The Cognito AI Tier System
 
 ---
@@ -7,7 +7,7 @@
 
 Every tier in the Cognito AI stack has the same interface: **Apollo**.
 
-Apollo is not just the entry product. Apollo is the orchestration layer. When you add Athena, Apollo now conducts a specialist team. When you build Pantheon, Apollo conducts your full custom workforce. **The interface never changes. The power underneath scales with you.**
+Apollo is not just the entry product. Apollo is the orchestration layer. When you add Moirai, Apollo now conducts a specialist team. When you build Pantheon, Apollo conducts your full custom workforce. **The interface never changes. The power underneath scales with you.**
 
 This is the defining differentiator. While other AI products give you a chatbot or a dashboard to manage, Cognito gives you a **conductor** — one voice, one relationship, growing capability behind it.
 
@@ -34,7 +34,7 @@ This is the defining differentiator. While other AI products give you a chatbot 
 
 ---
 
-### Athena (Mid — £750/month)
+### Moirai (Mid — £750/month)
 
 ```
          YOU
@@ -67,7 +67,7 @@ This is the defining differentiator. While other AI products give you a chatbot 
     │  Conductor  │     Now conducts your full custom team
     └──────┬──────┘
            │ briefs
-    ┌──────┼──────────────┐
+    ┌──────┼──────────────────┐
     ▼      ▼       ▼      ▼       ▼
   [CTO]  [CMO]  [CFO] [Scout] [Engineer]
   infra content finance leads    code
@@ -94,7 +94,7 @@ This is the defining differentiator. While other AI products give you a chatbot 
 
 ### The objection: "I'm not ready for a big commitment."
 
-**The answer:** Start with Apollo at £29.99/month. Add Athena when you want a team. Build Pantheon when you're ready for the full stack. The path is clear and the upgrade is natural because the interface — Apollo — never changes.
+**The answer:** Start with Apollo at £29.99/month. Add Moirai when you want a team. Build Pantheon when you're ready for the full stack. The path is clear and the upgrade is natural because the interface — Apollo — never changes.
 
 ---
 
@@ -108,18 +108,18 @@ The three products share:
 
 3. **Invisible infrastructure** — the client should never see the complexity. They see Apollo and results.
 
-4. **Greek mythology theme** — Apollo (the guide), Athena (wisdom), Pantheon (the full temple). The naming is intentional: each tier adds to the last. You're building something, not just buying a tool.
+4. **Greek mythology theme** — Apollo (the guide), Moirai (wisdom), Pantheon (the full temple). The naming is intentional: each tier adds to the last. You're building something, not just buying a tool.
 
 5. **Three taglines, one story**:
    - *"Start with knowledge."* — Apollo gives you an AI brain for your business.
-   - *"Add wisdom."* — Athena adds a team that acts on that knowledge.
+   - *"Add wisdom."* — Moirai adds a team that acts on that knowledge.
    - *"Build your temple."* — Pantheon builds the full infrastructure around you.
 
 ---
 
-## Visual Language (for all Athena/Pantheon materials)
+## Visual Language (for all Moirai/Pantheon materials)
 
-The hero visual for any Athena or Pantheon asset should follow this architecture:
+The hero visual for any Moirai or Pantheon asset should follow this architecture:
 
 **Top**: Client (chat bubble / person icon) — warm, human
 **↓ arrow pointing down**
