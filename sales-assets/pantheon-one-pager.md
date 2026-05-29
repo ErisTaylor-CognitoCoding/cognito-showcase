@@ -23,7 +23,7 @@ Pantheon is your private AI command centre — Apollo at the top, a full special
         └──────┬───────┘
                │  Apollo briefs the right agent
                │
-    ┌──────────┼────────────┐
+    ┌──────────┼────────────────────┐
     ▼          ▼          ▼          ▼          ▼
   [CTO]      [CMO]      [CFO]     [Scout]  [Engineer]
   infra     content    finance    leads      code
@@ -134,10 +134,10 @@ Ongoing maintenance and hosting included in your plan.
 | Tier | Product | Tagline | Price |
 |------|---------|---------|-------|
 | Entry | **Apollo** | Start with knowledge. | £29.99/mo |
-| Mid | **Athena** | Add wisdom. | £750/mo |
+| Mid | **Moirai** | Add wisdom. | £750/mo |
 | Full | **Pantheon** | Build your temple. | From £2,500 |
 
-Start with Athena if you want to test AI team deployment before a full build. Come to Pantheon when you're ready for the complete stack.
+Start with Moirai if you want to test AI team deployment before a full build. Come to Pantheon when you're ready for the complete stack.
 
 ---
 
