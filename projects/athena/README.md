@@ -2,4 +2,4 @@
 
 This product has been renamed to **Moirai**.
 
-See [projects/moirai](../moirai) for the current documentation.
+➡️ **[View updated documentation → projects/moirai](../moirai)**
