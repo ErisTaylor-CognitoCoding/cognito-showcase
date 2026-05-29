@@ -13,7 +13,7 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 | Tier | Product | Price |
 |------|---------|-------|
 | 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month · [🟢 Live demo](https://apollo.cognitocoding.app) |
-| 🟡 Mid | **[Athena](./projects/athena)** — AI audit + multi-agent consultancy | £750/month · [🟢 Live demo](https://athena.cognitocoding.app) |
+| 🟡 Mid | **[Moirai](./projects/moirai)** — AI audit + multi-agent consultancy | £750/month · [🟢 Live demo](https://moirai.cognitocoding.app) |
 | 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500/month (no build fee) · [🟢 Live demo](https://pantheon.cognitocoding.app) |
 
 Plus:
@@ -28,7 +28,7 @@ Plus:
 cognito-showcase/
 ├── projects/                     # Project showcases (sanitised)
 │   ├── apollo/                   # AI executive assistant (£29.99/mo)
-│   ├── athena/                   # AI audit + multi-agent consultancy (£750/mo)
+│   ├── moirai/                   # AI audit + multi-agent consultancy (£750/mo)
 │   ├── pantheon/                 # Full AI business command centre (from £2,500/mo)
 │   ├── nova/                     # AI Co-founder & Discord bot
 │   ├── wagtracker/               # Dog walker business manager (£9.99/mo)
@@ -63,10 +63,10 @@ Per-client AI executive assistant deployed in an isolated Docker container. Clau
 
 ---
 
-### [Athena](./projects/athena) — AI Consultancy & Multi-Agent (£750/month)
+### [Moirai](./projects/moirai) — AI Consultancy & Multi-Agent (£750/month)
 Business audit + AI team deployment. A full workflow review, AI opportunity map, implementation plan, and 60-minute debrief — plus 2–3 configured specialist agents deployed for your highest-value workflows. **Apollo sits on top as your single point of contact: you instruct Apollo, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.** The bridge between Apollo (entry) and Pantheon (full build).
 
-**Status**: 🟢 [Live demo](https://athena.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) is a V2 milestone. No paying clients yet.
+**Status**: 🟢 [Live demo](https://moirai.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) and live DM/comment ingestion are V2 milestones. No paying clients yet.
 
 **Deliverables**: Audit report, AI opportunity map, 2–3 deployed agents (Apollo-conducted), 60-min debrief
 
