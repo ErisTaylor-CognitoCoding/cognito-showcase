@@ -18,7 +18,7 @@ Pantheon is a custom private instance of the full Cognito stack, configured for 
 
 Pantheon is the flagship tier of Cognito's three-tier AI stack:
 
-> **Apollo (£29.99/mo) → Athena (£750) → Pantheon (£2,500+)**
+> **Apollo (£29.99/mo) → Moirai (£750) → Pantheon (£2,500+)**
 >
 > *"Start with knowledge. Add wisdom. Build your temple."*
 
@@ -93,7 +93,7 @@ All agent execution runs on Claude Max subscription billing, not per-token API b
         └──────┬───────┘
                │  Apollo briefs the right agent
                │
-    ┌──────────┼──────────────────┐
+    ┌──────────┼──────────────────────┐
     ▼          ▼          ▼          ▼          ▼
   [CTO]      [CMO]      [CFO]     [Scout]  [Engineer]
   infra     content    finance    leads      code
@@ -173,6 +173,6 @@ We didn't build this theoretically. We built it because we needed it, and Panthe
 
 ---
 
-*Part of the Cognito AI stack: [Apollo](../apollo) → [Athena](../athena) → [Pantheon](./)*
+*Part of the Cognito AI stack: [Apollo](../apollo) → [Moirai](../moirai) → [Pantheon](./)*
 
 *Built by [Cognito Coding](https://cognitocoding.com)*
