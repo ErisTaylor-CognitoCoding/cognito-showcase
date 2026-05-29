@@ -18,7 +18,7 @@ Clients interact with Apollo through **Telegram as the primary interface**, with
 
 Apollo is the entry tier of Cognito's three-tier AI stack:
 
-> **Apollo (£29.99/mo) → Athena (£750) → Pantheon (£2,500+)**
+> **Apollo (£29.99/mo) → Moirai (£750) → Pantheon (£2,500+)**
 >
 > *"Start with knowledge. Add wisdom. Build your temple."*
 
@@ -115,6 +115,6 @@ Four panels, no bloat:
 
 ---
 
-*Part of the Cognito AI stack: [Apollo](./) → [Athena](../athena) → [Pantheon](../pantheon)*
+*Part of the Cognito AI stack: [Apollo](./) → [Moirai](../moirai) → [Pantheon](../pantheon)*
 
 *Built by [Cognito Coding](https://cognitocoding.com)*
