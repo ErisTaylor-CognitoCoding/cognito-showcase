@@ -13,7 +13,7 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 | Tier | Product | Price |
 |------|---------|-------|
 | 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month · [🟢 Live demo](https://apollo.cognitocoding.app) |
-| 🟡 Mid | **[Moirai](./projects/moirai)** — AI audit + multi-agent consultancy | £750/month · [🟢 Live demo](https://athena.cognitocoding.app) |
+| 🟡 Mid | **[Moirai](./projects/moirai)** — AI audit + multi-agent consultancy | £750/month · [🟢 Live demo](https://moirai.cognitocoding.app) |
 | 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500/month (no build fee) · [🟢 Live demo](https://pantheon.cognitocoding.app) |
 
 Plus:
@@ -36,7 +36,6 @@ cognito-showcase/
 │   ├── sonaria-clip-saver/       # Background game clip recorder (browser)
 │   └── education-dashdeck/       # Education ecosystem (from £69/mo)
 │       ├── award-tracker/        #   AQA Unit Award Scheme (£19.99/mo add-on)
-│       ├── coding-hub/           #   In-browser code editor (£9.99/mo add-on)
 │       ├── revision-bites/       #   Personalised revision schedules (£9.99/mo add-on)
 │       ├── lesson-logs/          #   Auto session logging (£9.99/mo add-on)
 │       ├── target-tracker/       #   Half-termly targets + PDF reports (£9.99/mo add-on)
@@ -66,7 +65,7 @@ Per-client AI executive assistant deployed in an isolated Docker container. Clau
 ### [Moirai](./projects/moirai) — AI Consultancy & Multi-Agent (£750/month)
 Business audit + AI team deployment. A full workflow review, AI opportunity map, implementation plan, and 60-minute debrief — plus 2–3 configured specialist agents deployed for your highest-value workflows. **Apollo sits on top as your single point of contact: you instruct Apollo, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.** The bridge between Apollo (entry) and Pantheon (full build).
 
-**Status**: 🟢 [Live demo](https://athena.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) is a V2 milestone. No paying clients yet.
+**Status**: 🟢 [Live demo](https://moirai.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) is a V2 milestone. No paying clients yet.
 
 **Deliverables**: Audit report, AI opportunity map, 2–3 deployed agents (Apollo-conducted), 60-min debrief
 
@@ -117,7 +116,6 @@ EducationDashDeck — Command Centre (£69/mo, up to 50 users, 1 Basic app inclu
                 ├── Session Pay        ← invoicing + payment tracking
                 ├── Award Tracker      ← AQA Unit Award portfolios + certificates
                 ├── Revision Bites     ← personalised weekly revision schedules
-                ├── Coding Hub         ← in-browser HTML/CSS/JS editor with live preview
                 ├── LessonCrafter      ← AI curriculum planning
                 └── Titan for Teachers ← AI layer (lesson plans, AQA outcomes, reports)
 ```
@@ -127,7 +125,6 @@ EducationDashDeck — Command Centre (£69/mo, up to 50 users, 1 Basic app inclu
 | Module | What it does | Status | Price |
 |--------|-------------|--------|-------|
 | **[Award Tracker](./projects/education-dashdeck/award-tracker)** | AQA Unit Award Scheme — evidence, portfolios, certificates | 🟢 Live | £19.99/mo add-on |
-| **[Coding Hub](./projects/education-dashdeck/coding-hub)** | In-browser HTML/CSS/JS code editor with live visual feedback | 🟡 In Development | £9.99/mo add-on |
 | **[Revision Bites](./projects/education-dashdeck/revision-bites)** | Personalised weekly revision schedules, curriculum-aligned topics | 🟡 In Development | £9.99/mo add-on |
 | **[Lesson Logs](./projects/education-dashdeck/lesson-logs)** | Auto session logging, learner voice, progress notes | 🟡 In Development | £9.99/mo add-on |
 | **[Target Tracker](./projects/education-dashdeck/target-tracker)** | Half-termly targets + auto PDF reports | 🟡 In Development | £9.99/mo add-on |
