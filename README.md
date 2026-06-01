@@ -12,8 +12,8 @@ Cognito Coding builds AI-powered business automation and educational platforms. 
 
 | Tier | Product | Price |
 |------|---------|-------|
-| 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | £29.99/month · [🟢 Live demo](https://apollo.cognitocoding.app) |
-| 🟡 Mid | **[Moirai](./projects/moirai)** — AI audit + multi-agent consultancy | £750/month · [🟢 Live demo](https://moirai.cognitocoding.app) |
+| 🟠 Entry | **[Apollo](./projects/apollo)** — Per-client AI executive assistant | pricing TBC · [🟢 Live demo](https://apollo.cognitocoding.app) |
+| 🟡 Mid | **[Moirai](./projects/moirai)** — AI audit + multi-agent consultancy | pricing TBC · [🟢 Live demo](https://athena.cognitocoding.app) |
 | 🔵 Flagship | **[Pantheon](./projects/pantheon)** — Full custom AI business command centre | From £2,500/month (no build fee) · [🟢 Live demo](https://pantheon.cognitocoding.app) |
 
 Plus:
@@ -27,21 +27,21 @@ Plus:
 ```
 cognito-showcase/
 ├── projects/                     # Project showcases (sanitised)
-│   ├── apollo/                   # AI executive assistant (£29.99/mo)
-│   ├── moirai/                   # AI audit + multi-agent consultancy (£750/mo)
+│   ├── apollo/                   # AI executive assistant
+│   ├── moirai/                   # AI audit + multi-agent consultancy
 │   ├── pantheon/                 # Full AI business command centre (from £2,500/mo)
 │   ├── nova/                     # AI Co-founder & Discord bot
 │   ├── wagtracker/               # Dog walker business manager (£9.99/mo)
 │   ├── solo-tutor-lite/          # Independent tutor all-in-one (£9.99/mo)
 │   ├── sonaria-clip-saver/       # Background game clip recorder (browser)
-│   └── education-dashdeck/       # Education ecosystem (from £69/mo)
-│       ├── award-tracker/        #   AQA Unit Award Scheme (£19.99/mo add-on)
-│       ├── revision-bites/       #   Personalised revision schedules (£9.99/mo add-on)
-│       ├── lesson-logs/          #   Auto session logging (£9.99/mo add-on)
-│       ├── target-tracker/       #   Half-termly targets + PDF reports (£9.99/mo add-on)
-│       ├── session-pay/          #   Payment tracking + invoicing (£9.99/mo add-on)
-│       ├── meet-and-teach/       #   Video tutoring with IWB (£19.99/mo add-on)
-│       ├── lesson-crafter/       #   AI curriculum planning (£19.99/mo add-on)
+│   └── education-dashdeck/       # Education ecosystem
+│       ├── award-tracker/        #   AQA Unit Award Scheme
+│       ├── revision-bites/       #   Personalised revision schedules
+│       ├── lesson-logs/          #   Auto session logging
+│       ├── target-tracker/       #   Half-termly targets + PDF reports
+│       ├── session-pay/          #   Payment tracking + invoicing
+│       ├── meet-and-teach/       #   Video tutoring with IWB
+│       ├── lesson-crafter/       #   AI curriculum planning
 │       └── titan-for-teachers/   #   AI layer in EducationDashDeck (included)
 ├── marketing/                    # Positioning docs and market research
 ├── sales-assets/                 # Sales collateral and pitch materials
@@ -51,7 +51,7 @@ cognito-showcase/
 
 ## 🚀 Featured Projects
 
-### [Apollo](./projects/apollo) — AI Executive Assistant (£29.99/month)
+### [Apollo](./projects/apollo) — AI Executive Assistant
 Per-client AI executive assistant deployed in an isolated Docker container. Claude Code orchestration + Ollama for conversational inference + SQLite per client + Telegram as the primary interface. Clients can add custom skills to extend their agent. Clean IDE-style web UI: chat, skills panel, knowledge base, connections, settings.
 
 **Status**: 🟢 [Live demo](https://apollo.cognitocoding.app) — built and reachable. No paying clients yet.
@@ -62,10 +62,10 @@ Per-client AI executive assistant deployed in an isolated Docker container. Clau
 
 ---
 
-### [Moirai](./projects/moirai) — AI Consultancy & Multi-Agent (£750/month)
+### [Moirai](./projects/moirai) — AI Consultancy & Multi-Agent
 Business audit + AI team deployment. A full workflow review, AI opportunity map, implementation plan, and 60-minute debrief — plus 2–3 configured specialist agents deployed for your highest-value workflows. **Apollo sits on top as your single point of contact: you instruct Apollo, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.** The bridge between Apollo (entry) and Pantheon (full build).
 
-**Status**: 🟢 [Live demo](https://moirai.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) is a V2 milestone. No paying clients yet.
+**Status**: 🟢 [Live demo](https://athena.cognitocoding.app) — Social Media vertical live, seeded with PeakForm demo. Real social publishing (IG/FB/X) is a V2 milestone. No paying clients yet.
 
 **Deliverables**: Audit report, AI opportunity map, 2–3 deployed agents (Apollo-conducted), 60-min debrief
 
@@ -102,7 +102,7 @@ AI Co-founder running Cognito's daily operations — coordinates the internal ag
 ### Architecture
 
 ```
-EducationDashDeck — Command Centre (£69/mo, up to 50 users, 1 Basic app included)
+EducationDashDeck — Command Centre
         │
         └── SSO & Shared Student Data Layer
                 │
@@ -124,13 +124,13 @@ EducationDashDeck — Command Centre (£69/mo, up to 50 users, 1 Basic app inclu
 
 | Module | What it does | Status | Price |
 |--------|-------------|--------|-------|
-| **[Award Tracker](./projects/education-dashdeck/award-tracker)** | AQA Unit Award Scheme — evidence, portfolios, certificates | 🟢 Live | £19.99/mo add-on |
-| **[Revision Bites](./projects/education-dashdeck/revision-bites)** | Personalised weekly revision schedules, curriculum-aligned topics | 🟡 In Development | £9.99/mo add-on |
-| **[Lesson Logs](./projects/education-dashdeck/lesson-logs)** | Auto session logging, learner voice, progress notes | 🟡 In Development | £9.99/mo add-on |
-| **[Target Tracker](./projects/education-dashdeck/target-tracker)** | Half-termly targets + auto PDF reports | 🟡 In Development | £9.99/mo add-on |
-| **[Session Pay](./projects/education-dashdeck/session-pay)** | Session-based payment tracking + invoicing | 🟡 In Development | £9.99/mo add-on |
-| **[Meet & Teach](./projects/education-dashdeck/meet-and-teach)** | Integrated video tutoring with IWB — auto-logs into Lesson Logs | 🟡 In Development | £19.99/mo add-on |
-| **[LessonCrafter](./projects/education-dashdeck/lesson-crafter)** | AI-powered curriculum planning and course structure generation | 🟡 In Development | £19.99/mo add-on |
+| **[Award Tracker](./projects/education-dashdeck/award-tracker)** | AQA Unit Award Scheme — evidence, portfolios, certificates | 🟢 Live | TBC |
+| **[Revision Bites](./projects/education-dashdeck/revision-bites)** | Personalised weekly revision schedules, curriculum-aligned topics | 🟡 In Development | TBC |
+| **[Lesson Logs](./projects/education-dashdeck/lesson-logs)** | Auto session logging, learner voice, progress notes | 🟡 In Development | TBC |
+| **[Target Tracker](./projects/education-dashdeck/target-tracker)** | Half-termly targets + auto PDF reports | 🟡 In Development | TBC |
+| **[Session Pay](./projects/education-dashdeck/session-pay)** | Session-based payment tracking + invoicing | 🟡 In Development | TBC |
+| **[Meet & Teach](./projects/education-dashdeck/meet-and-teach)** | Integrated video tutoring with IWB — auto-logs into Lesson Logs | 🟡 In Development | TBC |
+| **[LessonCrafter](./projects/education-dashdeck/lesson-crafter)** | AI-powered curriculum planning and course structure generation | 🟡 In Development | TBC |
 | **Titan for Teachers** | AI layer inside EducationDashDeck — lesson plans, AQA outcomes, auto-reports. Not standalone. | 🟡 In Development | Included with base |
 
 ---
