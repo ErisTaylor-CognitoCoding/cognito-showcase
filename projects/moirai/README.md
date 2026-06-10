@@ -4,11 +4,11 @@
 >
 > *"Add wisdom."*
 
-**Price**: £750 fixed fee
+**Build**: £249 one-off (scoped per brief, you own the container + code outright) · **Hosting**: £750/month fixed (optional, after go-live)
 
 ## Status
 
-🟢 **[Live demo at moirai.cognitocoding.app](https://moirai.cognitocoding.app)** — Social Media vertical end-to-end, seeded with the PeakForm demo client. Anyone can click through and see Moirai in action. No paying clients yet. Real social API publishing (Instagram / Facebook / X) and live DM/comment ingestion are V2 milestones.
+🟢 **[Live demo at athena.cognitocoding.app](https://athena.cognitocoding.app)** — Social Media vertical end-to-end, seeded with the PeakForm demo client. Anyone can click through and see Moirai in action. No paying clients yet. Real social API publishing (Instagram / Facebook / X) and live DM/comment ingestion are V2 milestones.
 
 ## Overview
 
@@ -37,7 +37,7 @@ Moirai is for businesses that:
 
 Moirai is the mid-tier of Cognito's three-tier AI stack:
 
-> **Apollo (£29.99/mo) → Moirai (£750) → Pantheon (£2,500+)**
+> **Apollo (build from £99 · £29/mo hosting) → Moirai (build from £249 · £750/mo hosting) → Pantheon (build from £599 · £2,500+/mo hosting)**
 >
 > *"Start with knowledge. Add wisdom. Build your temple."*
 
@@ -74,6 +74,14 @@ These agents run underneath Apollo — you never interact with them directly. Yo
 ### 5. 60-Minute Debrief
 Live session to walk through the audit, the agents, the implementation plan, and answer questions. Recording provided.
 
+## Pricing
+
+**Build: £249 one-off** — bespoke, fixed-fee build scoped per brief. Client owns the container and code outright. Floor never goes under £249; scales up per scope.
+
+**Hosting: £750/month fixed** — after go-live, if you want us to run it. No per-token billing. No add-ons broken out. Integrations with your existing tools included (fair use).
+
+[Contact us](https://cognitocoding.com) for a scoped brief.
+
 ## Delivery Timeline
 
 | Week | What happens |
@@ -98,7 +106,7 @@ Moirai agents are typically built on the same stack Cognito uses internally:
 
 ### What Worked Well
 
-**A £750 fixed fee removes the barrier.** Businesses that would balk at a £2,500 Pantheon build can commit to a £750 Moirai engagement. It's small enough to feel safe, large enough to do real work, and a genuine stepping stone to the full platform.
+**The fixed-fee build removes the barrier.** Businesses that would balk at a £2,500 Pantheon build can commit to a Moirai engagement. It's small enough to feel safe, large enough to do real work, and a genuine stepping stone to the full platform.
 
 **The audit on its own justifies the fee.** Even without the agents, a well-run workflow review gives businesses the clearest picture they've ever had of their own operation. The agents are the kicker.
 
@@ -110,7 +118,7 @@ Moirai agents are typically built on the same stack Cognito uses internally:
 
 **Scope the agents before signing.** Scope drift happens when "we'll pick the agents after the audit" means candidates keep getting added. The right approach: scope 2–3 agent slots at kick-off and lock them by end of week 1.
 
-**Charge more for complex integrations.** £750 assumes agents integrate with common systems (Gmail, Stripe, standard CRMs). Projects needing a custom API bridge or legacy-system connector should be priced higher.
+**Charge more for complex integrations.** The build floor assumes agents integrate with common systems (Gmail, Stripe, standard CRMs). Projects needing a custom API bridge or legacy-system connector should be priced higher.
 
 **Ship a starter pack of known-good agent templates.** Starting from proven templates and tuning to the client cuts estimated delivery time by a week compared to designing each agent from scratch.
 
