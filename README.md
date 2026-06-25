@@ -25,16 +25,14 @@ Companion repo to the **One Concept, One Board** YouTube Shorts series. Every co
 
 ```
 cognito-showcase/
-├── projects/          # Project showcases (sanitised)
-│   ├── apollo/
-│   ├── moirai/
-│   ├── pantheon/
-│   ├── nova/
-│   ├── wagtracker/
-│   ├── solo-tutor-lite/
-│   └── education-dashdeck/
-├── marketing/         # Positioning docs and market research
-└── memory/            # Reference and context files
+└── projects/          # Project showcases (sanitised)
+    ├── apollo/
+    ├── moirai/
+    ├── pantheon/
+    ├── nova/
+    ├── wagtracker/
+    ├── solo-tutor-lite/
+    └── education-dashdeck/
 ```
 
 ---
@@ -64,7 +62,7 @@ A full private dashboard — CRM, invoicing, Kanban, agent orchestration, secret
 
 ---
 
-### [Nova](./projects/nova) — AI Co-founder
+### [Nova](./projects/nova) — Cognito's AI Partner
 Runs Cognito's daily operations — coordinates the internal agent team, handles communications, and executes real-world actions via MCP tools. Nova is the model for what Apollo is in client deployments.
 
 **Tech**: TypeScript / Node.js, React + Vite, Drizzle ORM + PostgreSQL, MCP tools, Docker
