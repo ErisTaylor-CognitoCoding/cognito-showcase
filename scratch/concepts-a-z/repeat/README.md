@@ -1,61 +1,65 @@
-# Repeat N Times — A Counted Loop
+# repeat — Do Something Exactly N Times
 
-> 📺 ***(Short coming Wed 2 Sep 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **2 Sep 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 2 Sep 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Control (orange)
-
----
-
-## What This Block Does
-
-`repeat (10)` runs everything inside it exactly 10 times, then stops.
-
-Different from `forever`: `forever` never stops. `repeat` stops after the exact count you give it.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-Press-ups. "Do 10 press-ups" — you do 10, then stop. You don't keep going until someone tells you to stop. You do the count.
+A stamper. You press it once, you get one print. You press it ten times, you get ten prints. Same action, counted. When you hit ten, you stop — unlike `forever`, which never stops.
 
-`forever` is "keep running until I say stop." `repeat` is "do this exact number of times."
-
----
-
-## How It Works
-
-```
-repeat (10)
-  move (10) steps
-  wait (0.1) seconds
-end
-```
-
-The sprite moves 10 steps, 10 times, with a pause between each. Total movement: 100 steps. Then it stops.
+`repeat [10]` does the blocks inside exactly 10 times, then moves on.
 
 ---
 
-## Building the Space Invaders Formation
+## What it does
 
-`repeat` is how 55 alien clones get spawned in Space Invaders. Two nested repeat loops — one for rows (5), one for columns (11) — create a clone for each grid cell:
+A counted loop. Unlike `forever` (which runs endlessly), `repeat` runs a fixed number of times and stops. Everything after the `repeat` block runs once it's done.
 
-```
-repeat (5)       [rows]
-  repeat (11)    [columns]
-    create clone of [myself]
-  end
-end
-```
-
-55 clones. Two blocks. One grid pattern.
-
-**Snake** uses `repeat` in the body-drawing step — it repeats half the length of the Snake list, one iteration per position pair.
+This is Scratch's equivalent of Python's `for i in range(N)`.
 
 ---
 
-## In the Arcade Series
+## Where games use it
 
-**Appears in:** [Ep 2 — Snake →](../../series/ep-02-snake) · [Ep 4 — Space Invaders →](../../series/ep-04-space-invaders)
+**Building the alien formation in Space Invaders:**
 
-*[← random-numbers](../random-numbers) · [Back to concepts →](../README.md) · Next: [if-then-else →](../if-then-else)*
+Nest two `repeat` blocks — one for rows, one for columns:
+
+```
+repeat [5]       ← 5 rows
+  repeat [11]    ← 11 columns per row
+    create clone of myself
+```
+
+That's 55 aliens from 8 blocks. Without nested `repeat`, you'd need 55 separate `create clone` blocks.
+
+**Scanning a row in Tetris:**
+
+```
+repeat [10]      ← check each of 10 columns
+  if item [n] of [board] = 0
+    set [row-full] to false
+```
+
+**Stamping the snake body:**
+
+```
+repeat [length of [body-x]]
+  go to x: [item [n] of [body-x]] y: [item [n] of [body-y]]
+  stamp
+```
+
+---
+
+## Where it appears in the series
+
+- [Space Invaders →](../../series/ep-04-space-invaders) — building the 11×5 alien formation
+- [Tetris →](../../series/ep-08-tetris) — scanning rows for line clears
+
+---
+
+*[← Back to concepts](../README.md) · Next: [if-then-else →](../if-then-else)*
