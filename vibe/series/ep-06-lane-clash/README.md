@@ -1,6 +1,6 @@
 # Lane Clash: I Talked a 3v3 Roblox Tower Defence Into Existing
 
-> 📺 **Watch on YouTube → *(link coming 30 Jun 2026)***
+> 📺 **[Watch on YouTube →](https://youtu.be/lIr1NWvrzNg)**
 
 > 🤖 **Built with Roblox Studio Assistant** — 16 directed phases, no hand-written Luau. [Try Replit Agent →](https://replit.com/refer/cognitocoding)
 
