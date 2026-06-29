@@ -1,53 +1,47 @@
-# Variables — Keeping Score
+# variables — A Named Box That Remembers a Number
 
-> 📺 ***(Short coming Wed 12 Aug 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **12 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 12 Aug 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Variables (orange)
-
----
-
-## What a Variable Does
-
-A variable is a named box that holds a number (or text). You can put a value in, read it out, or change it.
-
-```
-set [Score] to (0)
-change [Score] by (1)
-```
-
-`Score` starts at 0. Every time you eat an apple, hit an alien, or land on a lily pad, you add 1. Scratch remembers that number across the whole game.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-A whiteboard with a label. The label doesn't change — "Score" is always "Score". But the number written on it gets erased and rewritten every time you score. That's a variable.
+A scoreboard. It doesn't care about the past — it just shows the current number. Someone scores, the number goes up. Someone loses a life, the number goes down. The box remembers whatever you put in last.
+
+That's a variable.
 
 ---
 
-## For All Sprites vs This Sprite Only
+## What it does
 
-When you create a variable in Scratch, it asks: **For all sprites** or **For this sprite only**.
+A variable is a named storage location. Give it a name (`score`, `lives`, `speed`, `y-velocity`) and a starting value. Change it whenever something happens. Read it whenever you need to know the current state.
 
-- **For all sprites** — every sprite can read and change it. Use this for shared game state: `Score`, `Lives`, `Game Running`, `Formation DX`.
-- **This sprite only** — only this sprite can see it. Use this for clone-local state: a clone's health, its direction, its dive phase.
-
-Getting this wrong is the most common Scratch variable bug. A clone variable set to "for all sprites" gets overwritten by every other clone simultaneously — chaos.
+In Scratch:
+- `set [score] to [0]` — initialise
+- `change [score] by [1]` — increment
+- `show variable [score]` — display on screen
+- `if [score] > [100]` — use in a condition
 
 ---
 
-## In the Arcade Series
+## Variables make games dynamic
 
-Variables run every game:
-- `Score` and `Lives` — Pong, Snake, Frogger, all of them
-- `Y Velocity` — Donkey Kong's gravity engine (change it by -0.6 each frame)
-- `Formation DX` — Space Invaders' direction (shared across all 55 alien clones)
-- `Direction` — Snake's movement direction (1=right, 2=left, 3=up, 4=down)
-- `Game Running` — the on/off flag that gates all game logic
+Without variables, every game session is identical. With variables, the score increases, lives decrease, speed ramps up, gravity accelerates. Variables are the memory of the game.
 
-Every mechanic in every game is built on at least one variable.
+Every game in this series uses them. Gravity in Donkey Kong is a `y-velocity` variable changing every frame. The direction of the alien formation in Space Invaders is a variable flipping between 1 and -1. The snake's length in Snake is a variable tracking the list size.
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 2 — Snake →](../../series/ep-02-snake) · all episodes
+---
 
-*[← glide-to](../glide-to) · [Back to concepts →](../README.md) · Next: [broadcast →](../broadcast)*
+## Where it appears in the series
+
+- [Snake →](../../series/ep-02-snake) — score, snake length
+- [Space Invaders →](../../series/ep-04-space-invaders) — lives, alien count, direction flag
+- [Donkey Kong →](../../series/ep-05-donkey-kong) — y-velocity (gravity), score
+- [Asteroids →](../../series/ep-07-asteroids) — vx and vy (vector velocity)
+
+---
+
+*[← Back to concepts](../README.md) · Next: [broadcast →](../broadcast)*
