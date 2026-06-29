@@ -11,6 +11,45 @@ So Cognito Coding pivoted. It's now about sharing what I know: my solutions, my 
 
 ---
 
+## 🎮 I Taught an AI to Farm — The Farmer Was Replaced Series
+
+Playing through [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/) — a game where you write real Python to automate a drone farmer. Every Wednesday on the channel.
+
+### [/series](./series) — Long-form Episode Code
+
+One folder per episode. Each contains the **end-state Python code** from that episode plus a plain README explaining what was covered and why.
+
+| Episode | Topic | Video |
+|---------|-------|-------|
+| [ep-01-first-program](./series/ep-01-first-program) | `harvest()`, `while True`, `if can_harvest()`, `move(North)` | [▶ Watch](https://youtu.be/maTaBrkHh1o) |
+| [ep-02-operators](./series/ep-02-operators) | Comparison operators, position sensing, full 3×3 | [▶ Watch](https://youtu.be/qB2nKoU1dkI) |
+| [ep-03-functions](./series/ep-03-functions) | `def`, parameters, DRY principle | *(link coming)* |
+| [ep-04-pumpkins](./series/ep-04-pumpkins) | Variables, `if/elif`, reading tile state | [▶ Watch](https://youtu.be/X92lWWj8HbY) |
+| [ep-05-sunflowers](./series/ep-05-sunflowers) | Running maximum, `measure()`, double sweep | *(link coming)* |
+
+### [/concepts-a-z](./concepts-a-z) — Saturday Shorts Library
+
+One folder per concept. 30-second bite-sized videos with a working code snippet and a plain explanation. Same game, same concepts — zoomed in.
+
+| Concept | What it teaches |
+|---------|----------------|
+| [harvest](./concepts-a-z/harvest) | `while True` — your first infinite loop |
+| [if-check](./concepts-a-z/if-check) | `if` statements — guard before you act |
+| [grass-strip](./concepts-a-z/grass-strip) | `for` loops — cover a full row |
+| [snake-pattern](./concepts-a-z/snake-pattern) | Nested loops — cover every tile |
+| [pumpkins](./concepts-a-z/pumpkins) | Reading entity state before planting |
+| [sunflowers](./concepts-a-z/sunflowers) | Running maximum with a variable |
+| [dead-crops](./concepts-a-z/dead-crops) | Clearing failure states before replanting |
+| [trees](./concepts-a-z/trees) | `if/elif` — multi-resource harvest |
+| [cactus](./concepts-a-z/cactus) | Patience — only act when growth is complete |
+| [trade](./concepts-a-z/trade) | Arithmetic — converting harvest into gold |
+| [upgrade](./concepts-a-z/upgrade) | Conditional buying — check balance first |
+| [full-farm](./concepts-a-z/full-farm) | Combining everything into one automated farm |
+
+*New episode every Wednesday. New Short every Saturday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
+
+---
+
 ## 📖 Learn to Code
 
 ### [Cognito Coding A–Z](https://github.com/ErisTaylor-CognitoCoding/cognito-coding-a-z)
@@ -25,7 +64,18 @@ Companion repo to the **One Concept, One Board** YouTube Shorts series. Every co
 
 ```
 cognito-showcase/
-└── projects/          # Project showcases (sanitised)
+├── series/            # I Taught an AI to Farm — episode end-state code
+│   ├── ep-01-first-program/
+│   ├── ep-02-operators/
+│   ├── ep-03-functions/
+│   ├── ep-04-pumpkins/
+│   └── ep-05-sunflowers/
+├── concepts-a-z/      # Sat Farmer Shorts — one concept, one snippet
+│   ├── harvest/
+│   ├── if-check/
+│   ├── grass-strip/
+│   └── ... (12 concepts total)
+└── projects/          # App showcases (sanitised)
     ├── apollo/
     ├── moirai/
     ├── pantheon/
