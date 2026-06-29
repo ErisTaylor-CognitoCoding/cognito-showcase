@@ -1,48 +1,44 @@
-# When Green Flag Clicked — The Start Block
+# green-flag — Where Every Program Begins
 
-> 📺 ***(Short coming Wed 1 Jul 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **1 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 1 Jul 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Events (yellow)
-
----
-
-## What This Block Does
-
-Everything in Scratch starts here.
-
-When you click the green flag at the top of the screen, any script that begins with **"when green flag clicked"** runs. Without this block, nothing happens when you press the flag — your code just sits there.
-
-Think of it as the on-switch for your program. Every piece of code you want to run at the start of a game gets stacked underneath it.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-It's like pressing Play on a music player. The song (your code) is already written — the green flag just starts it.
+A starting pistol. Before it fires, nothing moves. After it fires, everything goes.
+
+In Scratch, the green flag is that pistol. Click it and every script that starts with `when green flag clicked` runs simultaneously.
 
 ---
 
-## How It Works
+## What it does
 
-1. Drag it from the **Events** category (yellow blocks).
-2. Stack any blocks you want below it.
-3. Click the green flag at the top of the Scratch editor.
-4. Those blocks run, top to bottom.
+The green flag block is the entry point for your entire program. Without it, your scripts sit dormant. It's not just a "start" button — it also resets any previous run. Clicking it mid-game restarts everything cleanly.
 
-```
-when green flag clicked
-say [Hi!] for (2) seconds
-```
-
-That's a complete Scratch program. Two blocks. Done.
+Every sprite can have its own `when green flag clicked` block. They all fire at once. A game might have 10 sprites each with their own green-flag script, all launching simultaneously.
 
 ---
 
-## In the Arcade Series
+## The block
 
-Every Friday game starts with `when green flag clicked` — resetting variables, hiding sprites, setting starting positions. It is the first block in every script.
+`when green flag clicked` — place this at the top of any script you want to run on start. Everything connected below it runs the moment the flag is clicked.
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 2 — Snake →](../../series/ep-02-snake) · all episodes
+---
 
-*[Back to concepts →](../README.md) · Next: [arrow-keys →](../arrow-keys)*
+## Where it appears in the series
+
+Every single episode starts here. It's the first block in every game.
+
+- [Pong →](../../series/ep-01-pong)
+- [Snake →](../../series/ep-02-snake)
+- [Frogger →](../../series/ep-03-frogger)
+- [Space Invaders →](../../series/ep-04-space-invaders)
+- [Donkey Kong →](../../series/ep-05-donkey-kong)
+
+---
+
+*[← Back to concepts](../README.md) · Next: [arrow-keys →](../arrow-keys)*
