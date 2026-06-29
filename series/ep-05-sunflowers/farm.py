@@ -1,40 +1,77 @@
 # I Taught an AI to Farm — Episode 5: Sunflowers
 # Game: The Farmer Was Replaced (Steam)
-# Watch: link coming soon (published 24 Jun 2026)
 #
-# End state: drone finds and harvests ONLY the sunflower with the most petals
+# Mid-point snapshot: sunflowers() integrated into main loop.
+# The drone now handles sunflowers on row 0, then runs the
+# standard tree / grass / carrot logic across the rest of the grid.
 #
-# Concepts introduced:
-#   measure()        — returns a number (petal count) you can compare
-#   running max      — track the best value as you sweep the grid
-#   max_petals       — variable that holds the current champion petal count
-#   double sweep     — pass 1 to find the max, pass 2 to harvest the champion
-#
-# Sunflower mechanic:
-#   Only the sunflower with the MOST petals on the grid drops a Sun when harvested.
-#   Harvest any other and you wasted the cut.
-#
-# Cliffhanger: we tracked the best PETAL COUNT but not WHERE the champion was,
-# so the drone re-walks the whole 12×12 to find it.
-# Next episode: lists — remember both the value AND the position.
+# Concepts in play:
+#   sunflowers()     — dedicated function called first, resets x to 0
+#   measure()        — returns petal count for comparison
+#   running max      — max_petals tracks the best petal count
+#   double sweep     — pass 1: prep + scan; pass 2: harvest champion + replant
+#   goodForTree()    — helper using modulo to checker-board trees
+#   change_hat()     — visual feedback per crop type
+#   get_ground_type() / till() — soil prep before planting carrots
 
-# --- Pass 1: find the maximum petal count across the 12×12 grid ---
-max_petals = 0
 
-for x in range(get_world_size()):
-    for y in range(get_world_size()):
-        if get_entity_type() == Entities.Sunflower:
-            petals = measure()
-            if petals > max_petals:
-                max_petals = petals      # new champion — update the best
-        move(North)
-    move(East)
+def goodForTree():
+	return get_pos_x() % 2 == get_pos_y() % 2
 
-# --- Pass 2: harvest only the champion ---
-for x in range(get_world_size()):
-    for y in range(get_world_size()):
-        if get_entity_type() == Entities.Sunflower:
-            if measure() == max_petals:
-                harvest()                # this is the one — collect the Sun
-        move(North)
-    move(East)
+
+def main():
+	sunflowers()
+	for i in range(get_world_size()):
+		for j in range(get_world_size()):
+			if j != 0:
+				if can_harvest():
+					harvest()
+				if goodForTree():
+					change_hat(Hats.Tree_Hat)
+					plant(Entities.Tree)
+				else:
+					if j < 4:
+						plant(Entities.Grass)
+						change_hat(Hats.Straw_Hat)
+					else:
+						if get_ground_type() != Grounds.Soil:
+							till()
+						plant(Entities.Carrot)
+						change_hat(Hats.Carrot_Hat)
+				while get_entity_type() != None and get_water() < 0.75 and num_items(Items.Water) > 0:
+					use_item(Items.Water)
+			move(North)
+		move(East)
+
+
+def sunflowers():
+	while get_pos_x() != 0:
+		move(East)
+
+	# Pass 1 - prep, plant, water and scan for max petals
+	max_petals = 0
+
+	for i in range(get_world_size()):
+		if get_entity_type() == Entities.Sunflower and can_harvest():
+			change_hat(Hats.Traffic_Cone)
+		if get_ground_type() != Grounds.Soil:
+			harvest()
+			till()
+			plant(Entities.Sunflower)
+			change_hat(Hats.Traffic_Cone)
+		if get_entity_type() == None:
+			plant(Entities.Sunflower)
+		if get_entity_type() != None:
+			while get_water() < 0.75 and num_items(Items.Water) > 0:
+				use_item(Items.Water)
+		p = measure()
+		if p != None and p > max_petals:
+			max_petals = p
+		move(East)
+
+	# Pass 2 - harvest the champion and replant
+	for i in range(get_world_size()):
+		if measure() == max_petals:
+			harvest()
+		plant(Entities.Sunflower)
+		move(East)
