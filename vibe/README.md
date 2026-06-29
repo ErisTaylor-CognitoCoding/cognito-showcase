@@ -10,6 +10,7 @@ The rules: one sitting, directed AI, as little hand-written code as possible. Th
 
 | # | Title | Date |
 |---|-------|------|
+| 03 | [Cognitocoding Chatbot Live Build](series/ep-03-cognitocoding-chatbot-live-build/) | 9 Jun 2026 |
 | 06 | [Lane Clash: I Talked a 3v3 Roblox Tower Defence Into Existing](series/ep-06-lane-clash/) | 30 Jun 2026 |
 
 ---
