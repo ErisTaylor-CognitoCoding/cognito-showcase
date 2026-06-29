@@ -1,57 +1,59 @@
-# Wait Blocks — Pacing
+# wait — Pause Before Doing the Next Thing
 
-> 📺 ***(Short coming Wed 16 Sep 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **16 Sep 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 16 Sep 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Control (orange)
-
----
-
-## What This Block Does
-
-`wait (1) seconds` pauses the script for that many seconds before running the next block.
-
-Without waits, loops run at Scratch's maximum frame rate. Sometimes that's right — the Pong ball should move every frame. Sometimes you need a controlled pause: the snake needs 0.1 seconds between steps, the turtle needs 3 seconds underwater, the Space Invaders formation needs a beat between moves.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-A traffic light. Green for 30 seconds — wait — amber for 3 seconds — wait — red for 30 seconds. Each phase runs for a fixed duration before the next begins. `wait` is the pause between phases.
+A traffic light. The light turns red — you stop. After a set amount of time, it turns green — you go. The `wait` block is that red light. Nothing in that script moves until the timer runs out.
 
 ---
 
-## The Snake Difficulty Dial
+## What it does
 
-```
-# Slower snake (easier):
-wait (0.2) seconds
+`wait [N] secs` pauses the current script for N seconds. Scripts in other sprites keep running. Only the script containing the `wait` block pauses.
 
-# Default:
-wait (0.1) seconds
-
-# Faster snake (harder):
-wait (0.05) seconds
-```
-
-In Snake, the `wait` inside the forever loop controls how fast the snake moves. Change one number to change the difficulty. That's a difficulty dial — one block, one value, the whole feel of the game shifts.
+This is essential for anything time-based: delays between events, animation pacing, spawn intervals, invincibility frames.
 
 ---
 
-## Dynamic Waits — Space Invaders Tempo
+## `wait` vs `forever`
 
-`wait` can take a variable instead of a fixed number:
-
-```
-wait (Formation Step) seconds
-```
-
-In Space Invaders, `Formation Step` gets smaller as aliens are destroyed (`Formation Step = Initial Step × Aliens Left / 55`). The wait shrinks. The pace accelerates. One variable feeding one `wait` block — that's the entire Space Invaders tempo mechanic.
+The `forever` block runs as fast as possible — up to 30 times per second. Sometimes you need things to happen slower than that. `wait [0.5]` inside a loop makes something happen twice a second, not 30 times.
 
 ---
 
-## In the Arcade Series
+## Where games use it
 
-**Appears in:** [Ep 2 — Snake →](../../series/ep-02-snake) (difficulty dial) · [Ep 3 — Frogger →](../../series/ep-03-frogger) (hop cooldown) · [Ep 4 — Space Invaders →](../../series/ep-04-space-invaders) (formation step interval)
+**Staggering enemy spawns in Frogger:**
 
-*[← if-then-else](../if-then-else) · [Back to concepts →](../README.md)*
+Cars in a lane appear one at a time with random gaps between them, not all at once. Each clone waits a random interval before starting its glide.
+
+**Explosion animation timing:**
+
+Switch to explosion costume, wait a fraction of a second, switch to next frame, wait again, then hide. Without `wait`, all three costume switches happen in the same frame — invisible to the player.
+
+**Invincibility frames after being hit:**
+
+Set invincible flag to true, wait 2 seconds, set it back to false. The player flashes during those 2 seconds and can't be hit again.
+
+**Ghost scatter timer in Pac-Man:**
+
+Ghosts chase for 20 seconds, scatter for 7, chase again. `wait [20]` then `broadcast [scatter]`. Timing the modes is what creates the rhythm of the game.
+
+---
+
+## Where it appears in the series
+
+- [Frogger →](../../series/ep-03-frogger) — staggered car spawns
+- [Space Invaders →](../../series/ep-04-space-invaders) — alien fire rate control
+- [Pac-Man →](../../series/ep-06-pac-man) — ghost scatter and chase timer
+- [Tetris →](../../series/ep-08-tetris) — piece drop speed scaling
+
+---
+
+*[← Back to concepts](../README.md)*
