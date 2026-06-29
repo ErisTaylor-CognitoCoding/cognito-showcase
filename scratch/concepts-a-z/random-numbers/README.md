@@ -1,55 +1,42 @@
-# Random Numbers — Controlled Unpredictability
+# random-numbers — Controlled Unpredictability
 
-> 📺 ***(Short coming Wed 26 Aug 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **26 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 26 Aug 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Operators (green)
-
----
-
-## What This Block Does
-
-`pick random (1) to (10)` gives you a random whole number between 1 and 10. Different every time.
-
-Without random numbers, games are deterministic — the same thing happens every time. That's not a game, that's a movie.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-Rolling a dice. You know the range (1 to 6). You don't know the result. That uncertainty is what makes it interesting.
+A dice roll. You don't know what number you'll get, but you know it'll be between 1 and 6. That's the deal with randomness in games — bounded chaos. Unpredictable enough to feel alive, constrained enough to stay playable.
 
 ---
 
-## How It Works — Three Games, Same Block
+## What it does
 
-```
-# Pong — random serve angle so the ball never serves the same way twice:
-point in direction (pick random 30 to 150)
-
-# Frogger — apple position snapped to the 20px movement grid:
-set x to ((pick random -11 to 11) * 20)
-
-# Donkey Kong — the chaos rule (1-in-8 chance a barrel drops down a ladder):
-if <(pick random 1 to 8) = 1> then
-  [drop down ladder]
-end
-```
-
-Three games. Three different purposes. Same block.
+`pick random [N] to [M]` returns a whole number anywhere in that range, with equal probability. Use it for positions, speeds, directions, spawning — anywhere a fixed value would make the game predictable and boring.
 
 ---
 
-## The Chaos Rule in Donkey Kong
+## Where games use it
 
-Every barrel has a 1-in-8 chance to drop *down* a ladder instead of rolling past it. That one `pick random 1 to 8` check is what makes the level feel alive. Without it, every barrel behaves identically — you'd memorise the pattern in one run and never lose.
+**Food spawn in Snake:** The food appears at a random grid position every time it's eaten. Without random, the food always appears in the same spot — trivial to predict after one run.
 
-Randomness is a design tool, not a fallback.
+**Enemy fire timing in Space Invaders:** Aliens fire at random intervals from random columns. `wait [pick random 30 to 120] frames` between shots. Keeps you guessing.
+
+**Asteroid directions:** Split rocks shoot off in random directions. Without randomness, each game plays out identically.
+
+**Car stagger in Frogger:** Cars in the same lane appear at slightly different intervals so they don't clump up immediately.
 
 ---
 
-## In the Arcade Series
+## Where it appears in the series
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 3 — Frogger →](../../series/ep-03-frogger) · [Ep 4 — Space Invaders →](../../series/ep-04-space-invaders) · [Ep 5 — Donkey Kong →](../../series/ep-05-donkey-kong)
+- [Snake →](../../series/ep-02-snake) — food spawn position
+- [Frogger →](../../series/ep-03-frogger) — initial car positions, clone stagger timing
+- [Space Invaders →](../../series/ep-04-space-invaders) — alien fire timing and column selection
 
-*[← broadcast](../broadcast) · [Back to concepts →](../README.md) · Next: [repeat →](../repeat)*
+---
+
+*[← Back to concepts](../README.md) · Next: [repeat →](../repeat)*
