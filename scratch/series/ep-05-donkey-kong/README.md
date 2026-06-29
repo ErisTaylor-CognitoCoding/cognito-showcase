@@ -1,63 +1,53 @@
-# Episode 5 — Coding Donkey Kong
+# Episode 5 — Donkey Kong
 
-> 📺 **[Watch on YouTube →](https://youtu.be/AdgnAxTkI30)** · 🎮 **[Open in Scratch →](https://scratch.mit.edu/projects/1335511261/)**
+> 📺 **[Watch on YouTube →](https://youtu.be/AdgnAxTkI30)**
 
-**Series:** Scratch Arcade Games
-**Headline concept:** Gravity — two lines of code that run every platformer ever made
+**Series:** Scratch Arcade Series  
+**Live Scratch Project:** [Open in Scratch →](https://scratch.mit.edu/projects/1335511261/)
 
 ---
 
 ## What We Built
 
-Donkey Kong — four slanted girders, broken ladders, rolling barrels that drop down ladders at random, an oil drum that spawns fireballs, and a hammer power-up. Mario at the bottom, Pauline at the top.
+Donkey Kong — a platformer. Mario runs, jumps, lands, falls off ledges. Barrels roll down the ramps. Reach the top to win.
+
+The game looks complex but it runs on two lines of logic repeated every frame: a `y-velocity` variable that increases downward, and a collision check that stops it when the player hits a platform. That's **gravity** — two variables and a check.
 
 ---
 
-## The Headline Trick — Gravity is Two Lines
+## Headline Concept: Gravity
 
-```
-change [Y Velocity] by (-0.6)
-change y by (Y Velocity)
-```
+### The analogy
 
-That's it. Every tick, the velocity gets a little more negative (gravity pulling down), and Mario moves by whatever velocity currently is. So he accelerates as he falls — just like real falling.
+Drop a ball off a table. It doesn't jump to the floor — it accelerates. Slowly at first, then faster. In code, that's a variable that increases every frame until something stops it.
 
-**Jumping is one push.** Set `Y Velocity` to a positive number (e.g. 12) and let gravity do the rest. The velocity goes: 12, 11.4, 10.8... 0... -0.6... -1.2 — he slows, stops at the top of the arc, falls back down. That parabola comes free from the maths. No animation, no keyframes needed.
+In Scratch: `change [y-velocity] by [-1]` every frame. Then `change y by [y-velocity]`. The player drops faster and faster until they hit a platform. On contact: `set [y-velocity] to [0]`. Gravity off. Standing still.
 
-Every barrel, every fireball in the game runs these same two lines.
+### How jumping works
 
----
+Jump = set `y-velocity` to a positive number (say, 10). Gravity drags it back toward zero. The player rises, slows, peaks, falls — all from one variable changing one unit per frame.
 
-## Slanted Girders as Maths
+### Blocks used in this episode
 
-The girders aren't pictures — they're lines. Each one is: `surface height = A + (B × x)`. Walk right and your floor rises or falls because the formula says so.
-
-Landing check: "Am I near that line AND not moving upward? If yes — snap my y to the surface height plus a foot offset."
-
-The foot offset matters. Mario's y is his centre point. Without the offset, the girder cuts through his belly and his feet float. One number to tune per sprite.
-
----
-
-## Other Key Ideas
-
-**Position-based ladders** — instead of "touching colour", each ladder is checked by x and y range. Is Mario between this ladder's left/right x and between its top and bottom y? If yes, he can climb. No colour-matching, no mid-air climbing.
-
-**The chaos rule** — every barrel has a 1-in-8 chance to drop *down* a ladder instead of rolling past. One `pick random 1 to 8` check. That's what makes the level feel alive — you can't memorise a safe route.
-
-**The hammer** — pick it up and you smash barrels for 5 seconds. But you can't jump or climb while holding it. Pure risk vs reward. One variable, one timer.
+- `change [y-velocity] by [-1]` — gravity every frame
+- `change y by [y-velocity]` — apply velocity
+- `if touching [Platform]` — ground check
+- `set [y-velocity] to [0]` — land
+- `set [y-velocity] to [10]` — jump
+- `if touching [Barrel]` — die
+- `key [left arrow] pressed` / `key [right arrow] pressed` — movement
 
 ---
 
-## Coding Concepts in This Episode
+## Concepts in this episode
 
-- `change [Y Velocity] by (-0.6)` + `change y by (Y Velocity)` — gravity engine
-- Setting velocity positive to jump — the arc comes from the maths
-- Surface height formula for sloped girders — `A + (B × x position)`
-- Position-based collision for ladders (no colour sensing)
-- `pick random 1 to 8 = 1` — the chaos rule for barrels
+- [variables →](../../concepts-a-z/variables)
+- [forever-loop →](../../concepts-a-z/forever-loop)
+- [if-touching →](../../concepts-a-z/if-touching)
+- [arrow-keys →](../../concepts-a-z/arrow-keys)
+- [if-then-else →](../../concepts-a-z/if-then-else)
+- [costumes →](../../concepts-a-z/costumes)
 
 ---
 
-**Concept deep-dives:** [forever-loop →](../../concepts-a-z/forever-loop) · [variables →](../../concepts-a-z/variables) · [random-numbers →](../../concepts-a-z/random-numbers)
-
-*[← Ep 4](../ep-04-space-invaders) · [Back to episode guide →](../README.md) · [Next: Ep 6 →](../ep-06-pac-man)*
+*[← Back to episode guide](../README.md) · [Next: Ep 6 — Pac-Man →](../ep-06-pac-man)*
