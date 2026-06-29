@@ -1,58 +1,40 @@
-# Arrow Keys + Move 10 Steps — Basic Player Control
+# arrow-keys — Keyboard Input
 
-> 📺 ***(Short coming Wed 8 Jul 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **8 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 8 Jul 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Events + Motion
-
----
-
-## What This Teaches
-
-How to make a sprite respond to the player.
-
-Two blocks working together:
-- `if <key [right arrow] pressed?>` — checks whether a key is held down this frame
-- `move (10) steps` — moves the sprite 10 pixels in whichever direction it's facing
-
-Stack them inside a `forever` loop and your sprite responds instantly, every frame.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-Arrow keys are the bridge between the player and the game. Without them, the game plays itself. With them, the player is in control.
+A TV remote. Press the button, something happens on screen. Release it, the thing stops. Arrow keys are the simplest form of player input: four buttons, four directions.
 
 ---
 
-## How It Works
+## What it does
 
-```
-when green flag clicked
-forever
-  if <key [right arrow] pressed?> then
-    point in direction (90)
-    move (10) steps
-  end
-  if <key [left arrow] pressed?> then
-    point in direction (-90)
-    move (10) steps
-  end
-end
-```
+Scratch can check whether any key is currently pressed using `key [name] pressed?`. This is a boolean — it's either true or false right now. Put it inside a `forever` loop and the game checks the keyboard 30 times per second.
 
-`point in direction` sets the facing direction first. Then `move 10 steps` moves in that direction. The `forever` loop runs this check every frame — held keys feel smooth and responsive.
+Common pattern: inside `forever`, check `if key [right arrow] pressed`, then `change x by [5]`. Sprite moves right while you hold the key. Release it, the condition is false, movement stops.
 
 ---
 
-## The 10 Steps Number
+## Two ways to handle input
 
-10 is a starting point. Bigger = faster. Smaller = slower. In Pong, the player paddle moves at 7 (and the AI at 4). In Donkey Kong, Mario moves at 4. These numbers are your difficulty dial — tune them by feel.
+**Polling (what most games use):** Put `if key [arrow] pressed` inside a `forever` loop. Check the state every frame. Smooth, continuous movement for platformers and shooters.
+
+**Event blocks:** `when [right arrow] key pressed` fires once per keypress, not continuously. Better for turn-based games or menu navigation where you want one action per press.
 
 ---
 
-## In the Arcade Series
+## Where it appears in the series
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 5 — Donkey Kong →](../../series/ep-05-donkey-kong)
+- [Pong →](../../series/ep-01-pong) — two players, two sets of keys (arrows + WASD)
+- [Donkey Kong →](../../series/ep-05-donkey-kong) — left/right movement and jump
+- [Asteroids →](../../series/ep-07-asteroids) — rotate and thrust
 
-*[← green-flag](../green-flag) · [Back to concepts →](../README.md) · Next: [forever-loop →](../forever-loop)*
+---
+
+*[← Back to concepts](../README.md) · Next: [forever-loop →](../forever-loop)*
