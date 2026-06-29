@@ -1,54 +1,50 @@
-# If Touching — Collision Detection
+# if-touching — Collision Detection
 
-> 📺 ***(Short coming Wed 22 Jul 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **22 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 22 Jul 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Sensing (cyan)
-
----
-
-## What This Block Does
-
-`if <touching [Sprite]?>` checks whether two sprites are overlapping. If they are, the blocks inside the `if` run.
-
-This is the trick behind every game ever made. Pong checks if the ball is touching the paddle. Snake checks if the head is touching the body. Frogger checks if the frog is touching a car. Space Invaders checks if a bullet is touching an alien. Same block, every time.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-A touch sensor on a lift door. If something is in the way, the door doesn't close. If the sensor is clear, carry on.
+Before you grab something, you check: is my hand close enough to reach it? Collision detection is that check, done 30 times per second by the game.
+
+In Scratch: `if touching [SpriteName]` — true if the sprites overlap, false if they don't.
 
 ---
 
-## How It Works
+## What it does
 
-```
-forever
-  if <touching [Paddle]?> then
-    point in direction (pick random -45 to -135)
-    move (15) steps
-  end
-end
-```
+Scratch compares the pixel boundaries of two sprites every time the block runs. If any pixel from sprite A overlaps any pixel from sprite B, `touching` returns true.
 
-Every frame, the ball checks if it's touching the paddle. If yes: bounce to a random angle, then move 15 steps to get *out* of the paddle. That last part matters — without it, the ball gets stuck inside the paddle and bounces over and over on the same frame.
+It's the building block of every game interaction:
+- Ball touching paddle → bounce
+- Player touching enemy → lose a life
+- Bullet touching enemy → destroy enemy
+- Player touching coin → score point
 
----
-
-## One Block, Many Consequences
-
-In Frogger, the same `if touching` check means three different things:
-- Touch a car → die
-- Touch a log → ride it
-- Touch nothing in the river → drown
-
-The block is identical. The consequence changes based on where the frog is (which zone, which row). That's how a simple block creates a complex game.
+Without it, sprites pass through each other and nothing happens.
 
 ---
 
-## In the Arcade Series
+## Two flavours
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 2 — Snake →](../../series/ep-02-snake) · [Ep 3 — Frogger →](../../series/ep-03-frogger) · all episodes
+`if touching [SpriteName]` — checks against another named sprite.
 
-*[← forever-loop](../forever-loop) · [Back to concepts →](../README.md) · Next: [costumes →](../costumes)*
+`if touching [edge]` — checks if the sprite has hit the screen boundary. Used constantly: the ball hits the edge in Pong, the frog hits the top in Frogger, the alien formation hits the side in Space Invaders.
+
+---
+
+## Where it appears in the series
+
+- [Pong →](../../series/ep-01-pong) — ball vs paddle, ball vs edge
+- [Snake →](../../series/ep-02-snake) — head vs food, head vs body
+- [Frogger →](../../series/ep-03-frogger) — frog vs cars, frog vs logs
+- [Space Invaders →](../../series/ep-04-space-invaders) — bullet vs alien, alien vs edge
+- [Donkey Kong →](../../series/ep-05-donkey-kong) — Mario vs platform, Mario vs barrel
+
+---
+
+*[← Back to concepts](../README.md) · Next: [costumes →](../costumes)*
