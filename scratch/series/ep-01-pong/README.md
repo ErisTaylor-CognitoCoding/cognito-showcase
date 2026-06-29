@@ -1,48 +1,53 @@
-# Episode 1 — Coding Pong
+# Episode 1 — Pong
 
-> 📺 ***(YouTube link coming)*** · 🎮 ***(Scratch project link coming)***
+> 📺 *(video coming soon)*
 
-**Series:** Scratch Arcade Games
-**Headline concept:** Collision detection — the trick behind every game ever made
+**Series:** Scratch Arcade Series  
+**Live Scratch Project:** *(link coming)*
 
 ---
 
 ## What We Built
 
-Pong from scratch in Scratch. Two paddles, one ball, a scoreboard, and a simple AI opponent — all in one episode. Pong is the right starting point because it contains almost every mechanic in every other game: collision, direction, score, win condition.
+Pong — the original arcade game. Two paddles, one ball, zero margin for error.
+
+The ball bounces around the screen. Each paddle deflects it back. Miss it and your opponent scores. First to a target wins.
+
+Pong is the perfect starting point because it has exactly one trick that underpins every game ever made: **collision detection** — checking whether two things are touching, and reacting when they are.
 
 ---
 
-## How the Game Works
+## Headline Concept: Collision Detection
 
-**The ball** moves in a direction every frame. When it hits a wall, Scratch bounces it automatically. When it hits a paddle, the game redirects it at a random angle — so rallies stay unpredictable.
+### The analogy
 
-**Collision detection** is the headline trick. Every loop, the ball checks: *"am I touching the paddle?"* If yes, bounce. That one check is how Pong works. It's how every game works.
+Imagine reaching out to shake someone's hand. Before you grab, you check: are they close enough? Collision detection is that check, done 30 times a second by the game engine.
 
-**The "stuck inside the paddle" bug** — and how to fix it. When the ball bounces, move it 15 steps immediately to get it *out* of the paddle. Without that, the bounce fires over and over on the same frame and the ball gets stuck. This is the most common Pong bug, and the fix teaches you something true about every collision system.
+In Scratch, the block is `if touching [Paddle]`. Every frame, the ball asks: "Am I touching the paddle right now?" If yes — bounce. If no — keep going.
 
-**The AI opponent** is one line of code. If the AI paddle's y is below the ball's y, move up. If it's above, move down. Speed 4 vs the player's 7 — that's the difficulty dial. Crank it to 10 and it's unbeatable.
+### Why it matters
 
-**Variables** track the score for both players. First to 11 wins.
+Without collision detection there is no game. The ball passes through the paddle, the bullet ignores the enemy, the player falls through the floor. Every interaction in every game is a collision check.
 
-**Broadcasting** — when someone hits 11, the ball broadcasts `GAME OVER`. The Game Over sprite is listening and appears.
+### Blocks used in this episode
 
-**The costume scoreboard trick** — the score picks a costume by number. Costume named "7" appears when the score is 7. That gives you retro pixel-font numbers for free.
-
----
-
-## Coding Concepts in This Episode
-
-- `if <touching [Paddle]?>` — collision detection
-- `point in direction (pick random 30 to 150)` — random serve angle
-- `point in direction (pick random -45 to -135)` — random bounce angle
-- `move (15) steps` after bounce — getting out of the paddle
-- `if y position < y position of Ball` — the one-line AI
-- `broadcast [GAME OVER]` — sprites communicating
-- `switch costume to (Score)` — the costume font trick
+- `if touching [Paddle1]` — ball checks left paddle
+- `if touching [Paddle2]` — ball checks right paddle
+- `if on edge, bounce` — built-in wall reflection
+- `set rotation style [left-right]` — keeps the paddle upright
+- `key [up arrow] pressed` / `key [w] pressed` — two-player input
 
 ---
 
-**Concept deep-dives:** [if-touching →](../../concepts-a-z/if-touching) · [variables →](../../concepts-a-z/variables) · [broadcast →](../../concepts-a-z/broadcast)
+## Concepts in this episode
 
-*[Back to episode guide →](../README.md) · [Next: Ep 2 →](../ep-02-snake)*
+These building blocks appear in the Wednesday Shorts:
+
+- [if-touching →](../../concepts-a-z/if-touching)
+- [arrow-keys →](../../concepts-a-z/arrow-keys)
+- [forever-loop →](../../concepts-a-z/forever-loop)
+- [variables →](../../concepts-a-z/variables)
+
+---
+
+*[← Back to episode guide](../README.md) · [Next: Ep 2 — Snake →](../ep-02-snake)*
