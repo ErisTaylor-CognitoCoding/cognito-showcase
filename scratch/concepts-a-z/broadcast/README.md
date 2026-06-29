@@ -1,59 +1,40 @@
-# Broadcast and Receive — Sprites Talking to Each Other
+# broadcast — Sprites Talking to Each Other
 
-> 📺 ***(Short coming Wed 19 Aug 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **19 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 19 Aug 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Events (yellow)
-
----
-
-## What This Teaches
-
-How sprites in Scratch communicate with each other.
-
-`broadcast [message]` shouts a message to every sprite in the project. Any sprite with `when I receive [message]` hears it and runs whatever's stacked below.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-A school tannoy. The headteacher says "fire drill." Every classroom hears it and responds — some classes line up at the door, some put books away, some head straight to the fire exit. One message, many reactions. Nobody had to ring each classroom individually.
+A stadium announcer. One person at a microphone says "goal!" and 50,000 people in the crowd all react — cheering, jumping, checking the scoreboard. The announcer didn't tell each one what to do individually. They broadcast a message. Everyone who heard it reacted in their own way.
+
+In Scratch: one sprite broadcasts a message. Every sprite with a matching `when I receive` block reacts immediately.
 
 ---
 
-## How It Works
+## What it does
 
-```
-# Ball script — when someone reaches 11:
-broadcast [GAME OVER]
+`broadcast [message]` sends a signal to every sprite in the project. Any sprite with `when I receive [message]` runs that script when the signal arrives.
 
-# Game Over sprite:
-when I receive [GAME OVER]
-go to x: (0) y: (0)
-show
-start sound [game over]
-```
-
-The ball doesn't know the Game Over sprite exists. It just broadcasts. The Game Over sprite is listening and reacts.
+This lets sprites coordinate without directly controlling each other. The game controller sprite broadcasts `game over`. Every enemy, every counter, every animation stops and runs its own `when I receive [game over]` behaviour.
 
 ---
 
-## Broadcast vs Broadcast and Wait
+## Why this matters
 
-- `broadcast [message]` — sends the message and carries on immediately (fire and forget).
-- `broadcast [message] and wait` — sends the message and pauses until every receiver has finished running.
-
-In Space Invaders, `broadcast [formation step] and wait` holds the formation controller until all 55 alien clones have moved. Without the `and wait`, the controller would immediately fire the next step while clones are still mid-move — the formation would glitch.
+In Space Invaders, when the alien formation reaches the screen edge, one clone detects the edge and broadcasts `[change direction]`. Every other clone — all 55 of them — receives that broadcast and reverses direction simultaneously. One message, 55 reactions. Without broadcast, this would be impossible to coordinate.
 
 ---
 
-## In the Arcade Series
+## Where it appears in the series
 
-Broadcast is the coordination layer across every game:
-- **Pong** — `broadcast [GAME OVER]` when score hits 11
-- **Snake** — `broadcast [draw body]` every step to redraw all segments
-- **Space Invaders** — `broadcast [formation step] and wait` to move all 55 clones in unison
+- [Space Invaders →](../../series/ep-04-space-invaders) — formation direction change, alien destroyed
+- [Pac-Man →](../../series/ep-06-pac-man) — ghost mode switch (chase / scatter / frightened)
+- [Tetris →](../../series/ep-08-tetris) — line clear signal triggers score and animation
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 2 — Snake →](../../series/ep-02-snake) · [Ep 4 — Space Invaders →](../../series/ep-04-space-invaders)
+---
 
-*[← variables](../variables) · [Back to concepts →](../README.md) · Next: [random-numbers →](../random-numbers)*
+*[← Back to concepts](../README.md) · Next: [random-numbers →](../random-numbers)*
