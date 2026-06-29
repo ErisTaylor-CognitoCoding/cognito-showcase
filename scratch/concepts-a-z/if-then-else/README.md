@@ -1,56 +1,55 @@
-# If-Then-Else — Two Paths, One Decision
+# if-then-else — Two Paths, One Decision
 
-> 📺 ***(Short coming Wed 9 Sep 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **9 Sep 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 9 Sep 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Control (orange)
-
----
-
-## What This Block Does
-
-`if-then-else` checks a condition. If it's true, run the top set of blocks. If it's false, run the bottom set.
-
-`if-then` handles "do this if true." `if-then-else` handles "do this if true, *or do that if false*." Two paths, one condition, always one taken.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-A fork in the road. You arrive at the junction: left goes to the café, right goes home. Is the café open? If yes, go left. If no, go right. You always take exactly one path.
+A fork in the road. You look at the signpost. If the condition is true, take the left path. If it's false, take the right path. You always take one of them — never both, never neither.
 
 ---
 
-## How It Works
+## What it does
 
-```
-if <(Score mod 10) = 0> then
-  switch costume to (10)
-else
-  switch costume to (Score mod 10)
-end
-```
+`if [condition] then ... else ...` — the condition is checked once. If it's true, the "then" blocks run. If it's false, the "else" blocks run. Either way, execution continues below.
 
-This is the costume-zero workaround from the arcade series. Scratch's costume picker is zero-indexed differently from costume names — when the digit is 0, you need the else branch to handle it explicitly.
+The basic `if [condition] then` has no else — if the condition is false, nothing happens and the script continues. The `if-then-else` block guarantees *something* always happens either way.
 
 ---
 
-## The AI Paddle in Pong
+## Where games use it
 
-```
-if <(y position) < (y position of Ball)> then
-  change y by (4)
-else
-  change y by (-4)
-end
-```
+**Gravity landing in Donkey Kong:**
 
-Two behaviours. One check. If the ball is above, move up. If it's below, move down. That's the entire AI. One `if-then-else` block, four lines, unbeatable at speed 10.
+- If touching platform → set y-velocity to 0 (landed)
+- Else → change y-velocity by -1 (still falling)
+
+Two states, one check, every frame.
+
+**Ghost mode in Pac-Man:**
+
+- If fright timer has run out → switch costume to normal, restore chase behaviour
+- Else → keep blue costume, run away from Pac-Man
+
+**Rock size after split in Asteroids:**
+
+- If rock is large → create two medium clones
+- Else if rock is medium → create two small clones
+- Else → just delete (small rocks disappear)
 
 ---
 
-## In the Arcade Series
+## Where it appears in the series
 
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) (AI paddle + score display) · [Ep 2 — Snake →](../../series/ep-02-snake) (direction blocking + score display) · all episodes
+- [Donkey Kong →](../../series/ep-05-donkey-kong) — gravity vs landing logic
+- [Pac-Man →](../../series/ep-06-pac-man) — ghost behaviour mode switching
+- [Asteroids →](../../series/ep-07-asteroids) — rock size after collision
+- [Tetris →](../../series/ep-08-tetris) — piece rotation direction
 
-*[← repeat](../repeat) · [Back to concepts →](../README.md) · Next: [wait →](../wait)*
+---
+
+*[← Back to concepts](../README.md) · Next: [wait →](../wait)*
