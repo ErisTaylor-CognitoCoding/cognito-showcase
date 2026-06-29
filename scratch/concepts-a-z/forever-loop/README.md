@@ -1,54 +1,50 @@
-# Forever Loop — Runs Until You Stop It
+# forever-loop — Runs Until You Stop It
 
-> 📺 ***(Short coming Wed 15 Jul 2026)*** · 🎮 ***(Scratch project coming soon)***
+> 📺 **15 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming 15 Jul 2026)*
 
-**Series:** Wednesday Scratch Shorts — [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
-**Block category:** Control (orange)
-
----
-
-## What This Block Does
-
-The `forever` block runs everything stacked inside it over and over, for as long as the program is running. It never stops by itself.
-
-This is the engine of every game. Pong's ball moves because it's inside a forever loop. Snake's head checks for input inside a forever loop. Space Invaders' formation steps inside a forever loop. Without `forever`, your game would run once and freeze.
+**Scratch project:** *(link coming)*
 
 ---
 
 ## The Analogy
 
-A hamster wheel. The hamster runs and runs. The wheel never stops on its own — you have to take the hamster out.
+A hamster wheel. Once it starts spinning, it doesn't stop. The hamster just keeps going — checking things, moving things, reacting to input — every lap the same, forever.
 
-In code: the hamster is your game logic. The wheel is the forever loop. Every frame, it runs again.
+In Scratch, the `forever` block is that wheel.
 
 ---
 
-## How It Works
+## What it does
 
+Everything inside `forever` repeats until the program stops or a `stop` block fires. There's no counter, no condition — it just runs.
+
+Games need this because they need to check things 30 times per second, every second. Is the ball touching the paddle? Is the key pressed? Has the enemy reached the edge? All of those checks live inside a forever loop.
+
+---
+
+## This is Scratch's `while True`
+
+If you've seen Python, this is the same idea:
+
+```python
+while True:
+    do_something()
 ```
-when green flag clicked
-forever
-  move (10) steps
-  if <on edge?> then
-    bounce
-  end
-end
-```
 
-Without the `forever`, the sprite moves 10 steps once and stops. With it, the sprite moves 10 steps every frame, bouncing off edges forever.
+That runs forever. Scratch's `forever` block is the same thing with different syntax. Same concept, every language has a version of it.
 
 ---
 
-## Stopping It
+## Where it appears in the series
 
-`stop [this script]` breaks out of a forever loop. Use it when a game-over condition is met — stop the ball, stop the enemies, end the game. In Snake, `Game Running = 0` gates the forever loop so all movement pauses on death without needing to stop the script.
+Every game engine runs on a forever loop. The ball bouncing in Pong, the snake moving every step in Snake, gravity applying every frame in Donkey Kong — all forever loops.
+
+- [Pong →](../../series/ep-01-pong)
+- [Snake →](../../series/ep-02-snake)
+- [Frogger →](../../series/ep-03-frogger)
+- [Donkey Kong →](../../series/ep-05-donkey-kong)
 
 ---
 
-## In the Arcade Series
-
-`forever` is in every game. It is the game loop.
-
-**Appears in:** [Ep 1 — Pong →](../../series/ep-01-pong) · [Ep 2 — Snake →](../../series/ep-02-snake) · all episodes
-
-*[← arrow-keys](../arrow-keys) · [Back to concepts →](../README.md) · Next: [if-touching →](../if-touching)*
+*[← Back to concepts](../README.md) · Next: [if-touching →](../if-touching)*
