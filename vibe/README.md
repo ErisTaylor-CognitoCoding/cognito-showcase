@@ -14,9 +14,8 @@ The rules: one sitting, directed AI, as little hand-written code as possible. Th
 | 02 | [Nova's Origin Story (Anchor Video)](series/ep-02-novas-origin-story/) | 2 Jun 2026 |
 | 03 | [Cognitocoding Chatbot Live Build](series/ep-03-cognitocoding-chatbot-live-build/) | 9 Jun 2026 |
 | 04 | [I Rebuilt cognitocoding.com in 45 Minutes (1 Prompt, Under $20)](series/ep-04-i-rebuilt-cognitocoding-com/) | 16 Jun 2026 |
+| 05 | [I Went on a Walk to the Beach and Then Built an App](series/ep-05-i-went-on-a-walk-to-the-beach/) | 23 Jun 2026 |
 | 06 | [Lane Clash: I Talked a 3v3 Roblox Tower Defence Into Existing](series/ep-06-lane-clash/) | 30 Jun 2026 |
-
-*ep-05 ("I Went on a Walk to the Beach and Built an App", 23 Jun) — folder pending, next sweep.*
 
 ---
 
