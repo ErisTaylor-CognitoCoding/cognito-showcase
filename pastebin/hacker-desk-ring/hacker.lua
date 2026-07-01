@@ -1,39 +1,49 @@
--- hacker: turtle lays the perimeter desk ring
--- Run:  hacker <length> <width>     (default 330 120)
--- Setup: sit the turtle on the START CORNER, facing ALONG the long wall,
---        at the height you want the desk row. Desk blocks in slot 1,
---        coal/fuel in slot 16.
+-- hacker desk ring — Zero's spec
+-- Slots: 1=corner FULL block, 2=black slab, 3=white slab, 4=computer, 16=coal
+-- Place ONE corner block, sit turtle ON it facing along the long wall.
+-- Run:  hacker 330 120
 local a = {...}
-local L = tonumber(a[1]) or 330
-local W = tonumber(a[2]) or 120
+local L, W = tonumber(a[1]), tonumber(a[2])
+if not L or not W then print("Usage: hacker <L> <W>") return end
+local sides = { L, W, L, W }
 
 local function fuel()
-  if turtle.getFuelLevel() > 10 then return end
-  turtle.select(16)
-  turtle.refuel(1)
-  turtle.select(1)
+  if turtle.getFuelLevel() < 20 then turtle.select(16); turtle.refuel(1) end
+end
+local function fwd()
+  fuel()
+  while not turtle.forward() do turtle.dig() end
 end
 
--- lay n desks along a wall, ending ON the far corner block
-local function lay(n)
+-- PASS 1: desk floor. Turtle rides one block above, digs then places down.
+-- corners = full block, everything between = alternating black/white slab.
+local black = true
+for s = 1, 4 do
+  local n = sides[s] - 1
   for i = 1, n do
-    fuel()
-    turtle.select(1)
-    turtle.digDown()      -- clear whatever's there
-    turtle.placeDown()    -- drop the desk
-    if i < n then
-      if not turtle.forward() then
-        turtle.dig()       -- something in the way
-        turtle.forward()
+    fwd()
+    if i == n then
+      if s < 4 then                    -- fresh corner (s4 arrival = start, already down)
+        turtle.select(1); turtle.digDown(); turtle.placeDown()
       end
+    else                               -- slab cell
+      if black then turtle.select(2) else turtle.select(3) end
+      black = not black
+      turtle.digDown(); turtle.placeDown()
     end
   end
+  turtle.turnRight()
 end
 
--- walk all four walls; corners overlap by one block (harmless, guarantees no gap)
-lay(L); turtle.turnRight()
-lay(W); turtle.turnRight()
-lay(L); turtle.turnRight()
-lay(W)
+-- PASS 2: computers on every slab (corners stay bare). Up one, walk it again.
+turtle.up()
+for s = 1, 4 do
+  local n = sides[s] - 1
+  for i = 1, n do
+    fwd()
+    if i < n then turtle.select(4); turtle.placeDown() end
+  end
+  turtle.turnRight()
+end
 
-print("Desk ring done: " .. L .. " x " .. W)
+print("Hacker desk ring done")
