@@ -1,9 +1,7 @@
 # green-flag — Where Every Program Begins
 
-> 📺 **1 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 1 Jul 2026)*
-
-**Scratch project:** *(link coming)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/gH6XfixwIqg?feature=share)**  
+> [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
 
 ---
 
