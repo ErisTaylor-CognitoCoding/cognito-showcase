@@ -15,7 +15,7 @@ Each game teaches one headline coding concept. These folders explain what's goin
 | 3 | [ep-03-frogger](./ep-03-frogger) | Timing — two hazard types, five lane speeds | [▶ Watch](https://youtu.be/gfHLoLGMHIg) | [Open in Scratch →](https://scratch.mit.edu/projects/1331052891/) |
 | 4 | [ep-04-space-invaders](./ep-04-space-invaders) | Cloning — one sprite becomes a 55-alien formation | [▶ Watch](https://youtu.be/mVugtGz6oL0) | [Open in Scratch →](https://scratch.mit.edu/projects/1331615967/) |
 | 5 | [ep-05-donkey-kong](./ep-05-donkey-kong) | Gravity — two lines of code that run every platformer | [▶ Watch](https://youtu.be/AdgnAxTkI30) | [Open in Scratch →](https://scratch.mit.edu/projects/1335511261/) |
-| 6 | [ep-06-pac-man](./ep-06-pac-man) | Grid movement + ghost AI | *(coming 3 Jul 2026)* | *(coming soon)* |
+| 6 | [ep-06-pac-man](./ep-06-pac-man) | Grid movement + ghost AI | [▶ Watch](https://youtu.be/QOeZVI7zfPQ) | [Open in Scratch →](https://scratch.mit.edu/projects/1350773872/) |
 | 7 | [ep-07-asteroids](./ep-07-asteroids) | Vector movement, rotation, splitting | *(coming 10 Jul 2026)* | *(coming soon)* |
 | 8 | [ep-08-tetris](./ep-08-tetris) | 2D arrays, rotation, line clearing | *(coming 17 Jul 2026)* | *(coming soon)* |
 
