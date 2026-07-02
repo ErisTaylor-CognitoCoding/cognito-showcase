@@ -1,9 +1,9 @@
 # Episode 6 — Pac-Man
 
-> 📺 *(coming 3 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtu.be/QOeZVI7zfPQ)**
 
 **Series:** Scratch Arcade Series  
-**Live Scratch Project:** *(link coming 3 Jul 2026)*
+🎮 **[Play the project on Scratch →](https://scratch.mit.edu/projects/1350773872/)**
 
 ---
 
