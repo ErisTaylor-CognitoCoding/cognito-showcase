@@ -16,6 +16,7 @@ The rules: one sitting, directed AI, as little hand-written code as possible. Th
 | 04 | [I Rebuilt cognitocoding.com in 45 Minutes (1 Prompt, Under $20)](series/ep-04-i-rebuilt-cognitocoding-com/) | 16 Jun 2026 |
 | 05 | [I Went on a Walk to the Beach and Then Built an App](series/ep-05-i-went-on-a-walk-to-the-beach/) | 23 Jun 2026 |
 | 06 | [Lane Clash: I Talked a 3v3 Roblox Tower Defence Into Existing](series/ep-06-lane-clash/) | 30 Jun 2026 |
+| 07 | [AI Designed My Whole Game (Lane Clash Ep 7)](series/ep-07-we-bring-lane-clash-to-life/) | 14 Jul 2026 |
 
 ---
 
