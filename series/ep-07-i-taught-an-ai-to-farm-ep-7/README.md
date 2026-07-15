@@ -1,6 +1,6 @@
 # I Taught an AI to Farm — Ep 7: Fertiliser + Maze Unlock
 
-> 📺 **Watch on YouTube →** *(link coming — scheduled 15 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtu.be/fI1fF9-VIo8)**
 
 **Game:** [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/) (Steam)  
 **Series:** [← Back to episode guide](../README.md)
