@@ -17,6 +17,7 @@ Each episode folder contains the **end-state Python code** from that episode and
 | 4 | [ep-04-pumpkins](./ep-04-pumpkins) | Variables, `if/elif`, reading tile state | [▶ Watch](https://youtu.be/X92lWWj8HbY) |
 | 5 | [ep-05-sunflowers](./ep-05-sunflowers) | Running maximum, `measure()`, `max_petals` variable | *(link coming)* |
 | 6 | [ep-06-cactus](./ep-06-cactus) | Bubble sort, `measure()`, `swap()`, boundary guards | [▶ Watch](https://youtu.be/iuiQK3me25M) |
+| 7 | [ep-07-i-taught-an-ai-to-farm-ep-7](./ep-07-i-taught-an-ai-to-farm-ep-7) | `use_item(Items.Fertilizer)`, `get_world_size()`, indentation, magic numbers | *(link coming)* |
 
 ---
 
