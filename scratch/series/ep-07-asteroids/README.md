@@ -1,9 +1,9 @@
 # Episode 7 — Asteroids
 
-> 📺 *(coming 10 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtu.be/Ji9RHP-I3qk)**
 
 **Series:** Scratch Arcade Series  
-**Live Scratch Project:** *(link coming 10 Jul 2026)*
+**Live Scratch Project:** *(scratch.mit.edu link coming — will appear here when available)*
 
 ---
 
