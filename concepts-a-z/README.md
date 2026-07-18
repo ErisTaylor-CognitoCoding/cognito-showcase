@@ -1,7 +1,7 @@
 # Concepts A–Z — Farmer Shorts Library
 
-> **30-second coding concepts from [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/)**  
-> Every Saturday on [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
+> **30-second coding concepts from [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/)** and the **One Concept, One Board** series  
+> On [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
 
 Each folder = one concept. One Short. One code snippet. One plain explanation you can actually follow.
 
@@ -13,6 +13,7 @@ These bite-sized shorts map directly to the long-form **[/series](../series)** e
 
 | Folder | What it teaches | Short |
 |--------|----------------|-------|
+| [booleans](./booleans) | Boolean values — `True` or `False`, your code's only yes or no | *6 Jul 2026* |
 | [cactus](./cactus) | Patience — only harvest when growth is complete | *29 Aug 2026* |
 | [dead-crops](./dead-crops) | Clearing failure states before replanting | *15 Aug 2026* |
 | [full-farm](./full-farm) | Combining everything into one automated farm | *19 Sep 2026* |
@@ -30,4 +31,4 @@ These bite-sized shorts map directly to the long-form **[/series](../series)** e
 
 For the full build walkthroughs that show these concepts in action, see the **[/series](../series)** folder.
 
-*New Short every Saturday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
+*[Subscribe →](https://www.youtube.com/@CognitoCoding01)*
