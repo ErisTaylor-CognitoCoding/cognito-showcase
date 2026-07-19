@@ -1,6 +1,6 @@
 # harvest — Your First Loop
 
-> 📺 **4 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/-wpMsjlb5yE?feature=share)**
 
 **Game:** The Farmer Was Replaced  
 **Concepts:** `harvest()`, `while True`
