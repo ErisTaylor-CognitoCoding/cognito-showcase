@@ -1,6 +1,6 @@
 # if-check — Only Act When Ready
 
-> 📺 **11 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/TGDX4BRNBDw)**
 
 **Game:** The Farmer Was Replaced  
 **Concepts:** `if can_harvest()`, conditional guards
