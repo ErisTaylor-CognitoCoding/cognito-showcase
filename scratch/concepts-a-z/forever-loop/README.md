@@ -1,9 +1,8 @@
-# forever-loop — Runs Until You Stop It
+# `forever` — Runs Until You Stop It
 
-> 📺 **15 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 15 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/VsgZuYQDo9M)**
 
-**Scratch project:** *(link coming)*
+**Lane:** Scratch Shorts
 
 ---
 
