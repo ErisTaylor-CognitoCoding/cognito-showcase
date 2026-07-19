@@ -1,6 +1,6 @@
 # `turtle.dig()` + `for` loop — dig a tunnel
 
-> 📺 **Coming 17 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/iXwzDlBLbN0)**
 
 **Lane:** Minecraft ComputerCraft Shorts (CC:Tweaked · Lua)
 
