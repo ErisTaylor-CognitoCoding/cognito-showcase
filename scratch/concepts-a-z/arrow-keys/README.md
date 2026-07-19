@@ -1,9 +1,6 @@
 # arrow-keys — Keyboard Input
 
-> 📺 **8 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 8 Jul 2026)*
-
-**Scratch project:** *(link coming)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/SXK-c77k0JM)**
 
 ---
 
