@@ -1,6 +1,6 @@
 # `turtle.forward()` + `turnLeft()` + `turnRight()` — walk and turn
 
-> 📺 **Coming 10 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/nEzpFaMe9AY)**
 
 **Lane:** Minecraft ComputerCraft Shorts (CC:Tweaked · Lua)
 
