@@ -1,9 +1,6 @@
-<!-- showcase-stub-v1 -->
+<!-- stub-superseded -->
 # I Built a Roblox Obby Without Touching a Single Script
 
-> 🚧 **Coming soon** — this episode is currently in production. The code, walkthrough, and link to the video land here when it goes live on the [Cognito Coding YouTube channel](https://www.youtube.com/@CognitoCoding01).
-
-**Lane:** Tue Vibe Coding (Replit Agent)
-**Scheduled slot:** 2026-08-04
+> ⚠️ **Episode superseded** — this topic was replaced before filming. No video was produced for this stub. The Tue Vibe slot for 2026-08-04 shipped as [ep-12: Vibe-Code a Live Weather Card in 30 Minutes](../ep-12-vibe-code-a-live-weather-card-in-30-min/README.md).
 
 [← back to showcase root](../../README.md)
