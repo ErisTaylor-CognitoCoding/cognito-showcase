@@ -17,6 +17,7 @@ The rules: one sitting, directed AI, as little hand-written code as possible. Th
 | 05 | [I Went on a Walk to the Beach and Then Built an App](series/ep-05-i-went-on-a-walk-to-the-beach/) | 23 Jun 2026 |
 | 06 | [Lane Clash: I Talked a 3v3 Roblox Tower Defence Into Existing](series/ep-06-lane-clash/) | 30 Jun 2026 |
 | 07 | [AI Designed My Whole Game (Lane Clash Ep 7)](series/ep-07-we-bring-lane-clash-to-life/) | 14 Jul 2026 |
+| 10 | [My Family Lingo: One Prompt, Six Languages, an App My Boys Actually Use](series/ep-10-my-family-lingo-one-prompt-six-languages/) | 21 Jul 2026 |
 
 ---
 
