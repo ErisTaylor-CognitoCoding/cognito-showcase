@@ -4,6 +4,8 @@
 
 > 🤖 **Built with Replit** — Python app built by directing an AI. [Try Replit →](https://replit.com/refer/cognitocoding)
 
+**Live Replit Project:** *(URL not captured — check the video description, or ask in the comments if you'd like the link)*
+
 ---
 
 ## The Prompt I Gave
