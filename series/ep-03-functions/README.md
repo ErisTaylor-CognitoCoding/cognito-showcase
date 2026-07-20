@@ -1,6 +1,6 @@
 # Episode 3 — Functions
 
-> 📺 **Video coming soon** *(filmed 10 Jun 2026)*
+> 📺 **[Watch on YouTube →](https://youtu.be/FMUXw4UKyLI?si=vdR-_AmSTZTkQyH_)**
 
 **Series:** I Taught an AI to Farm  
 **Game:** [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/) (Steam)
@@ -9,9 +9,9 @@
 
 ## What We Built
 
-Cleaned up the messy 3×3 code from EP2. The same harvest block was copy-pasted everywhere — once we spotted the pattern, we wrapped it in our first **function**. `harvest_field(size)` replaced ten repeated lines with one clean call.
+In Episode 2 we got the 3×3 harvest working — but the code was a mess. The same harvest block copy-pasted everywhere. Episode 3 spots the pattern and wraps it in our first function. `harvest_field(size)` replaced ten repeated lines with one clean call.
 
-The payoff: `"I replaced ten lines with one."`
+The payoff: *"I replaced ten lines with one."*
 
 ---
 
@@ -53,7 +53,7 @@ The function is clean — but it does the exact same thing every run. No memory.
 
 ## End-State Code
 
-See [`farm.py`](./farm.py)
+See [`farm.py`](./farm.py) *(code file not yet pushed — Zero to add)*
 
 ---
 
