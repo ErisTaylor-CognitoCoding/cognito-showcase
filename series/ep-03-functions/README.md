@@ -53,7 +53,7 @@ The function is clean — but it does the exact same thing every run. No memory.
 
 ## End-State Code
 
-See [`farm.py`](./farm.py) *(code file not yet pushed — Zero to add)*
+See [`farm.py`](./farm.py)
 
 ---
 
