@@ -1,18 +1,16 @@
 # Automated Clip Saver for Creatures of Sonaria
 
-> 📺 *(YouTube link coming — no URL captured for this episode)*
+> 📺 **[Watch on YouTube →](https://youtu.be/dM20TDLq0sU?si=aN2G6GXCZ78ykGz0)**
 
 > 🤖 **Built with Replit** — Python app built by directing an AI. [Try Replit →](https://replit.com/refer/cognitocoding)
 
 ---
 
-## The Brief
+## The Prompt I Gave
 
-The problem: you get a great kill in Creatures of Sonaria, you want to clip it, but by the time you tab out to your recording software the moment's gone.
+*(Full original prompt not captured for this episode — see the video for the brief.)*
 
-The solution: a Replit app that watches the gameplay, catches kill-confirm moments automatically, and queues up the clips in a drag-drop mini-app. No more scrubbing.
-
-*(No step-by-step walkthrough captured for this episode — see the video for the full build.)*
+> Built a Replit app that watches Creatures of Sonaria gameplay and auto-saves the best clips. Drag-drop the kill-confirms straight to a sleek mini-app — no more scrubbing through footage looking for the good bits.
 
 ---
 
@@ -28,7 +26,7 @@ A Python app that monitors Creatures of Sonaria gameplay and auto-saves the best
 
 | Ep | Title | Watch |
 |---|---|---|
-| 01 | Automated Clip Saver for Creatures of Sonaria | *(link TBC)* |
+| 01 | Automated Clip Saver for Creatures of Sonaria | [▶ Watch](https://youtu.be/dM20TDLq0sU?si=aN2G6GXCZ78ykGz0) |
 
 ---
 
