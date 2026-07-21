@@ -1,6 +1,6 @@
 # grass-strip — Farm a Full Row
 
-> 📺 **21 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/TGDX4BRNBDw)**
 
 **Game:** The Farmer Was Replaced  
 **Concepts:** `for` loop, `range()`, `move(North)`
