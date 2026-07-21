@@ -1,6 +1,6 @@
 # My Family Lingo — One Prompt, Six Languages, an App My Boys Actually Use
 
-> 📺 **Video link coming** *(publishes 21 Jul 2026 — link added once live)*
+> 📺 **[Watch on YouTube →](https://youtu.be/AObxWbJv5Sw)**
 
 **Built with:** [Replit Agent](https://replit.com) — sign up for a free month via the link in the video description  
 **Project:** Family Lingo — a personal multilingual phrasebook Progressive Web App  
