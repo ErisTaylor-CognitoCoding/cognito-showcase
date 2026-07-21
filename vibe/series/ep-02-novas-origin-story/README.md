@@ -1,6 +1,6 @@
 # Nova's Origin Story (Anchor Video)
 
-> 📺 **Watch on YouTube → *(link not yet recorded in Pantheon for this episode)***
+> 📺 **[Watch on YouTube →](https://youtu.be/taJHi2w4fdc)**
 
 > 🤖 **Tue Vibe Coding** — real builds, real AI, every Tuesday. [Try Replit Agent →](https://replit.com/refer/cognitocoding)
 
