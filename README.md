@@ -23,9 +23,11 @@ One folder per episode. Each contains the **end-state Python code** from that ep
 |---------|-------|-------|
 | [ep-01-first-program](./series/ep-01-first-program) | `harvest()`, `while True`, `if can_harvest()`, `move(North)` | [▶ Watch](https://youtu.be/maTaBrkHh1o) |
 | [ep-02-operators](./series/ep-02-operators) | Comparison operators, position sensing, full 3×3 | [▶ Watch](https://youtu.be/qB2nKoU1dkI) |
-| [ep-03-functions](./series/ep-03-functions) | `def`, parameters, DRY principle | *(link coming)* |
+| [ep-03-functions](./series/ep-03-functions) | `def`, parameters, DRY principle | [▶ Watch](https://youtu.be/FMUXw4UKyLI) |
 | [ep-04-pumpkins](./series/ep-04-pumpkins) | Variables, `if/elif`, reading tile state | [▶ Watch](https://youtu.be/X92lWWj8HbY) |
-| [ep-05-sunflowers](./series/ep-05-sunflowers) | Running maximum, `measure()`, double sweep | *(link coming)* |
+| [ep-05-sunflowers](./series/ep-05-sunflowers) | Running maximum, `measure()`, double sweep | [▶ Watch](https://youtu.be/rchPKYdB3AE) |
+| [ep-06-cactus](./series/ep-06-cactus) | Patience — `while not ready`, only act when growth is complete | [▶ Watch](https://youtu.be/iuiQK3me25M) |
+| [ep-07-fertilizers](./series/ep-07-fertilizers) | Resource management — combining items to boost crop yields | [▶ Watch](https://youtu.be/fI1fF9-VIo8) |
 
 ### [/concepts-a-z](./concepts-a-z) — Saturday Shorts Library
 
@@ -69,7 +71,9 @@ cognito-showcase/
 │   ├── ep-02-operators/
 │   ├── ep-03-functions/
 │   ├── ep-04-pumpkins/
-│   └── ep-05-sunflowers/
+│   ├── ep-05-sunflowers/
+│   ├── ep-06-cactus/
+│   └── ep-07-fertilizers/
 ├── concepts-a-z/      # Sat Farmer Shorts — one concept, one snippet
 │   ├── harvest/
 │   ├── if-check/
