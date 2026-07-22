@@ -1,6 +1,6 @@
 # Family Lingo — Vibe Coded for My Boys
 
-> 📺 *(Short YouTube link coming — will be added when live URL is set)*  
+> 📺 **[Watch the Short ↗](https://youtube.com/shorts/K2Ya1l6gE7c)**  
 > ▶️ **[Watch the full build story →](https://youtu.be/AObxWbJv5Sw)**
 
 **Built with:** Replit Agent  
@@ -13,7 +13,7 @@
 A language learning app for my boys — covering Bambara, Pashto, Kurdish Sorani, Arabic, and Albanian.
 
 - 📖 500 phrases across 10 everyday categories
-- 🎴 Flashcards that make practice feel like a game
+- 🃏 Flashcards that make practice feel like a game
 - 🗣️ AI translator with spoken pronunciation
 - 📱 Installs on their phones like a real app
 
