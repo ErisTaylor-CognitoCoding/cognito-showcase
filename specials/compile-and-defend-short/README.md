@@ -1,9 +1,22 @@
-<!-- showcase-stub-v1 -->
-# Compile and Defend Short
+# Compile and Defend — Short
 
-> 🚧 **Coming soon** — this episode is currently in production. The code, walkthrough, and link to the video land here when it goes live on the [Cognito Coding YouTube channel](https://www.youtube.com/@CognitoCoding01).
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/mdoq_B0uETw?feature=share)**
 
-**Lane:** Special
-**Scheduled slot:** 2026-07-22
+**Lane:** Special  
+**Published:** 2026-07-22
 
-[← back to showcase root](../../README.md)
+---
+
+## What This Is
+
+Tower defence where you never click a tower to shoot. Every tower on the field runs your Python, over and over, and the script is the whole game. Seven waves in the demo tutorial, and each one breaks the code that beat the last. By wave seven it's flyers and armour together — and the thing that finally got me three stars wasn't code at all.
+
+---
+
+## Related
+
+- 📺 [Full demo tutorial →](https://github.com/ErisTaylor-CognitoCoding/cognito-showcase/tree/main/specials/compile-and-defend-demo-tutorial)
+
+---
+
+*[← back to showcase root](../../README.md)*
