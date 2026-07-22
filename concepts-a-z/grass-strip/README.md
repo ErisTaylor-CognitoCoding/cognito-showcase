@@ -1,6 +1,6 @@
 # grass-strip — Farm a Full Row
 
-> 📺 *(Short YouTube link coming — will be added when live URL is confirmed)*
+> 📺 **[Watch the Short ↗](https://youtube.com/shorts/TGDX4BRNBDw)**
 
 **Game:** The Farmer Was Replaced  
 **Concepts:** `for` loop, `range()`, `move(North)`
