@@ -1,9 +1,8 @@
 # if-touching — Collision Detection
 
-> 📺 **22 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 22 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/cSmpO3D0oTQ)**
 
-**Scratch project:** *(link coming)*
+**🎮 [Play on Scratch →](https://scratch.mit.edu/projects/1363804968/)**
 
 ---
 
