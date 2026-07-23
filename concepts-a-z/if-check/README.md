@@ -1,6 +1,6 @@
 # if-check — Only Act When Ready
 
-> 📺 **[Watch on YouTube →](https://youtube.com/shorts/TGDX4BRNBDw)**
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/-wpMsjlb5yE)**
 
 **Game:** The Farmer Was Replaced  
 **Concepts:** `if can_harvest()`, conditional guards
