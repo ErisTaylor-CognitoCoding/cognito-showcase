@@ -1,55 +1,45 @@
-# Episode 8 — Tetris
+# Coding Tetris — Ep 8 (2D Arrays, Rotation, Line Clearing)
 
-> 📺 *(coming 17 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtu.be/jzBlCuoY1HY)**
 
 **Series:** Scratch Arcade Series  
-**Live Scratch Project:** *(link coming 17 Jul 2026)*
+🎮 **[Play the project on Scratch →](https://scratch.mit.edu/projects/1362768609/)**
 
 ---
 
 ## What We Built
 
-Tetris — pieces fall, you rotate them, full lines clear. The board fills. The speed increases. You lose when you run out of space.
-
-This is the most data-heavy game in the series. The board isn't a visual — it's a **2D grid stored as a list**. Every cell is either empty or filled. The game reads the list and draws accordingly.
+Tetris — properly retro-accurate. The headline trick is the 10×20 grid stored as a flat Scratch list with `row × 10 + col` index math — once you see that pattern, you can store any 2D world in a Scratch list. Add proper rotation via offset-table lookups, real line clearing that rewrites the grid in place, and NES-accurate drop-speed scaling all the way to the kill-screen.
 
 ---
 
-## Headline Concept: 2D Arrays (Lists of Lists)
+## Block Coding Concepts Covered
 
-### The analogy
-
-Think of a spreadsheet. Rows and columns. Each cell has a row number and a column number. In Tetris, every tile on the board is a cell. To check if row 3, column 5 is filled: look up entry `[(3 × width) + 5]` in a single flat list. One list represents the entire 2D grid.
-
-### How line clearing works
-
-Scan each row. If every cell in that row is filled, delete those entries from the list and insert empty cells at the top. The whole board shifts down — no sprites moved, just list entries reshuffled.
-
-### Piece rotation
-
-Each tetromino is defined as four coordinate offsets from a centre point. Rotating 90° swaps the x and y offsets according to a rotation rule. Seven pieces × four rotations = 28 stored shapes, all as lists of offsets.
-
-### Blocks used in this episode
-
-- `replace item [n] of [board] with [1]` — mark cell filled
-- `item [n] of [board]` — read cell state
-- `delete [n] of [board]` — line clear
-- `insert [0] at [1] of [board]` — add empty row at top
-- `repeat [width]` — scan a row
-- Variables `[piece-x]`, `[piece-y]`, `[rotation]` — active piece state
-- `broadcast [line-clear]` — trigger score update
+| Block | What it does |
+|---|---|
+| `replace item [n] of [Grid]` | Writes a colour into one cell of the board |
+| `item [n] of [Grid]` | Reads whether a cell is filled — the board read |
+| `delete [n] of [Grid]` | Removes a row when a line clears |
+| `insert [0] at [1] of [Grid]` | Adds a blank row at the top after a line clear |
+| `repeat [width]` | Scans one row checking whether every cell is filled |
+| Variables `[piece-x]` `[piece-y]` `[rotation]` | Track the active piece position and orientation |
+| `broadcast [line-clear]` | Tells the score sprite to update after a line clears |
+| `create clone of [Playfield]` | Stamps 200 individual cell sprites onto the board in one go |
 
 ---
 
-## Concepts in this episode
+## The Big Insight
 
-- [variables →](../../concepts-a-z/variables)
-- [repeat →](../../concepts-a-z/repeat)
-- [if-then-else →](../../concepts-a-z/if-then-else)
-- [forever-loop →](../../concepts-a-z/forever-loop)
-- [broadcast →](../../concepts-a-z/broadcast)
-- [wait →](../../concepts-a-z/wait)
+A 2D grid in a 1D list: `index = row × 10 + col`. NES Tetris used this same trick in 1989. Once you see it, every grid-based project — chess boards, dungeon maps, Pac-Man mazes — looks the same.
 
 ---
 
-*[← Back to episode guide](../README.md)*
+## Remix It on Scratch
+
+[Remix the project →](https://scratch.mit.edu/projects/1362768609/)
+
+Challenge: add a **ghost piece** — the translucent shadow showing where the active piece would land on a hard drop. Then turn it OFF and play without it. Drop a 🧩 in the comments with your highest level without the ghost.
+
+---
+
+*[← Back to Scratch Arcade Series](../README.md)*
