@@ -28,7 +28,7 @@ One folder per episode. Each contains the **end-state Python code** from that ep
 | [ep-06-cactus](./series/ep-06-cactus) | Patience — `while not ready`, only act when growth is complete | [▶ Watch](https://youtu.be/iuiQK3me25M) |
 | [ep-07-fertilizers](./series/ep-07-fertilizers) | Resource management — combining items to boost crop yields | [▶ Watch](https://youtu.be/fI1fF9-VIo8) |
 
-### [/concepts-a-z](./concepts-a-z) — Tuesday Shorts Library
+### [/concepts-a-z](./concepts-a-z) — Saturday Shorts Library
 
 One folder per concept. 30-second bite-sized videos with a working code snippet and a plain explanation. Same game, same concepts — zoomed in.
 
@@ -47,7 +47,73 @@ One folder per concept. 30-second bite-sized videos with a working code snippet 
 | [upgrade](./concepts-a-z/upgrade) | Conditional buying — check balance first |
 | [full-farm](./concepts-a-z/full-farm) | Combining everything into one automated farm |
 
-*New episode every Wednesday. New Short every Tuesday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
+*New episode every Wednesday. New Short every Saturday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
+
+---
+
+## 🧩 Scratch — Block Coding, Built Live
+Full games built in Scratch, block by block, with the logic explained as it goes. Project files are public and remixable on scratch.mit.edu.
+
+### [/scratch/retro-games](./scratch/retro-games) — Retro Games Series
+Arcade classics rebuilt from scratch. One game per episode.
+| Episode | Game | What it teaches | Video |
+|---|---|---|---|
+| Ep 1 | Pong | Collision, ball physics | [▶ Watch](https://youtu.be/95Ty51EgzHw) |
+| Ep 2 | Snake | Lists, clones, grid-snapping | [▶ Watch](https://youtu.be/8qaxgK9FrbM) |
+| Ep 3 | Frogger | Timing, multiple hazards, lives | [▶ Watch](https://youtu.be/gfHLoLGMHIg) |
+| Ep 4 | Space Invaders | Cloning, formation movement | [▶ Watch](https://youtu.be/mVugtGz6oL0) |
+| Ep 5 | Donkey Kong | Gravity, jumping, ladders | [▶ Watch](https://youtu.be/AdgnAxTkI30) |
+| Ep 6 | Pac-Man | Grid movement, ghost AI, state machines | [▶ Watch](https://youtu.be/QOeZVI7zfPQ) |
+| Ep 7 | Asteroids | Vector movement, rotation, splitting | [▶ Watch](https://youtu.be/Ji9RHP-I3qk) |
+| Ep 8 | Tetris | 2D arrays, rotation, line clearing | 🔜 |
+
+### [/scratch/starters](./scratch/starters) — Scratch Starters Series
+For total beginners. One new concept per episode, no experience needed. From 30 Jul, Thursdays.
+| Episode | Project | What it teaches | Date |
+|---|---|---|---|
+| Ep 1 | Talking Pet | Green flag, when-clicked, say, costumes | 🔜 30 Jul |
+| Ep 2 | Catch the Apples | Arrow keys, falling, touching, first variable | 🔜 6 Aug |
+| Ep 3 | Maze Runner | Coordinates, touching-colour, win condition | 🔜 13 Aug |
+| Ep 4 | Coin Collector | Random position, score + timer, game over | 🔜 20 Aug |
+| Ep 5 | Bounce | Bouncing off edges, if-touching-paddle, losing a life | 🔜 27 Aug |
+| Ep 6 | Whack-a-Mole | Hide/show, random timing, clicking | 🔜 3 Sep |
+| Ep 7 | Tappy Bird | A first taste of gravity and velocity | 🔜 10 Sep |
+| Ep 8 | Make-Your-Own Quiz | ask/answer input, if/else logic | 🔜 17 Sep |
+
+---
+
+## ⛏️ Minecraft — CC:Tweaked, Lua and Robots
+Programming turtle robots inside Minecraft with Lua. Real code, real robot, and the machine it builds stays in your world. Every script runs in-game as-is.
+
+### [/minecraft/shorts](./minecraft/shorts) — Friday Shorts Library
+One command, one concept, 30 seconds. Working Lua snippet in every folder.
+| Concept | What it teaches | Video |
+|---|---|---|
+| [place-a-block](./minecraft/shorts/place-a-block) | `refuel()`, `place()`, `placeUp()` — your robot's first block | [▶ Watch](https://youtube.com/shorts/H7q7i1xO6XE) |
+| [walk-and-turn](./minecraft/shorts/walk-and-turn) | `forward()`, `turnLeft()`, `turnRight()` | [▶ Watch](https://youtube.com/shorts/nEzpFaMe9AY) |
+| [dig-a-tunnel](./minecraft/shorts/dig-a-tunnel) | `turtle.dig()` inside a for loop | [▶ Watch](https://youtube.com/shorts/iXwzDlBLbN0) |
+| [dig-down](./minecraft/shorts/dig-down) | Files and loops — one word becomes a shaft | [▶ Watch](https://youtube.com/shorts/cfFXAYphEes) |
+| sleep | `os.sleep(N)` — make the turtle pause | 🔜 31 Jul |
+| print | Show a message on screen | 🔜 7 Aug |
+| detect | Look before you leap | 🔜 14 Aug |
+| if-then | Make the turtle decide | 🔜 21 Aug |
+| variables | `local x = 5` | 🔜 28 Aug |
+| read-input | Ask the player a question | 🔜 4 Sep |
+| functions | Give your moves a name | 🔜 11 Sep |
+| forever-loop | `while true do` | 🔜 18 Sep |
+
+### /minecraft/series — Long-form Episode Code
+Eight episodes, Thursdays from 24 Sep. Code lands here as each one ships.
+| Episode | Build | Date |
+|---|---|---|
+| Ep 1 | Auto tree farm that never runs out of logs | 🔜 24 Sep |
+| Ep 2 | Auto-farm wheat with one Lua script | 🔜 1 Oct |
+| Ep 3 | Strip mine and come back with the loot | 🔜 8 Oct |
+| Ep 4 | Sort every item in your base | 🔜 15 Oct |
+| Ep 5 | Type in chat, a turtle does the job | 🔜 22 Oct |
+| Ep 6 | Two turtles work as a team (rednet) | 🔜 29 Oct |
+| Ep 7 | Type an item name, a turtle fetches it | 🔜 5 Nov |
+| Ep 8 | Auto-defend your base from mobs | 🔜 12 Nov |
 
 ---
 
@@ -73,14 +139,18 @@ cognito-showcase/
 │   ├── ep-05-sunflowers/
 │   ├── ep-06-cactus/
 │   └── ep-07-fertilizers/
-├── concepts-a-z/      # Tue Farmer Shorts — one concept, one snippet
+├── concepts-a-z/      # Sat Farmer Shorts — one concept, one snippet
 │   ├── harvest/
 │   ├── if-check/
 │   ├── grass-strip/
 │   └── ... (12 concepts total)
 ├── vibe/              # Tue Replit long-forms — vibe-coded builds
-├── scratch/           # Thu Scratch Starters — block-by-block
-├── minecraft/         # Fri Minecraft Shorts — CC:Tweaked Lua
+├── scratch/           # Scratch — block coding series
+│   ├── retro-games/   # Retro Games series (Pong, Snake, Frogger...)
+│   └── starters/      # Scratch Starters — for total beginners
+├── minecraft/         # Minecraft — CC:Tweaked Lua
+│   ├── shorts/        # Friday Shorts — one concept, one snippet
+│   └── series/        # Long-form episode code (from 24 Sep)
 ├── challenges/        # Coding challenges — solved with explanation
 └── projects/          # App showcases (sanitised)
     ├── apollo/
