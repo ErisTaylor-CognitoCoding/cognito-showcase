@@ -28,7 +28,7 @@ One folder per episode. Each contains the **end-state Python code** from that ep
 | [ep-06-cactus](./series/ep-06-cactus) | Patience — `while not ready`, only act when growth is complete | [▶ Watch](https://youtu.be/iuiQK3me25M) |
 | [ep-07-fertilizers](./series/ep-07-fertilizers) | Resource management — combining items to boost crop yields | [▶ Watch](https://youtu.be/fI1fF9-VIo8) |
 
-### [/concepts-a-z](./concepts-a-z) — Saturday Shorts Library
+### [/concepts-a-z](./concepts-a-z) — Tuesday Shorts Library
 
 One folder per concept. 30-second bite-sized videos with a working code snippet and a plain explanation. Same game, same concepts — zoomed in.
 
@@ -47,7 +47,7 @@ One folder per concept. 30-second bite-sized videos with a working code snippet 
 | [upgrade](./concepts-a-z/upgrade) | Conditional buying — check balance first |
 | [full-farm](./concepts-a-z/full-farm) | Combining everything into one automated farm |
 
-*New episode every Wednesday. New Short every Saturday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
+*New episode every Wednesday. New Short every Tuesday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
 
 ---
 
@@ -73,7 +73,7 @@ cognito-showcase/
 │   ├── ep-05-sunflowers/
 │   ├── ep-06-cactus/
 │   └── ep-07-fertilizers/
-├── concepts-a-z/      # Sat Farmer Shorts — one concept, one snippet
+├── concepts-a-z/      # Tue Farmer Shorts — one concept, one snippet
 │   ├── harvest/
 │   ├── if-check/
 │   ├── grass-strip/
