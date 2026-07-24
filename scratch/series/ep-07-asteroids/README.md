@@ -3,7 +3,7 @@
 > 📺 **[Watch on YouTube →](https://youtu.be/Ji9RHP-I3qk)**
 
 **Series:** Scratch Arcade Series  
-**Live Scratch Project:** *(scratch.mit.edu link coming — will appear here when available)*
+🎮 **[Play the project on Scratch →](https://scratch.mit.edu/projects/1352586016/)**
 
 ---
 
