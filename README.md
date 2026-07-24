@@ -1,7 +1,6 @@
 # Cognito Coding — Showcase
 
-> **Learn To Code By Building Real Things.**  
-> No fluff. No theory dumps. Just real builds.
+> **Learn To Code Through Games, Challenges And Real Builds.**
 
 I'm a coder and a teacher. For a while those two pulled in different directions — proposals, clients, chasing the agency — and the bit I actually love got buried.
 
@@ -79,6 +78,10 @@ cognito-showcase/
 │   ├── if-check/
 │   ├── grass-strip/
 │   └── ... (12 concepts total)
+├── vibe/              # Tue Replit long-forms — vibe-coded builds
+├── scratch/           # Thu Scratch Starters — block-by-block
+├── minecraft/         # Fri Minecraft Shorts — CC:Tweaked Lua
+├── challenges/        # Coding challenges — solved with explanation
 └── projects/          # App showcases (sanitised)
     ├── apollo/
     ├── moirai/
@@ -131,9 +134,9 @@ Schedule walks, manage clients and dogs, track cancellations, invoice — all fr
 ---
 
 ### [SoloTutorLite](./projects/solo-tutor-lite) — Independent Tutor All-in-One
-Lesson planning, interactive whiteboard, one-click video sessions, AI-generated reports, and invoicing — all in one app. No more juggling five tools. Built by a tutor who still teaches every day.
+Lesson planning, interactive whiteboard, one-click video sessions, AI-generated reports, and invoicing — all in one app.
 
-🟢 **Live** · [30s Short](https://youtube.com/shorts/jm2Bs0u7p2k)
+🟡 **Archived** · [30s Short](https://youtube.com/shorts/jm2Bs0u7p2k)
 
 ---
 
