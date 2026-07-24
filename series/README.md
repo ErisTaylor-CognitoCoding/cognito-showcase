@@ -21,6 +21,6 @@ Each episode folder contains the **end-state Python code** from that episode and
 
 ---
 
-The companion **[/concepts-a-z](../concepts-a-z)** folder maps each coding concept to its 30-second Saturday Short.
+The companion **[/concepts-a-z](../concepts-a-z)** folder maps each coding concept to its 30-second Tuesday Short.
 
 *New episode every Wednesday. [Subscribe →](https://www.youtube.com/@CognitoCoding01)*
