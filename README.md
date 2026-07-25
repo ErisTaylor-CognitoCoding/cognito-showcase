@@ -68,17 +68,17 @@ Arcade classics rebuilt from scratch. One game per episode.
 | Ep 8 | Tetris | 2D arrays, rotation, line clearing | 🔜 |
 
 ### [/scratch/starters](./scratch/starters) — Scratch Starters Series
-For total beginners. One new concept per episode, no experience needed. From 30 Jul, Thursdays.
+For total beginners. One new concept per episode, no experience needed. From 24 Sep, Thursdays.
 | Episode | Project | What it teaches | Date |
 |---|---|---|---|
-| Ep 1 | Talking Pet | Green flag, when-clicked, say, costumes | 🔜 30 Jul |
-| Ep 2 | Catch the Apples | Arrow keys, falling, touching, first variable | 🔜 6 Aug |
-| Ep 3 | Maze Runner | Coordinates, touching-colour, win condition | 🔜 13 Aug |
-| Ep 4 | Coin Collector | Random position, score + timer, game over | 🔜 20 Aug |
-| Ep 5 | Bounce | Bouncing off edges, if-touching-paddle, losing a life | 🔜 27 Aug |
-| Ep 6 | Whack-a-Mole | Hide/show, random timing, clicking | 🔜 3 Sep |
-| Ep 7 | Tappy Bird | A first taste of gravity and velocity | 🔜 10 Sep |
-| Ep 8 | Make-Your-Own Quiz | ask/answer input, if/else logic | 🔜 17 Sep |
+| Ep 1 | Talking Pet | Green flag, when-clicked, say, costumes | 🔜 24 Sep |
+| Ep 2 | Catch the Apples | Arrow keys, falling, touching, first variable | 🔜 1 Oct |
+| Ep 3 | Maze Runner | Coordinates, touching-colour, win condition | 🔜 8 Oct |
+| Ep 4 | Coin Collector | Random position, score + timer, game over | 🔜 15 Oct |
+| Ep 5 | Bounce | Bouncing off edges, if-touching-paddle, losing a life | 🔜 22 Oct |
+| Ep 6 | Whack-a-Mole | Hide/show, random timing, clicking | 🔜 29 Oct |
+| Ep 7 | Tappy Bird | A first taste of gravity and velocity | 🔜 5 Nov |
+| Ep 8 | Make-Your-Own Quiz | ask/answer input, if/else logic | 🔜 12 Nov |
 
 ---
 
@@ -102,18 +102,18 @@ One command, one concept, 30 seconds. Working Lua snippet in every folder.
 | functions | Give your moves a name | 🔜 11 Sep |
 | forever-loop | `while true do` | 🔜 18 Sep |
 
-### /minecraft/series — Long-form Episode Code
-Eight episodes, Thursdays from 24 Sep. Code lands here as each one ships.
+### /minecraft/series — Turtle Village (Long-form Episode Code)
+Eight episodes, Thursdays from 30 Jul. Every block placed by a turtle running Lua. Code lands here as each one ships.
 | Episode | Build | Date |
 |---|---|---|
-| Ep 1 | Auto tree farm that never runs out of logs | 🔜 24 Sep |
-| Ep 2 | Auto-farm wheat with one Lua script | 🔜 1 Oct |
-| Ep 3 | Strip mine and come back with the loot | 🔜 8 Oct |
-| Ep 4 | Sort every item in your base | 🔜 15 Oct |
-| Ep 5 | Type in chat, a turtle does the job | 🔜 22 Oct |
-| Ep 6 | Two turtles work as a team (rednet) | 🔜 29 Oct |
-| Ep 7 | Type an item name, a turtle fetches it | 🔜 5 Nov |
-| Ep 8 | Auto-defend your base from mobs | 🔜 12 Nov |
+| Ep 1 | A turtle builds a house, block by block | 🔜 30 Jul |
+| Ep 2 | Plant a whole crop field with one loop | 🔜 6 Aug |
+| Ep 3 | A well, dug and built by turtle | 🔜 13 Aug |
+| Ep 4 | A row of market stalls from one repeated build | 🔜 20 Aug |
+| Ep 5 | The village hall — a bigger build | 🔜 27 Aug |
+| Ep 6 | The village square — paths and edges | 🔜 3 Sep |
+| Ep 7 | A working water wheel that turns | 🔜 10 Sep |
+| Ep 8 | The windmill finale — sails and height | 🔜 17 Sep |
 
 ---
 
@@ -150,7 +150,7 @@ cognito-showcase/
 │   └── starters/      # Scratch Starters — for total beginners
 ├── minecraft/         # Minecraft — CC:Tweaked Lua
 │   ├── shorts/        # Friday Shorts — one concept, one snippet
-│   └── series/        # Long-form episode code (from 24 Sep)
+│   └── series/        # Turtle Village — long-form episode code (from 30 Jul)
 ├── challenges/        # Coding challenges — solved with explanation
 └── projects/          # App showcases (sanitised)
     ├── apollo/

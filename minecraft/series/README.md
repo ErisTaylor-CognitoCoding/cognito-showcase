@@ -1,17 +1,17 @@
-# Minecraft Series — Turtle Builds Create
+# Minecraft Series — Turtle Village
 
-> **Eight episodes, Thursdays from 24 Sep. Code lands here as each one ships.**
+> **Eight episodes, Thursdays from 30 Jul. Every block placed by a turtle running Lua. Code lands here as each one ships.**
 
 | Episode | Build | Date |
 |---|---|---|
-| [Ep 1](./ep-01-cobblestone-generator) | Cobblestone generator — I never touch a block | 🔜 24 Sep |
-| [Ep 2](./ep-02-simple-house) | Forty lines of Lua and a house appears | 🔜 1 Oct |
-| [Ep 3](./ep-03-water-wheel-millstone) | Water wheel and millstone — my first machine that turns | 🔜 8 Oct |
-| [Ep 4](./ep-04-windmill) | Windmill — bearing, sails and a lot of height | 🔜 15 Oct |
-| [Ep 5](./ep-05-mixer-stack) | Mixer stack — basin, cogs and a depot | 🔜 22 Oct |
-| [Ep 6](./ep-06-watchtower) | Watchtower — same loops, much bigger | 🔜 29 Oct |
-| [Ep 7](./ep-07-train-track-station) | A turtle lays its own train track and station | 🔜 5 Nov |
-| [Ep 8](./ep-08-diesel-engine) | A working diesel engine | 🔜 12 Nov |
+| [Ep 1](./ep-01-house) | A turtle builds a house, block by block | 🔜 30 Jul |
+| [Ep 2](./ep-02-crop-field) | Plant a whole crop field with one loop | 🔜 6 Aug |
+| [Ep 3](./ep-03-well) | A well, dug and built by turtle | 🔜 13 Aug |
+| [Ep 4](./ep-04-market-stalls) | A row of market stalls from one repeated build | 🔜 20 Aug |
+| [Ep 5](./ep-05-village-hall) | The village hall — a bigger build | 🔜 27 Aug |
+| [Ep 6](./ep-06-village-square) | The village square — paths and edges | 🔜 3 Sep |
+| [Ep 7](./ep-07-water-wheel) | A working water wheel that turns | 🔜 10 Sep |
+| [Ep 8](./ep-08-windmill) | The windmill finale — sails and height | 🔜 17 Sep |
 
 ---
 
