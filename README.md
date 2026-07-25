@@ -164,11 +164,10 @@ cognito-showcase/
 
 ## 🚀 What I've Built
 
-### [Pantheon](./projects/pantheon) — AI Business Command Centre
-A full private dashboard — CRM, invoicing, Kanban, agent orchestration, secrets vault, and more. Cognito Coding itself runs on Pantheon every day.
+### [Pantheon](./projects/pantheon) — Internal Command Centre
+The system Cognito Coding runs on: agents, routines, content production, tutoring, invoicing and an encrypted secrets vault. Internal only — not a product.
 
-**Tech**: Python/Flask, PostgreSQL, Claude API, Docker  
-🟢 **Live demo**: [pantheon.cognitocoding.app](https://pantheon.cognitocoding.app)
+**Tech**: Python/Flask, PostgreSQL, HTMX, Claude via CLI on a Max subscription, Docker
 
 ---
 

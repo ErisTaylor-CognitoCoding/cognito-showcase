@@ -1,178 +1,93 @@
 # Pantheon
 
-> **Your own AI-powered business command centre — CRM, agents, invoicing, proposals, and automation in one private instance.**
->
-> *"Build your temple."*
-
-**Price**: £2,500+ fixed fee (flagship tier of the Cognito AI stack)
+> **The internal command centre Cognito Coding runs on — agents, tasks, content production, invoicing and secrets in one private Flask app.**
 
 ## Status
 
-🟢 **[Live demo at pantheon.cognitocoding.app](https://pantheon.cognitocoding.app)** — Multi-Vertical Cross-System Orchestration build, seeded with the PeakForm demo client. Cognito Coding itself runs on Pantheon daily (this is our own production stack). No external paying clients yet — Pantheon is a bespoke engagement; [get in touch](https://cognitocoding.com) to scope your build.
+🔒 **Internal. Not a product, not for sale, not deployed for anyone else.**
 
-## Overview
+Pantheon is the system the business actually runs on, every day. It was originally built as a sellable platform; that direction was dropped in June 2026 when Cognito Coding moved to a YouTube-and-apps model. What remains is a real production tool with a single user — and, as a showcase, an honest look at what running your own agent platform involves.
 
-Pantheon is a custom private instance of the full Cognito stack, configured for your business. Not a template, not a shared platform — **your data, your database, your branding, your infrastructure**. Cognito deploys and maintains; you own the workflow.
+Everything below describes the live system, not a plan.
 
-**Apollo orchestrates a bespoke specialist team built around your operation — you instruct Apollo in natural language, Apollo briefs the specialists underneath. You never manage the stack — you manage Apollo.**
+## What it does
 
-Pantheon is the flagship tier of Cognito's three-tier AI stack:
+One Flask app, one Postgres database, one browser tab that stays open all day.
 
-> **Apollo (£29.99/mo) → Moirai (£750) → Pantheon (£2,500+)**
->
-> *"Start with knowledge. Add wisdom. Build your temple."*
+| Area | What it holds |
+|---|---|
+| **Agents** | Roster, per-agent run history, failure triage, health stats |
+| **Grind** | Fortnightly sprint board — tasks under per-category targets |
+| **Routines** | Cron-scheduled agent jobs, with a watchdog for missed fires |
+| **Skills** | Markdown playbooks agents read at runtime |
+| **Video Docs** | Structured production records per YouTube episode — script, hook, thumbnail prompt, code links, publish status |
+| **Challenges** | Coding challenges tracked from attempted through solved |
+| **Tutoring** | Students, timetables, lessons, EHCP files, AQA outcomes, monthly invoicing |
+| **Accounts** | Income and expenses, Stripe sync, Gmail receipt scanning, UK tax-year filtering |
+| **Invoices** | Line items, PDF generation, send and mark-paid |
+| **Newsletter** | Subscribers, drafts, live preview, scheduled send |
+| **Company doc** | Single source of truth for products, schedule and brand voice |
+| **Vault** | AES-256-GCM encrypted secrets |
 
-Pantheon was built from three earlier systems — a business dashboard, Apollo's AI executive assistant, and an agent execution engine — unified into a single platform in April 2026. **Cognito Coding itself runs on Pantheon every day.** Nova, CMO, CFO, Scout, CTO and the rest of the agent roster all live in production on the same stack we deploy for clients.
+Current live state: **4 agents** (3 AI, 1 human), **34 enabled routines**, **73 skills**, and **1,830 agent runs** logged for audit.
 
-## What You Get
+## Tech
 
-### 1. Your Own Dashboard
-One place to run the business:
-- **CRM** — client lifecycle, contacts, last-contact tracking
-- **Invoicing** — drafts, send-ready PDFs, payment status
-- **Accounts ledger** — income, expenses, Stripe sync, Gmail receipt scanning, UK tax-year filtering
-- **Kanban** — task board: backlog → todo → in progress → in review → done
-- **Proposals** — Scout-drafted, Nova-reviewed, status tracking
-- **Newsletter** — draft, preview, scheduled send
-- **Company doc** — single source of truth for products, pricing, brand voice
-- **Skills library** — reusable Markdown playbooks agents read at runtime
-- **Routines** — cron-scheduled agent jobs
-- **Secrets vault** — encrypted storage for API keys
+- **Backend**: Python 3.11, Flask, SQLAlchemy, Gunicorn (gthread, 2 workers × 4 threads)
+- **Frontend**: Jinja2 + HTMX + Alpine.js — server-rendered, no SPA build step
+- **Database**: PostgreSQL 16
+- **AI**: Claude, executed through the Claude CLI on a Max subscription — *not* the per-token API
+- **Deployment**: Docker, single container plus its database
 
-### 2. Your Own Apollo — The Conductor
-Apollo is the centrepiece of every Pantheon deployment. It is your **single point of contact for the entire specialist team** running beneath it.
+Designed dyslexia-friendly throughout: Atkinson Hyperlegible for body text, high contrast, icon-and-colour navigation, and a per-page scoped CSS system so one page's styling can never leak into another.
 
-You talk to Apollo in plain English — Discord, Slack, or Telegram. Apollo reads your email, manages your calendar, runs your morning briefing, and briefs the right specialist agent for every task. Results come back to you through Apollo. **You never issue instructions to individual agents — you manage Apollo, Apollo manages the team.**
+## The agent runtime
 
-Apollo is active 24/7:
-- Reads your inbox and surfaces what matters
-- Manages your calendar
-- Runs morning briefings with overnight activity summary
-- Conducts outreach and chases leads
-- Briefs your specialist team and reports results back to you
+Agents are not chatbots. They are rows in a table with a Markdown persona, a model, a skill list and a schedule. A routine fires on cron, the runner assembles the prompt from the agent's persona plus its skills, executes it through the Claude CLI, and writes the result to `agent_runs` — every action auditable after the fact.
 
-### 3. Your Specialist Agent Team — Conducted by Apollo
-Apollo orchestrates this team. You don't interact with individual agents directly — you instruct Apollo, Apollo assigns the work, and Apollo reports results back to you.
-
-| Agent | What They Do |
-|-------|-------------|
-| **CTO** | Technical execution, infrastructure monitoring, code reviews |
-| **CMO** | Content creation, social scheduling, proposal writing, lead nurturing |
-| **CFO** | Stripe sync, receipt scanning, expense tracking, weekly P&L |
-| **Scout** | Upwork and LinkedIn prospecting, outreach drafting |
-| **Engineer** | Code changes, shell-level automation, integrations |
-
-Agents are **not chatbots**. They run on cron schedules (routines), execute autonomously, report to Apollo and Discord, and log every action (`agent_runs` table) for audit.
-
-### 4. Configured for Your Business
-Personas, brand voice, pricing, workflows — all tuned to your operation, not a generic chatbot bolted onto a template.
-
-### 5. Claude Max Under the Hood
-All agent execution runs on Claude Max subscription billing, not per-token API billing. No surprise spend. No bill shock. Predictable monthly infrastructure cost.
-
-### 6. Fully Private and Audited
-- Every agent action logged
-- Secrets encrypted at rest
-- Destructive operations require confirmation
-- Per-client database isolation — your data never mixes with anyone else's
-
-## Architecture
-
-### Client Experience
+The roster is deliberately small. It was a wider set of narrow specialists — content, finance, prospecting, engineering, design — and is now three: **Nova**, the partner Zero actually talks to, who owns content and finance; **host-shell**, which handles infrastructure; and **git**, which maintains the repositories. Consolidating cut prompt bloat and made ownership obvious.
 
 ```
-              YOU
-               │
-               ▼
-        ┌──────────────┐
-        │    APOLLO    │  ← Your single point of contact
-        │  Conductor   │     Plain English. Any time.
-        │  Discord /   │     Reads your email. Knows your CRM.
-        │  Slack /     │     Runs your morning briefing.
-        │  Telegram    │
-        └──────┬───────┘
-               │  Apollo briefs the right agent
-               │
-    ┌──────────┼──────────────────────┐
-    ▼          ▼          ▼          ▼          ▼
-  [CTO]      [CMO]      [CFO]     [Scout]  [Engineer]
-  infra     content    finance    leads      code
+   Zero  ──talks to──▶  Nova  (Discord DM · web chat widget)
+                          │
+                          ├── reads/writes Pantheon via the bridge API
+                          │
+   cron ──fires──▶  Routines ──▶  agent runner ──▶ Claude CLI (Max sub)
+                                        │
+                                        ▼
+                                   agent_runs  (full audit trail)
 ```
 
-### System Architecture
+Nova reaches Pantheon over an internal bridge (`/api/nova/*`, shared-key auth) rather than touching the database, so every agent action goes through the same validation the UI does.
 
-```
-┌──────────────────────────────────────────────────┐
-│             Pantheon Web UI                  │
-│  CRM │ Invoices │ Accounts │ Kanban          │
-│  Proposals │ Newsletter │ Skills │ Routines  │
-└──────────────────────────────────────────────────┘
-                       │
-┌──────────────────────────────────────────────────┐
-│          Pantheon Agent Runtime              │
-│  Apollo (conductor) │ CMO │ CFO │ Scout      │
-│  CTO │ Engineer                              │
-│  Skills library │ Routines │ Agent logs      │
-└──────────────────────────────────────────────────┘
-                       │
-┌──────────────────────────────────────────────────┐
-│      PostgreSQL (Per-Client Isolation)       │
-│  clients │ contacts │ proposals │ tasks      │
-│  accounts │ agent_runs │ secrets │ skills    │
-└──────────────────────────────────────────────────┘
-```
+## Design learnings
 
-## Why It's Not Niche
+Real ones, from running it rather than selling it.
 
-Any business that deals with clients, leads, content, or ops can run on Pantheon. Law firms, dental practices, tradespeople, coaches, agencies, consultancies, service businesses.
+### What worked
 
-If our education product DashDeck is *"the command centre for tutors"*, **Pantheon is the command centre for any business.**
+**Agents as scheduled jobs, not conversations.** The useful part was never the chat. It was a cron entry that reconciles Stripe at 07:00 without being asked.
 
-## Proof It Works
+**A skills library stops drift.** Reusable Markdown playbooks mean a thumbnail generated in November matches one from June. Prompts live in the database and are edited in the browser, not redeployed.
 
-Cognito Coding itself runs on Pantheon:
+**Postgres is enough.** No Redis, no queue broker, no NoSQL. Postgres with sensible indexes and a few JSONB columns carries agent logs, conversation history and every domain table comfortably.
 
-- **Apollo** runs our outreach and morning briefings — and conducts the team below
-- **Scout** hunts job listings and drafts proposals every weekday
-- **CMO** schedules social posts, drafts newsletters, produces YouTube videos
-- **CFO** syncs Stripe and scans Gmail receipts into the accounts ledger
-- **CTO** monitors infra and triages every agent failure
-- The dashboard is the first thing Zero opens every morning
+**Server-rendered beats an SPA here.** HTMX and Alpine cover every interaction this app needs. There is no build step, no bundle, no hydration bug — a page is a template.
 
-We didn't build this theoretically. We built it because we needed it, and Pantheon is ready to deploy for other businesses on their own private instance.
+**Subscription billing removed the anxiety.** All background execution runs through the Claude CLI on a Max subscription rather than per-token API billing. The failure mode of an agent looping is wasted time, not an unbounded invoice.
 
-## Design Learnings
+**Delta-only reporting.** Routines that sweep for changes keep a persistent ledger row and only notify when something actually changed. Without that, a daily sweep becomes noise you learn to ignore.
 
-> **Note:** Cognito Coding itself runs on Pantheon every day — these learnings come from building and operating our own production stack. No external paying clients yet.
+### What we'd do differently
 
-### What Worked Well
+**Retire features properly the first time.** Dropping a feature means removing its tools, its enum values, its skill mappings and its documentation — not just the page. Half-removed features leave tools that are advertised and then denied, which reads to an agent as a broken tool rather than a retired one.
 
-**Apollo as conductor, not just assistant.** Treating Apollo as the orchestration layer — the single voice the client manages — made the system feel coherent. Zero doesn't "use agents" — he talks to Nova (Apollo's equivalent in our stack), and Nova briefs the team.
+**Enumerations belong in one place.** The same list of video lanes ended up copied into five files and drifted apart. One of them was missing a lane that had live records, so the agent could not create records on it at all.
 
-**Agents as employees, not chatbots.** Treating agents like team members (with roles, personas, routines) made them feel part of the operation.
+**Surface agent failures louder.** Failures were logged from the start but not always surfaced. A routine that triages failed runs and comments on stuck tasks should exist from day one, not after the first silent week.
 
-**Skills library prevents drift.** Reusable Markdown playbooks keep processes consistent. When CMO generates a thumbnail, the skill ensures the same template and brand style every time.
-
-**Cron routines are killer.** Morning briefings, Stripe sync, receipt scanning happen automatically. Zero wakes up to a Discord message with the day's overview. This is the "magic moment" clients pay for.
-
-**PostgreSQL handles everything.** No Redis, no caching layers, no NoSQL. Postgres + proper indexes + JSONB columns handle agent logs, conversation history, and CRM data beautifully.
-
-**Docker isolates cleanly.** Each client gets their own container stack. Rebuild one without touching others. Logs stay separate.
-
-**Claude Max beats per-token API billing.** Moving all background agent execution off per-token API billing onto Claude Max subscription removed the spend anxiety. Pantheon clients get predictable monthly infra, not a metered surprise.
-
-### What We'd Do Differently
-
-**UI polish comes last.** We built backend and agents first, UI second. The dashboard works but looks utilitarian. For client deployments, investing in frontend design earlier is the right approach.
-
-**Agent error handling.** When an agent fails (API timeout, malformed response), the error is logged but not always surfaced. A CTO routine that triages failed runs and comments on stuck tasks should be scaffolded from day one.
-
-**Secrets management.** Current vault works but is custom-built. For larger deployments we'd consider HashiCorp Vault or AWS Secrets Manager.
-
-**Cost monitoring.** Even on Claude Max, some agents can burn hours of CLI time. Per-agent run tracking and alerting should be scaffolded in from day one.
+**Watch the drift between disk and git.** Code reaching the box outside version control means the running app can be correct while the repository is ten commits behind. Fetch before assuming, and check both directions.
 
 ---
 
-*Part of the Cognito AI stack: [Apollo](../apollo) → [Moirai](../moirai) → [Pantheon](./)*
-
-*Built by [Cognito Coding](https://cognitocoding.com)*
+*Built and run by [Cognito Coding](https://cognitocoding.com).*
