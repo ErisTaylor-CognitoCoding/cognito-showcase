@@ -153,8 +153,6 @@ cognito-showcase/
 │   └── series/        # Turtle Village — long-form episode code (from 30 Jul)
 ├── challenges/        # Coding challenges — solved with explanation
 └── projects/          # App showcases (sanitised)
-    ├── apollo/
-    ├── moirai/
     ├── pantheon/
     ├── nova/
     ├── wagtracker/
@@ -165,21 +163,6 @@ cognito-showcase/
 ---
 
 ## 🚀 What I've Built
-
-### [Apollo](./projects/apollo) — AI Executive Assistant
-Per-client AI assistant deployed in an isolated Docker container. Claude Code orchestration + Ollama + SQLite + Telegram as the primary interface.
-
-**Tech**: Claude Code, Ollama, SQLite, Telegram Bot API, Docker  
-🟢 **Live demo**: [apollo.cognitocoding.app](https://apollo.cognitocoding.app)
-
----
-
-### [Moirai](./projects/moirai) — Apollo-Conducted Multi-Agent Team
-A coordinated agent team under one conductor. Apollo sits on top as the single point of contact — you instruct Apollo, Apollo briefs the specialists. You never manage the stack.
-
-🟢 **Live demo**: [athena.cognitocoding.app](https://athena.cognitocoding.app)
-
----
 
 ### [Pantheon](./projects/pantheon) — AI Business Command Centre
 A full private dashboard — CRM, invoicing, Kanban, agent orchestration, secrets vault, and more. Cognito Coding itself runs on Pantheon every day.

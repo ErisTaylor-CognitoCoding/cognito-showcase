@@ -8,7 +8,7 @@
 
 ## The Anchor Episode
 
-How Nova went from a Discord chatbot prototype in 2025 to running the Cognito Coding agency in 2026 — Pantheon, Apollo, Athena, all driven by an AI that learned the business by living in it.
+How Nova went from a Discord chatbot prototype in 2025 to running Cognito Coding in 2026 — driven by an AI that learned the business by living in it.
 
 This is the video every later Tuesday references. Start here if you're new to the series.
 
@@ -19,7 +19,7 @@ This is the video every later Tuesday references. Start here if you're new to th
 - The original Discord bot prototype — Nova v0
 - The "what if it had memory" moment that started everything
 - Building Pantheon as Nova's command centre
-- Apollo + Athena — the products Nova helped design and ship
+- The products Nova helped design and ship
 - Why Nova has his own email, his own voice, his own opinions
 - What it actually feels like running an agency with an AI co-founder
 
