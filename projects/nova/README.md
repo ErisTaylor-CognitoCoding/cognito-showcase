@@ -12,7 +12,7 @@ Unlike typical chatbots, Nova has:
 - **Real execution power** with MCP tools for Gmail, Calendar, GitHub, Drive
 - **Personality and context** — Nova is "he/him", part of the team, speaks in first person
 
-Nova demonstrates how AI can be embedded into a business as a true operational partner, not just a Q&A tool. Nova is the model for what Apollo is in client deployments — the single point of contact that conducts the specialist team.
+Nova demonstrates how AI can be embedded into a business as a true operational partner, not just a Q&A tool — a single point of contact that conducts the specialist team.
 
 ## Tech Stack
 
@@ -96,7 +96,7 @@ Nova reviews content drafts and acts as the brand-voice gate before anything shi
 
 **Tool error handling**: When an MCP tool fails (e.g. Gmail API rate limit), Nova needs better retry logic and user-facing error messages. Currently too raw.
 
-**Multi-channel support**: Nova runs in Discord and the website widget. Apollo (the client-facing equivalent) extends this to Slack and Telegram using the same conductor model — one interface, specialist team underneath.
+**Multi-channel support**: Nova runs in Discord and the website widget. The same conductor model would extend to any other channel — one interface, specialist team underneath.
 
 ---
 

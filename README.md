@@ -190,7 +190,7 @@ A full private dashboard — CRM, invoicing, Kanban, agent orchestration, secret
 ---
 
 ### [Nova](./projects/nova) — Cognito's AI Partner
-Runs Cognito's daily operations — coordinates the internal agent team, handles communications, and executes real-world actions via MCP tools. Nova is the model for what Apollo is in client deployments.
+Runs Cognito's daily operations — coordinates the internal agent team, handles communications, and executes real-world actions via MCP tools.
 
 **Tech**: TypeScript / Node.js, React + Vite, Drizzle ORM + PostgreSQL, MCP tools, Docker
 
