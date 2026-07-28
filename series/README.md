@@ -19,6 +19,7 @@ Each episode folder contains the **end-state Python code** from that episode and
 | 6 | [ep-06-cactus](./ep-06-cactus) | Bubble sort, `measure()`, `swap()`, boundary guards | [▶ Watch](https://youtu.be/iuiQK3me25M) |
 | 7 | [ep-07-fertilizers](./ep-07-fertilizers) | `use_item(Items.Fertilizer)`, `get_world_size()`, indentation, magic numbers | [▶ Watch](https://youtu.be/fI1fF9-VIo8) |
 | 8 | [ep-08-i-taught-an-ai-to-farm-ep-8](./ep-08-i-taught-an-ai-to-farm-ep-8) | DFS maze solver, recursion, visited list, `cell()` 2D encoding | [▶ Watch](https://youtu.be/mT0pmo3Obfo) |
+| 9 | [ep-09-i-taught-an-ai-to-farm-ep-9](./ep-09-i-taught-an-ai-to-farm-ep-9) | Multi-drone lanes, `num_drones()` gate, death-as-signal, jobs that can't parallelise | [▶ Watch](https://youtu.be/BdORh_gViFk) |
 
 ---
 
