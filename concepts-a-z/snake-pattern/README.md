@@ -1,5 +1,7 @@
 # Snake Pattern — The Farmer Was Replaced
 
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/s-nEDmL8UH8)**
+
 **Series:** Tue Farmer Short  
 **Concept:** Nested loops used to sweep a field in a snake/column-by-column pattern
 
