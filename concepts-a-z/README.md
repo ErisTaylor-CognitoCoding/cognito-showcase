@@ -21,6 +21,7 @@ These bite-sized shorts map directly to the long-form **[/series](../series)** e
 | [harvest](./harvest) | `while True` — your first infinite loop | *4 Jul 2026* |
 | [if-check](./if-check) | `if` statements — guard before you act | *11 Jul 2026* |
 | [pumpkins](./pumpkins) | Reading entity state before planting | *1 Aug 2026* |
+| [pumpkins-need-space](./pumpkins-need-space) | Adjacency merging — wait for the whole field to ripen at once | [▶ Watch](https://youtube.com/shorts/jJSJQHcTkJ8?feature=share) |
 | [snake-pattern](./snake-pattern) | Nested loops — cover every tile efficiently | *25 Jul 2026* |
 | [sunflowers](./sunflowers) | Running maximum with a variable | *8 Aug 2026* |
 | [trade](./trade) | Arithmetic — converting harvest into gold | *5 Sep 2026* |
