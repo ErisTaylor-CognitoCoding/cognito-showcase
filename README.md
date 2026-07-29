@@ -52,10 +52,13 @@ One folder per concept. 30-second bite-sized videos with a working code snippet 
 ---
 
 ## 🧩 Scratch — Block Coding, Built Live
+
 Full games built in Scratch, block by block, with the logic explained as it goes. Project files are public and remixable on scratch.mit.edu.
 
 ### [/scratch/retro-games](./scratch/retro-games) — Retro Games Series
+
 Arcade classics rebuilt from scratch. One game per episode.
+
 | Episode | Game | What it teaches | Video |
 |---|---|---|---|
 | Ep 1 | Pong | Collision, ball physics | [▶ Watch](https://youtu.be/95Ty51EgzHw) |
@@ -68,7 +71,9 @@ Arcade classics rebuilt from scratch. One game per episode.
 | Ep 8 | Tetris | 2D arrays, rotation, line clearing | 🔜 |
 
 ### [/scratch/starters](./scratch/starters) — Scratch Starters Series
+
 For total beginners. One new concept per episode, no experience needed. From 24 Sep, Thursdays.
+
 | Episode | Project | What it teaches | Date |
 |---|---|---|---|
 | Ep 1 | Talking Pet | Green flag, when-clicked, say, costumes | 🔜 24 Sep |
@@ -83,10 +88,13 @@ For total beginners. One new concept per episode, no experience needed. From 24 
 ---
 
 ## ⛏️ Minecraft — CC:Tweaked, Lua and Robots
+
 Programming turtle robots inside Minecraft with Lua. Real code, real robot, and the machine it builds stays in your world. Every script runs in-game as-is.
 
 ### [/minecraft/shorts](./minecraft/shorts) — Friday Shorts Library
+
 One command, one concept, 30 seconds. Working Lua snippet in every folder.
+
 | Concept | What it teaches | Video |
 |---|---|---|
 | [place-a-block](./minecraft/shorts/place-a-block) | `refuel()`, `place()`, `placeUp()` — your robot's first block | [▶ Watch](https://youtube.com/shorts/H7q7i1xO6XE) |
@@ -103,7 +111,9 @@ One command, one concept, 30 seconds. Working Lua snippet in every folder.
 | forever-loop | `while true do` | 🔜 18 Sep |
 
 ### /minecraft/series — Turtle Village (Long-form Episode Code)
+
 Eight episodes, Thursdays from 30 Jul. Every block placed by a turtle running Lua. Code lands here as each one ships.
+
 | Episode | Build | Date |
 |---|---|---|
 | Ep 1 | A turtle builds a house, block by block | 🔜 30 Jul |
@@ -114,6 +124,37 @@ Eight episodes, Thursdays from 30 Jul. Every block placed by a turtle running Lu
 | Ep 6 | The village square — paths and edges | 🔜 3 Sep |
 | Ep 7 | A working water wheel that turns | 🔜 10 Sep |
 | Ep 8 | The windmill finale — sails and height | 🔜 17 Sep |
+
+---
+
+## 📋 Pastebin Scripts
+
+CC:Tweaked Lua programs built for Minecraft and published to Pastebin. Load any script in-game with `pastebin get <id> startup`.
+
+### [/pastebin](./pastebin) — In-Game Ready Builds
+
+| Script | What it builds |
+|--------|---------------|
+| [hacker-desk-ring](./pastebin/hacker-desk-ring) | Hacker desk setup with Cognito ring framing |
+| [hacker-workstation-ring](./pastebin/hacker-workstation-ring) | Full workstation variant |
+| [hacker-zone-full](./pastebin/hacker-zone-full) | Complete hacker zone build |
+| [grass-floor-300x120](./pastebin/grass-floor-300x120) | 300×120 grass floor layer — foundation build |
+
+Each folder contains the `.lua` source and a `paste.json` with the live Pastebin URL.
+
+---
+
+## 🎬 Specials
+
+One-off episodes, game demos, and tutorials outside the regular series schedule.
+
+### [/specials](./specials)
+
+| Episode | What it covers |
+|---------|---------------|
+| [compile-and-defend-demo-tutorial](./specials/compile-and-defend-demo-tutorial) | Full wave data and tutorial walkthrough for Compile & Defend |
+| [compile-and-defend-short](./specials/compile-and-defend-short) | Short from the demo |
+| [solo-tutor-lite-walkthrough](./specials/solo-tutor-lite-walkthrough) | SoloTutorLite app walkthrough (archived) |
 
 ---
 
@@ -151,6 +192,8 @@ cognito-showcase/
 ├── minecraft/         # Minecraft — CC:Tweaked Lua
 │   ├── shorts/        # Friday Shorts — one concept, one snippet
 │   └── series/        # Turtle Village — long-form episode code (from 30 Jul)
+├── pastebin/          # CC:Tweaked scripts published to Pastebin — paste.get in-game
+├── specials/          # One-off episodes, game demos, and special tutorials
 ├── challenges/        # Coding challenges — solved with explanation
 └── projects/          # App showcases (sanitised)
     ├── pantheon/
