@@ -25,8 +25,10 @@ One folder per episode. Each contains the **end-state Python code** from that ep
 | [ep-03-functions](./series/ep-03-functions) | `def`, parameters, DRY principle | [▶ Watch](https://youtu.be/FMUXw4UKyLI) |
 | [ep-04-pumpkins](./series/ep-04-pumpkins) | Variables, `if/elif`, reading tile state | [▶ Watch](https://youtu.be/X92lWWj8HbY) |
 | [ep-05-sunflowers](./series/ep-05-sunflowers) | Running maximum, `measure()`, double sweep | [▶ Watch](https://youtu.be/rchPKYdB3AE) |
-| [ep-06-cactus](./series/ep-06-cactus) | Patience — `while not ready`, only act when growth is complete | [▶ Watch](https://youtu.be/iuiQK3me25M) |
+| [ep-06-cactus](./series/ep-06-cactus) | Bubble sort, `measure()`, `swap()`, boundary guards | [▶ Watch](https://youtu.be/iuiQK3me25M) |
 | [ep-07-fertilizers](./series/ep-07-fertilizers) | Resource management — combining items to boost crop yields | [▶ Watch](https://youtu.be/fI1fF9-VIo8) |
+| [ep-08](./series/ep-08-i-taught-an-ai-to-farm-ep-8) | Maze solver — DFS with recursion, visited list, 2D `cell()` encoding | [▶ Watch](https://youtu.be/mT0pmo3Obfo) |
+| [ep-09](./series/ep-09-i-taught-an-ai-to-farm-ep-9) | Four drones — lane assignment, death-as-sync, jobs that can't parallelise | [▶ Watch](https://youtu.be/BdORh_gViFk) |
 
 ### [/concepts-a-z](./concepts-a-z) — Saturday Shorts Library
 
@@ -179,11 +181,12 @@ cognito-showcase/
 │   ├── ep-04-pumpkins/
 │   ├── ep-05-sunflowers/
 │   ├── ep-06-cactus/
-│   └── ep-07-fertilizers/
+│   ├── ep-07-fertilizers/
+│   ├── ep-08-.../     # Maze solver (DFS)
+│   └── ep-09-.../     # Four drones
 ├── concepts-a-z/      # Sat Farmer Shorts — one concept, one snippet
 │   ├── harvest/
 │   ├── if-check/
-│   ├── grass-strip/
 │   └── ... (12 concepts total)
 ├── vibe/              # Tue Replit long-forms — vibe-coded builds
 ├── scratch/           # Scratch — block coding series
