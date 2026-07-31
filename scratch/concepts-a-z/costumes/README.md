@@ -1,9 +1,8 @@
 # costumes — Animation by Switching Outfits
 
-> 📺 **29 Jul 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 29 Jul 2026)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/Q-JnwNejZrI)**
 
-**Scratch project:** *(link coming)*
+**Scratch project:** [Open in Scratch →](https://scratch.mit.edu/projects/1365678973/)
 
 ---
 
