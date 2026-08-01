@@ -3,7 +3,7 @@
 > 📺 **5 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
 > Short: *(link coming 5 Aug 2026)*
 
-**Scratch project:** *(link coming)*
+🎮 **[Play on Scratch →](https://scratch.mit.edu/projects/1365728110/)**
 
 ---
 
