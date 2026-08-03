@@ -1,7 +1,6 @@
 # glide-to — Smooth Movement on Autopilot
 
-> 📺 **5 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 5 Aug 2026)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/HStabO8z37c)** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
 
 🎮 **[Play on Scratch →](https://scratch.mit.edu/projects/1365728110/)**
 
