@@ -8,6 +8,8 @@ Short concept videos covering CC:Tweaked turtle commands — one concept per epi
 | `turtle.forward()` + `turnLeft()` + `turnRight()` | [turtle-forward](./turtle-forward) | Walk one way. Turn. Walk another. |
 | `turtle.dig()` + `for` loop | [turtle-dig](./turtle-dig) | Dig a tunnel with one command and a loop |
 | `turtle.digDown()` | [turtle-digdown](./turtle-digdown) | Break the block below — one word, then the loop that makes a hole |
+| `os.sleep(N)` | [os-sleep](./os-sleep) | Make the turtle pause between commands |
+| `print()` | [print](./print) | Ask the turtle a question — it answers back |
 
 ---
 
