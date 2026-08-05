@@ -1,7 +1,7 @@
 # random-numbers — Controlled Unpredictability
 
-> 📺 **26 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 26 Aug 2026)*
+> 📺 [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming)*
 
 **Scratch project:** *(link coming)*
 
