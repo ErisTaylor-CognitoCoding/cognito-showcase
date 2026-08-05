@@ -1,7 +1,7 @@
 # if-then-else — Two Paths, One Decision
 
-> 📺 **9 Sep 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 9 Sep 2026)*
+> 📺 [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming)*
 
 **Scratch project:** *(link coming)*
 
