@@ -1,6 +1,6 @@
 # Controlling the Turtle — Lua, `edit` and Pastebin in Minecraft
 
-> 📺 **Watch on YouTube** *(link coming when the episode goes live)*
+> 📺 **[Watch on YouTube →](https://youtu.be/x8JjMrbETG4)**
 
 **Series:** Minecraft ComputerCraft (CC:Tweaked)  
 **Lane:** `wed_minecraft` · Long-form
