@@ -1,7 +1,7 @@
 # variables — A Named Box That Remembers a Number
 
-> 📺 **12 Aug 2026** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming 12 Aug 2026)*
+> 📺 [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
+> Short: *(link coming)*
 
 **Scratch project:** *(link coming)*
 
