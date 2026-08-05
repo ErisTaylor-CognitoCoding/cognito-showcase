@@ -44,7 +44,7 @@ Family Lingo is a Progressive Web App with 500+ phrases across six languages —
 
 ## Code
 
-*Code will be added here once the episode ships.*
+*(No standalone code file for this episode — the app was built entirely in Replit Agent. Watch the episode for the full build session.)*
 
 ---
 
