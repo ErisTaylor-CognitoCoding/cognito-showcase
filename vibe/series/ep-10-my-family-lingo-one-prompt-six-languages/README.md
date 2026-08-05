@@ -2,7 +2,8 @@
 
 > 📺 **[Watch on YouTube →](https://youtu.be/AObxWbJv5Sw)**
 
-**Built with:** [Replit Agent](https://replit.com) — sign up for a free month via the link in the video description  
+> 🤖 **Built with Replit Agent** — one conversation, one working app. [Try Replit Agent →](https://replit.com/refer/cognitocoding)
+
 **Project:** Family Lingo — a personal multilingual phrasebook Progressive Web App  
 **Lane:** Vibe Coding (Replit Agent)
 
@@ -42,9 +43,9 @@ Family Lingo is a Progressive Web App with 500+ phrases across six languages —
 
 ---
 
-## Code
+## Series
 
-*(No standalone code file for this episode — the app was built entirely in Replit Agent. Watch the episode for the full build session.)*
+**Tue Vibe Coding** — one game or app per episode, built live by directing an AI. Every Tuesday on [Cognito Coding](https://www.youtube.com/@CognitoCoding01).
 
 ---
 
