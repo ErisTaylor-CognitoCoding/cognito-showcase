@@ -1,6 +1,6 @@
 # Controlling the Turtle — Lua, `edit` and Pastebin in Minecraft
 
-> 📺 **[Watch on YouTube →](https://youtu.be/x8JjMrbETG4)**
+> 📺 **[Watch on YouTube →](https://youtu.be/x8JjMrbETG4)** · [Cognito Coding](https://www.youtube.com/@CognitoCoding01)
 
 **Series:** Minecraft ComputerCraft (CC:Tweaked)  
 **Lane:** `wed_minecraft` · Long-form
@@ -86,7 +86,7 @@ The slot numbers are written into the program. It doesn't go hunting — it look
 | 1 | Stairs |
 | 3 | Advanced computer |
 | 5 | Floor blocks |
-| 6 | Disk drive |
+| 6 | Disk Drive |
 | 7 | Printer |
 | 8 | Wired modem (sits on the machine) |
 | 9 | Wireless modems (roof network line) |
