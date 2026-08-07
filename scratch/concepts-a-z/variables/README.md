@@ -1,9 +1,8 @@
 # variables — A Named Box That Remembers a Number
 
-> 📺 [Cognito Coding](https://www.youtube.com/@CognitoCoding01)  
-> Short: *(link coming)*
+> 📺 **[Watch on YouTube →](https://youtube.com/shorts/uefsopdazag)**
 
-**Scratch project:** *(link coming)*
+🎮 **[Play the project on Scratch →](https://scratch.mit.edu/projects/1365760121/)**
 
 ---
 
@@ -44,4 +43,4 @@ Every game in this series uses them. Gravity in Donkey Kong is a `y-velocity` va
 
 ---
 
-*[← Back to concepts](../README.md) · Next: [broadcast →](../broadcast)*
+*[← Back to concepts](../README.md) · Next: [broadcast →](../broadcast-and-receive)*
