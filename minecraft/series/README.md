@@ -4,7 +4,7 @@
 
 | Episode | Build | Date |
 |---|---|---|
-| [Ep 1](./ep-01-controlling-the-turtle) | Controlling the Turtle — Lua, `edit` and Pastebin | ✅ 5 Aug |
+| [Ep 1](./ep-01-house) | A turtle builds a house, block by block | 🔜 TBC |
 | [Ep 2](./ep-02-crop-field) | Plant a whole crop field with one loop | 🔜 6 Aug |
 | [Ep 3](./ep-03-well) | A well, dug and built by turtle | 🔜 13 Aug |
 | [Ep 4](./ep-04-market-stalls) | A row of market stalls from one repeated build | 🔜 20 Aug |
