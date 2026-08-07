@@ -19,7 +19,7 @@ These are the building blocks that appear in the Friday arcade games — zoomed 
 | [costumes](./costumes) | Animation — switching between costumes to bring sprites to life | *29 Jul 2026* |
 | [glide-to](./glide-to) | Smooth movement — glide block handles the path for you | *5 Aug 2026* |
 | [variables](./variables) | Keeping score — a variable that remembers a number | *12 Aug 2026* |
-| [broadcast](./broadcast) | Sprites talking to each other — broadcast and receive | *19 Aug 2026* |
+| [broadcast-and-receive](./broadcast-and-receive) | Sprites talking to each other — broadcast and receive | *13 Aug 2026* |
 | [random-numbers](./random-numbers) | Pick random — controlled unpredictability | *26 Aug 2026* |
 | [repeat](./repeat) | Repeat N times — a counted loop | *2 Sep 2026* |
 | [if-then-else](./if-then-else) | Decisions — two paths, one condition | *9 Sep 2026* |
