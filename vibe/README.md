@@ -21,4 +21,16 @@ The rules: one sitting, directed AI, as little hand-written code as possible. Th
 
 ---
 
+## Shorts
+
+Quick companion clips and product showcases.
+
+| Title | Date |
+|-------|------|
+| [Family Lingo](shorts/family-lingo/) | 21 Jul 2026 |
+| [2D Racing Game Teaser](shorts/2d-racing-game/) | 25 Jul 2026 |
+| [Solo Tutor Lite — All You Need For Tutoring In One Place](shorts/solo-tutor-lite/) | 10 Aug 2026 |
+
+---
+
 ← [Back to showcase root](../README.md)
