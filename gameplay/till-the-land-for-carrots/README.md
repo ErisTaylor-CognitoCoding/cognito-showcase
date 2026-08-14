@@ -2,7 +2,7 @@
 
 > 📺 **[Watch on YouTube →](https://youtube.com/shorts/87-V31wpaZc?feature=share)**
 
-> 🎮 Played in [The Farmer Was Replaced](https://store.steampowered.com/app/2060160/The_Farmer_Was_Replaced/) — available on Steam
+**Game:** The Farmer Was Replaced (Steam)
 
 ---
 
@@ -12,51 +12,35 @@ Row zero is carrots, and carrots are fussy — they only go in tilled soil. Ever
 
 ## What the code does
 
-The drone sweeps a column at a time, then steps east. On every ripe tile it harvests, tops the water up to 75% with a `while` loop, then checks which row it's on.
+The drone sweeps a column at a time, then east. For every ripe tile it:
+1. Harvests
+2. Waters up to 75% with a `while` loop
+3. Checks `get_pos_y()` — row zero gets carrots, every other row gets bush
 
-Row zero gets carrots — but only after a ground check. Carrots only plant on tilled soil, so the code reads `get_ground_type()` before calling `till()`. Two unlocks required before this line will run: **Senses** (for `get_ground_type`) and **Operators** (for `!=`).
+On row zero, before planting, it reads `get_ground_type()`. If the ground isn't tilled soil, it calls `till()` first — carrots won't plant on anything else. That single line needs two unlocks before it runs: **Senses** (for `get_ground_type`) and **Operators** (for `!=`).
 
-Every other row gets bush. Each pass yields two hay; one hay buys one carrot seed. Know your exchange rate before you code — if the bush rows don't fund the carrot row, the loop starves.
+The bush rows fund the carrot row. Each pass: harvest the bush for wood → harvest the hay that grows back → replant the bush. Two hay per pass, one hay buys one carrot seed.
 
 ---
 
-## Concepts in this Short
+## Concepts covered
 
 | Concept | What it does |
 |---------|-------------|
-| `get_pos_y() == 0` | Returns the drone's Y position — row zero is the carrot row, everything else is bush |
-| `get_ground_type() != Grounds.Soil` | Read the tile before acting — the `!=` operator needs the Operators unlock |
-| `till()` | Prepares the ground; carrots won't plant without it |
-| Nested `for` loops | Sweep the whole 2D field — outer loop steps east, inner loop moves north |
-| `while get_water() < 0.75` | Top the water up before planting — runs until the tile hits 75% |
+| Nested `for` loops | Sweeps every tile: inner loop moves North, outer loop steps East |
+| `while` loop | Waters each tile until `get_water() >= 0.75` |
+| `get_pos_y()` | Returns the drone's Y position — splits row zero from the rest |
+| `get_ground_type()` | Reads the tile's ground type before deciding to till |
+| `till()` | Converts ground to farmable soil — required before planting carrots |
+| `plant(Entities.Carrot)` | Plants a carrot — only works on tilled soil |
+| `plant(Entities.Bush)` | Plants a bush — the economy crop that funds the carrot row |
 
 ---
 
-## Code
+## End-state code
 
-Full code: [`carrots.py`](carrots.py)
-
-```python
-while True:
-    for i in range(get_world_size()):
-        for j in range(get_world_size()):
-            if can_harvest():
-                harvest()
-                change_hat(Hats.Straw_Hat)
-                while get_water() < 0.75:
-                    use_item(Items.Water)
-                if get_pos_y() == 0:
-                    if get_ground_type() != Grounds.Soil:
-                        till()
-                    change_hat(Hats.Carrot_Hat)
-                    plant(Entities.Carrot)
-                else:
-                    plant(Entities.Bush)
-                change_hat(Hats.Purple_Hat)
-        move(North)
-    move(East)
-```
+See [`carrots.py`](carrots.py) — the full script from the episode.
 
 ---
 
-*[← Back to gameplay](../README.md)*
+*[← back to gameplay](../README.md)*
