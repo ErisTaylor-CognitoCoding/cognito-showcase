@@ -1,35 +1,42 @@
-# `broadcast` and `when I receive` — How Sprites Talk in Scratch
+# `broadcast-and-receive` — How Sprites Talk to Each Other
 
 > 📺 **[Watch on YouTube →](https://youtube.com/shorts/fN3hD4fYHrU?feature=share)**
 
-**Lane:** Thu Scratch Short
+🎮 **[Play the project on Scratch →](https://scratch.mit.edu/projects/1365762442/)**
 
 ---
-
-## The Concept
 
 How sprites talk to each other in Scratch.
 
-One sprite shouts a named message — every sprite with a matching `when I receive` block hears it and fires. The broadcaster never names anyone. It just shouts. Three sprites listening? All three react at once, same moment, no queue.
+One sprite shouts a message. Every sprite with a matching `when I receive` block hears it — at the exact same moment. Nobody queues. The sender never names the receivers.
 
 ---
 
-## The Blocks
+## The blocks
 
-**`broadcast [message ▼]`** — sends a named message to every sprite in the project. The sender never names who should react — it just shouts.
+**`broadcast [message]`** — sends a message out to the whole project. The sprite sending it doesn't name anyone. It just shouts.
 
-**`when I receive [message ▼]`** — sits at the top of a script on any sprite. The instant that message arrives, the script runs. Multiple sprites can all listen for the same broadcast and fire simultaneously.
+**`when I receive [message]`** — sits in any sprite, listening. The moment that message arrives, everything stacked underneath runs.
 
-The real payoff: add a fourth sprite and the broadcaster's script doesn't change by a single block.
-
----
-
-## 🎮 Try the project on Scratch
-
-[**Play it → scratch.mit.edu/projects/1365762442**](https://scratch.mit.edu/projects/1365762442/)
-
-Every block has an explanation on it. Remix it and try adding your own receiver.
+One `broadcast` block can trigger ten sprites simultaneously. Add an eleventh sprite and the original sender's script doesn't change by a single block.
 
 ---
 
-*[← back to Scratch concepts](../README.md)*
+## When to use it
+
+- **Game Over** — one sprite detects the losing condition, broadcasts "Game Over", every other sprite stops
+- **Level Up** — broadcast triggers a scene change, new enemies, a fanfare — all at once
+- **Start** — a controller sprite kicks everything off with one broadcast rather than timing each sprite separately
+
+---
+
+## Remix it on Scratch
+
+Open the [project →](https://scratch.mit.edu/projects/1365762442/) and try:
+1. Add a fourth sprite
+2. Give it a `when I receive [Game Over]` block
+3. Notice: the broadcasting sprite's script doesn't change at all
+
+---
+
+*[← Back to concepts](../README.md)*
