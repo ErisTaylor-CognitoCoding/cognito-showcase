@@ -21,6 +21,7 @@ These bite-sized shorts map directly to the long-form **[/series](../series)** e
 | [grass-strip](./grass-strip) | `for` loops — cover a full row in one pass | *18 Jul 2026* |
 | [harvest](./harvest) | `while True` — your first infinite loop | *4 Jul 2026* |
 | [if-check](./if-check) | `if` statements — guard before you act | *11 Jul 2026* |
+| [modulo](./modulo) | Modulo — the `%` operator gives you the remainder after sharing out | [▶ Watch](https://youtube.com/shorts/Lq0eUeRJViI) |
 | [pumpkins](./pumpkins) | Reading entity state before planting | *1 Aug 2026* |
 | [pumpkins-need-space](./pumpkins-need-space) | Adjacency merging — wait for the whole field to ripen at once | [▶ Watch](https://youtube.com/shorts/jJSJQHcTkJ8?feature=share) |
 | [return-values](./return-values) | Return values — how a function hands its answer back | [▶ Watch](https://youtube.com/shorts/RZCWJ9cIZW8) |
