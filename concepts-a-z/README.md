@@ -25,6 +25,7 @@ These bite-sized shorts map directly to the long-form **[/series](../series)** e
 | [pumpkins](./pumpkins) | Reading entity state before planting | *1 Aug 2026* |
 | [pumpkins-need-space](./pumpkins-need-space) | Adjacency merging — wait for the whole field to ripen at once | [▶ Watch](https://youtube.com/shorts/jJSJQHcTkJ8?feature=share) |
 | [return-values](./return-values) | Return values — how a function hands its answer back | [▶ Watch](https://youtube.com/shorts/RZCWJ9cIZW8) |
+| [scope](./scope) | Scope — where a variable can and can't be seen | [▶ Watch](https://youtube.com/shorts/lCW5lShG6To) |
 | [snake-pattern](./snake-pattern) | Nested loops — cover every tile efficiently | *25 Jul 2026* |
 | [sunflowers](./sunflowers) | Running maximum with a variable | *8 Aug 2026* |
 | [trade](./trade) | Arithmetic — converting harvest into gold | *5 Sep 2026* |
