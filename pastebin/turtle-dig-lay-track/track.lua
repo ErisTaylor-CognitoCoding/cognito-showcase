@@ -1,42 +1,44 @@
--- track.lua  -- dig forward, lay rail behind/below as it goes
--- Slot 1 = rails. Coal/fuel anywhere in slots 2-16.
--- Usage: track 30
+-- track.lua : dig a tunnel and lay rail behind
+-- slot 1 = rails, slots 2-16 = coal
 
-local length = tonumber(({...})[1]) or 20
+local args = { ... }
+local n = tonumber(args[1]) or 20
 
 local function refuel()
-  if turtle.getFuelLevel() > 5 then return true end
+  if turtle.getFuelLevel() == "unlimited" then return end
+  if turtle.getFuelLevel() > 10 then return end
   for s = 2, 16 do
     turtle.select(s)
-    if turtle.refuel(1) then turtle.select(1) return true end
+    if turtle.refuel(1) then turtle.select(1) return end
   end
   turtle.select(1)
   print("Out of fuel - put coal in slots 2-16")
-  return false
 end
 
-local function fwd()
-  while not turtle.forward() do
-    turtle.dig()
-    sleep(0.2)
+local function digTo(dig, detect, move)
+  while detect() do
+    dig()
+    sleep(0.4) -- gravel / sand
   end
+  return move()
 end
 
--- lift to head height so the rail can sit on the original floor
-turtle.digUp()
-if not turtle.up() then print("No room above") return end
+-- get to head height so we can lay rail on the original floor
+digTo(turtle.digUp, turtle.detectUp, turtle.up)
 
-for i = 1, length do
-  if not refuel() then return end
-  turtle.dig()
-  fwd()
-  turtle.digDown()
+for i = 1, n do
+  refuel()
+  if not digTo(turtle.dig, turtle.detect, turtle.forward) then
+    print("Blocked at block " .. i)
+    break
+  end
+  while turtle.detectDown() do turtle.digDown() end
   turtle.select(1)
   if not turtle.placeDown() then
-    print("No rails left at block " .. i)
-    return
+    print("Out of rails at block " .. i)
+    break
   end
 end
 
-turtle.down()
-print("Laid " .. length .. " track")
+digTo(turtle.digDown, turtle.detectDown, turtle.down)
+print("Done.")
