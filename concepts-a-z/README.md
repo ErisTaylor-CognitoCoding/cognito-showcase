@@ -18,6 +18,7 @@ These bite-sized shorts map directly to the long-form **[/series](../series)** e
 | [dead-crops](./dead-crops) | Clearing failure states before replanting | *15 Aug 2026* |
 | [dictionaries](./dictionaries) | Dictionaries — look up any value by name, no searching required | [▶ Watch](https://youtube.com/shorts/lkEoNwNhI0Y) |
 | [errors-debugging](./errors-debugging) | Errors and debugging — Python stops and names exactly what it couldn't find | [▶ Watch](https://youtube.com/shorts/L56qAxir5Wo) |
+| [f-strings](./f-strings) | f-strings — drop any value straight into a sentence with `f"..."` | [▶ Watch](https://youtube.com/shorts/gs2JOpP3ocA) |
 | [full-farm](./full-farm) | Combining everything into one automated farm | *19 Sep 2026* |
 | [grass-strip](./grass-strip) | `for` loops — cover a full row in one pass | *18 Jul 2026* |
 | [harvest](./harvest) | `while True` — your first infinite loop | *4 Jul 2026* |
